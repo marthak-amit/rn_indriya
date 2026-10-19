@@ -225,9 +225,9 @@ async function main() {
       if (visited <= 4) await page.screenshot({ path: path.join(REF, `page-${visited}-${slug(pathName)}.png`) }).catch(() => {});
       let kept = 0;
       for (const t of tiles) {
-        if (kept >= MAX_PER_PAGE || products.size >= MAX_PRODUCTS) { if (!col) break; continue; }
         const key = t.href;
         if (products.has(key)) { const ex = products.get(key); if (col && !ex.collection) ex.collection = col; continue; }
+        if (kept >= MAX_PER_PAGE || products.size >= MAX_PRODUCTS) continue; // cap new additions only; tagging above is uncapped
         const category = pageCat || categoryFromText(`${t.name} ${t.href}`) || categoryFromText(t.name);
         if (!category) continue;
         const id = `${slug(t.name).slice(0, 30)}-${hash(key)}`;
