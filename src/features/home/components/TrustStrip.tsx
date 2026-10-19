@@ -5,12 +5,11 @@ import { Text } from '@/components/ui/Text';
 import { colors } from '@/theme';
 
 type Icon = keyof typeof Ionicons.glyphMap;
-// PLACEHOLDER promises — confirm wording with the Indriya brand team.
 const ITEMS: { icon: Icon; title: string; body: string }[] = [
-  { icon: 'ribbon-outline', title: 'Certified', body: 'Hallmarked & certified' },
-  { icon: 'cube-outline', title: 'Insured delivery', body: 'Free on larger orders' },
-  { icon: 'refresh-outline', title: 'Easy returns', body: 'Hassle-free exchange' },
-  { icon: 'shield-checkmark-outline', title: 'Secure', body: 'Safe, encrypted checkout' },
+  { icon: 'ribbon-outline', title: 'BIS Hallmark', body: 'Hallmarked gold' },
+  { icon: 'diamond-outline', title: 'Certified diamonds', body: 'Natural & certified' },
+  { icon: 'shield-checkmark-outline', title: 'Aditya Birla Group', body: 'Trust & reliability' },
+  { icon: 'lock-closed-outline', title: 'Secure checkout', body: 'Safe, encrypted payments' },
 ];
 
 export function TrustStrip() {

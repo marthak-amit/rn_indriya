@@ -48,7 +48,7 @@ export function CartRow({ line, index }: { line: CartLine; index: number }) {
       <GestureDetector gesture={pan}>
         <Animated.View style={[styles.card, shadow.soft, card]}>
           <PressableScale pressedScale={0.97} onPress={() => router.push({ pathname: '/product/[id]', params: { id: product.id } })} accessibilityLabel={product.name}>
-            <ProductImage uri={product.imageUrls[0]} shape={product.shape} tone={product.tone} gem={product.gem} padding={8} style={styles.thumb} />
+            <ProductImage source={product.images[0]} shape={product.shape} tone={product.tone} gem={product.gem} padding={8} style={styles.thumb} />
           </PressableScale>
           <View style={{ flex: 1, gap: 3 }}>
             <Text variant="subheading" numberOfLines={2} style={{ fontSize: 15 }}>{product.name}</Text>

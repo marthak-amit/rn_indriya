@@ -34,7 +34,7 @@ export function AnimatedSplash() {
   if (done) return null;
   return (
     <Animated.View exiting={SlideOutUp.duration(650).easing(Easing.inOut(Easing.cubic))} style={[StyleSheet.absoluteFill, { zIndex: 999 }]} pointerEvents="auto">
-      <LinearGradient colors={[colors.primaryDark, colors.primary, '#7A2539']} style={styles.fill} start={{ x: 0.1, y: 0 }} end={{ x: 0.9, y: 1 }}>
+      <LinearGradient colors={[colors.primaryDark, colors.primary, '#0B47A3']} style={styles.fill} start={{ x: 0.1, y: 0 }} end={{ x: 0.9, y: 1 }}>
         <Animated.View style={gemStyle}>
           <Svg width={96} height={96} viewBox="-50 -50 100 100">
             <Polygon points="0,-40 28,-24 40,4 16,40 -16,40 -40,4 -28,-24" fill="none" stroke={colors.goldLight} strokeWidth={2.4} strokeLinejoin="round" />

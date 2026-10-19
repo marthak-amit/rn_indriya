@@ -90,7 +90,7 @@ export default function SearchScreen() {
             <Reveal index={index}>
               <Animated.View layout={LinearTransition}>
                 <PressableScale onPress={() => { dispatch(addRecentSearch(q)); router.push({ pathname: '/product/[id]', params: { id: item.id } }); }} style={styles.row}>
-                  <ProductImage uri={item.imageUrls[0]} shape={item.shape} tone={item.tone} gem={item.gem} padding={6} style={styles.thumb} />
+                  <ProductImage source={item.images[0]} shape={item.shape} tone={item.tone} gem={item.gem} padding={6} style={styles.thumb} />
                   <View style={{ flex: 1, gap: 2 }}>
                     <Text variant="subheading" numberOfLines={1}>{item.name}</Text>
                     <Text variant="caption" color="muted">{item.metal}</Text>

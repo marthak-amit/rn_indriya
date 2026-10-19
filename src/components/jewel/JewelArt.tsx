@@ -37,7 +37,7 @@ function GemShape({ g, stone, edge, x, y, s = 1, tear = false, rotate = 0 }: Gem
 
 /**
  * Vector jewellery illustrations. They stand in for photography until real
- * product images are wired in (see config/remoteAssets) and also act as the
+ * product images are bundled (see scripts/sync-indriya.mjs) and also act as the
  * graceful fallback when an image fails to load.
  */
 function JewelArtBase({ shape, tone, gem, size = '100%' }: JewelArtProps) {
@@ -83,6 +83,22 @@ function JewelArtBase({ shape, tone, gem, size = '100%' }: JewelArtProps) {
               <GemShape g={g} stone={stone} edge={m[2]} x={x} y={118} s={1.05} tear />
             </G>
           ))}
+        </>
+      );
+      break;
+    case 'mangalsutra':
+      body = (
+        <>
+          <Path d="M32 30 Q100 175 168 30" fill="none" stroke={`url(#${metal})`} strokeWidth={3} strokeLinecap="round" />
+          {Array.from({ length: 13 }, (_, i) => {
+            const t = 0.08 + (i / 12) * 0.84;
+            const x = (1 - t) * (1 - t) * 32 + 2 * (1 - t) * t * 100 + t * t * 168;
+            const y = (1 - t) * (1 - t) * 30 + 2 * (1 - t) * t * 175 + t * t * 30;
+            return <Circle key={i} cx={x} cy={y} r={i % 3 === 1 ? 5 : 3.6} fill={i % 3 === 1 ? m[1] : '#14110F'} stroke={i % 3 === 1 ? m[2] : 'none'} />;
+          })}
+          <Circle cx={100} cy={118} r={9} fill={`url(#${metal})`} stroke={m[2]} />
+          <Path d="M100 124 C 126 142 122 164 100 176 C 78 164 74 142 100 124 Z" fill={`url(#${metal})`} stroke={m[2]} strokeWidth={1.5} />
+          <GemShape g={g} stone={stone} edge={m[2]} x={100} y={150} s={0.8} tear />
         </>
       );
       break;

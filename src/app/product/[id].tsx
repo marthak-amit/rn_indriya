@@ -63,7 +63,7 @@ export default function ProductScreen() {
   useEffect(() => () => { if (timer.current) clearTimeout(timer.current); }, []);
 
   const shakeStyle = useAnimatedStyle(() => ({ transform: [{ translateX: shake.value }] }));
-  const topBar = useAnimatedStyle(() => ({ backgroundColor: `rgba(251,248,243,${interpolate(scrollY.value, [width * 0.6, width * 0.9], [0, 0.97], 'clamp')})` }));
+  const topBar = useAnimatedStyle(() => ({ backgroundColor: `rgba(255,249,243,${interpolate(scrollY.value, [width * 0.6, width * 0.9], [0, 0.97], 'clamp')})` }));
   const barTitle = useAnimatedStyle(() => ({ opacity: interpolate(scrollY.value, [width * 0.75, width], [0, 1], 'clamp') }));
 
   if (isLoading) {
@@ -137,14 +137,14 @@ export default function ProductScreen() {
             </View>
             <Text variant="title">{product.name}</Text>
             <View style={styles.rowWrap}>
-              <RatingStars rating={product.rating} count={product.reviewCount} />
-              <Text variant="caption" color="muted">{product.weightGrams} g · {product.metal}</Text>
+              {product.rating !== undefined ? <RatingStars rating={product.rating} count={product.reviewCount} /> : null}
+              <Text variant="caption" color="muted">{product.weightGrams ? `${product.weightGrams} g · ` : ''}{product.metal}</Text>
             </View>
             <View style={styles.priceRow}>
               <Text style={{ fontFamily: fonts.bodySemi, fontSize: 26 }}>{formatINR(product.price)}</Text>
               {off > 0 ? (<><Text variant="body" color="muted" style={{ textDecorationLine: 'line-through' }}>{formatINR(product.mrp)}</Text><Text variant="bodyStrong" color="success">{off}% off</Text></>) : null}
             </View>
-            <Text variant="caption" color="muted">Inclusive of all taxes · Free insured shipping on larger orders</Text>
+            <Text variant="caption" color="muted">Inclusive of all taxes · BIS hallmarked</Text>
 
             {needsSize ? (
               <Animated.View style={[{ gap: 10, marginTop: 18 }, shakeStyle]}>
@@ -210,6 +210,6 @@ const styles = StyleSheet.create({
   pin: { flex: 1, fontFamily: fonts.body, fontSize: 15, color: colors.ink, outlineStyle: 'none' } as never,
   eta: { flexDirection: 'row', alignItems: 'center', gap: 6, paddingLeft: 6 },
   bullet: { flexDirection: 'row', alignItems: 'center', gap: 10 },
-  cta: { position: 'absolute', left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(251,248,243,0.97)', borderTopWidth: 1, borderTopColor: colors.line, paddingTop: 12, paddingHorizontal: 16, alignItems: 'center', ...shadow.soft },
+  cta: { position: 'absolute', left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(255,249,243,0.97)', borderTopWidth: 1, borderTopColor: colors.line, paddingTop: 12, paddingHorizontal: 16, alignItems: 'center', ...shadow.soft },
   ctaInner: { flexDirection: 'row', gap: 12, width: '100%', maxWidth: 640 },
 });

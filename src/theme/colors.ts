@@ -1,21 +1,21 @@
 /**
- * Design tokens. Brand colours are PLACEHOLDERS until the real Indriya palette
- * is confirmed — change them here and the whole app follows.
+ * Design tokens. Brand colours follow Indriya's palette (Midnight Blue #022E71, Bridal Heath #FFF9F3,
+ * Black). The champagne `gold` is a restrained accent for jewellery details (stars, badges).
  */
 export const colors = {
-  background: '#FBF8F3',
+  background: '#FFF9F3',
   surface: '#FFFFFF',
-  surfaceAlt: '#F4EEE5',
-  ink: '#1E1A18',
-  inkSoft: '#4A423D',
-  muted: '#8A817A',
-  line: '#EAE2D6',
-  primary: '#5B1A2B',
-  primaryDark: '#3E0F1C',
-  primarySoft: '#F3E6E9',
-  gold: '#B8893B',
-  goldLight: '#E7CF96',
-  goldPale: '#F7EDD3',
+  surfaceAlt: '#F6EEE3',
+  ink: '#0A0A0A',
+  inkSoft: '#3A3F4B',
+  muted: '#7B8190',
+  line: '#E8DED0',
+  primary: '#022E71',
+  primaryDark: '#011B45',
+  primarySoft: '#E7EDF8',
+  gold: '#B08A4A',
+  goldLight: '#E9D6A8',
+  goldPale: '#F7EFD9',
   rose: '#C98A7A',
   success: '#2E7D5B',
   successSoft: '#E3F2EA',
@@ -23,7 +23,7 @@ export const colors = {
   dangerSoft: '#FBE9E7',
   white: '#FFFFFF',
   black: '#000000',
-  overlay: 'rgba(20,12,10,0.55)',
+  overlay: 'rgba(2,14,36,0.55)',
 } as const;
 
 export type ColorToken = keyof typeof colors;

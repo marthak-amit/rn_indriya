@@ -38,7 +38,6 @@ export interface OrderLine {
   shape: string;
   tone: string;
   gem: string;
-  imageUrl?: string;
 }
 
 export interface OrderTotals {

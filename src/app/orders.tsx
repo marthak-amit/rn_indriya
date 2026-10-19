@@ -12,11 +12,17 @@ import { Reveal } from '@/components/ui/Reveal';
 import { Screen } from '@/components/ui/Screen';
 import { Text } from '@/components/ui/Text';
 import { useAppSelector } from '@/store/hooks';
+import { selectProductById } from '@/features/catalog/selectors';
 import type { Order } from '@/services/api/types';
 import { colors, motion, radius, shadow } from '@/theme';
 import { formatINR } from '@/utils/format';
 
 const STAGES: Order['status'][] = ['confirmed', 'packed', 'shipped', 'delivered'];
+
+function OrderThumb({ line }: { line: Order['lines'][number] }) {
+  const product = useAppSelector((s) => selectProductById(s, line.productId));
+  return <ProductImage source={product?.images[0]} shape={line.shape as never} tone={line.tone as never} gem={line.gem as never} padding={4} style={styles.thumb} />;
+}
 
 function Timeline({ status }: { status: Order['status'] }) {
   const idx = STAGES.indexOf(status);
@@ -57,7 +63,7 @@ function OrderCard({ order, index }: { order: Order; index: number }) {
               <Timeline status={order.status} />
               {order.lines.map((l) => (
                 <View key={l.productId + (l.size ?? '')} style={styles.line}>
-                  <ProductImage uri={l.imageUrl} shape={l.shape as never} tone={l.tone as never} gem={l.gem as never} padding={4} style={styles.thumb} />
+                  <OrderThumb line={l} />
                   <View style={{ flex: 1 }}>
                     <Text variant="bodyStrong" numberOfLines={1}>{l.name}</Text>
                     <Text variant="caption" color="muted">Qty {l.qty}{l.size ? ` · Size ${l.size}` : ''}</Text>

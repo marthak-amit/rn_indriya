@@ -54,7 +54,8 @@
     "typecheck": "tsc --noEmit",
     "lint": "expo lint",
     "test": "jest",
-    "format": "prettier --write \"src/**/*.{ts,tsx}\""
+    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "sync:indriya": "node scripts/sync-indriya.mjs"
   },
   "private": true,
   "jest": {

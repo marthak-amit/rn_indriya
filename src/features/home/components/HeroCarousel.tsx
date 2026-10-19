@@ -1,3 +1,4 @@
+import { Image } from 'expo-image';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useRouter } from 'expo-router';
 import { useCallback, useEffect, useRef, useState } from 'react';
@@ -35,10 +36,21 @@ function Slide({ banner, index, width, height, scrollX }: { banner: Banner; inde
   return (
     <View style={{ width, height }}>
       <LinearGradient colors={banner.gradient} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={StyleSheet.absoluteFill} />
-      <View style={styles.glow} pointerEvents="none" />
-      <Animated.View style={[styles.art, art]} pointerEvents="none">
-        <JewelArt shape={banner.shape} tone={banner.tone} gem={banner.gem} />
-      </Animated.View>
+      {banner.image ? (
+        <>
+          <Animated.View style={[StyleSheet.absoluteFill, art]} pointerEvents="none">
+            <Image source={banner.image} style={StyleSheet.absoluteFill} contentFit="cover" transition={400} />
+          </Animated.View>
+          <LinearGradient colors={['rgba(1,27,69,0.05)', 'rgba(1,27,69,0.85)']} style={styles.scrim} pointerEvents="none" />
+        </>
+      ) : (
+        <>
+          <View style={styles.glow} pointerEvents="none" />
+          <Animated.View style={[styles.art, art]} pointerEvents="none">
+            <JewelArt shape={banner.shape} tone={banner.tone} gem={banner.gem} />
+          </Animated.View>
+        </>
+      )}
       <Animated.View style={[styles.copy, text]}>
         <Text variant="overline" color="goldLight">{banner.eyebrow}</Text>
         <Text color="white" style={{ fontFamily: fonts.displayBold, fontSize: 38, lineHeight: 42 }}>{banner.title}</Text>
@@ -115,6 +127,7 @@ export function HeroCarousel({ banners }: { banners: Banner[] }) {
 
 const styles = StyleSheet.create({
   art: { position: 'absolute', right: -24, top: 18, width: 300, height: 300 },
+  scrim: { position: 'absolute', left: 0, right: 0, bottom: 0, top: '30%' },
   glow: { position: 'absolute', right: -50, top: -10, width: 360, height: 360, borderRadius: 180, backgroundColor: 'rgba(231,207,150,0.14)' },
   copy: { position: 'absolute', left: 24, right: 24, bottom: 64, gap: 8 },
   pager: { position: 'absolute', bottom: 28, left: 24, flexDirection: 'row', gap: 6 },

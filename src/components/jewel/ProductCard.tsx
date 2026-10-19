@@ -26,7 +26,7 @@ export function ProductCard({ product, width, index = 0, still = false }: Produc
       <PressableScale onPress={() => router.push({ pathname: '/product/[id]', params: { id: product.id } })} pressedScale={0.97} accessibilityLabel={product.name}>
         <View style={[styles.card, shadow.soft]}>
           <View>
-            <ProductImage uri={product.imageUrls[0]} shape={product.shape} tone={product.tone} gem={product.gem} style={{ width, height: width * 1.12 }} />
+            <ProductImage source={product.images[0]} shape={product.shape} tone={product.tone} gem={product.gem} style={{ width, height: width * 1.12 }} />
             <View style={styles.badges}>
               {product.isNew ? <Text variant="overline" style={styles.badge} color="white">New</Text> : null}
               {product.isBestseller ? <Text variant="overline" style={[styles.badge, styles.gold]} color="white">Bestseller</Text> : null}
@@ -40,7 +40,7 @@ export function ProductCard({ product, width, index = 0, still = false }: Produc
               <Text variant="price">{formatINR(product.price)}</Text>
               {off > 0 ? <Text variant="caption" color="muted" style={{ textDecorationLine: 'line-through' }}>{formatINR(product.mrp)}</Text> : null}
             </View>
-            <RatingStars rating={product.rating} count={product.reviewCount} />
+            {product.rating !== undefined ? <RatingStars rating={product.rating} count={product.reviewCount} /> : null}
           </View>
         </View>
       </PressableScale>

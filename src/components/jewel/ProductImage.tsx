@@ -3,12 +3,12 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { useEffect, useState } from 'react';
 import { StyleSheet, View, type StyleProp, type ViewStyle } from 'react-native';
 import Animated, { Easing, interpolate, useAnimatedStyle, useSharedValue, withDelay, withRepeat, withTiming } from 'react-native-reanimated';
-import type { GemType, JewelShape, MetalTone } from '@/features/catalog/types';
+import type { GemType, ImageRef, JewelShape, MetalTone } from '@/features/catalog/types';
 import { JewelArt } from './JewelArt';
 import { backdropStops } from './palettes';
 
 export interface ProductImageProps {
-  uri?: string;
+  source?: ImageRef;
   shape: JewelShape;
   tone: MetalTone;
   gem: GemType;
@@ -21,7 +21,7 @@ export interface ProductImageProps {
 }
 
 /** Remote photo when available, otherwise tone-matched vector artwork. */
-export function ProductImage({ uri, shape, tone, gem, shimmer = false, padding = 18, artScale = 1, style }: ProductImageProps) {
+export function ProductImage({ source, shape, tone, gem, shimmer = false, padding = 18, artScale = 1, style }: ProductImageProps) {
   const [failed, setFailed] = useState(false);
   const t = useSharedValue(0);
   useEffect(() => {
@@ -30,12 +30,12 @@ export function ProductImage({ uri, shape, tone, gem, shimmer = false, padding =
   }, [shimmer, t]);
   const sweep = useAnimatedStyle(() => ({ transform: [{ translateX: interpolate(t.value, [0, 1], [-260, 460]) }, { rotate: '18deg' }] }));
 
-  const showPhoto = !!uri && !failed;
+  const showPhoto = source !== undefined && !failed;
   return (
     <View style={[styles.box, style]}>
       <LinearGradient colors={backdropStops[tone]} style={StyleSheet.absoluteFill} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} />
       {showPhoto ? (
-        <Image source={{ uri }} style={StyleSheet.absoluteFill} contentFit="cover" transition={350} onError={() => setFailed(true)} />
+        <Image source={source} style={StyleSheet.absoluteFill} contentFit="cover" transition={350} onError={() => setFailed(true)} />
       ) : (
         <View style={[StyleSheet.absoluteFill, { padding, transform: [{ scale: artScale }] }]}><JewelArt shape={shape} tone={tone} gem={gem} /></View>
       )}

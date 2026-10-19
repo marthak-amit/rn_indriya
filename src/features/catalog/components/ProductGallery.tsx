@@ -5,9 +5,9 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { JewelArt } from '@/components/jewel/JewelArt';
 import { ProductImage } from '@/components/jewel/ProductImage';
 import { colors } from '@/theme';
-import type { Product } from '../types';
+import type { ImageRef, Product } from '../types';
 
-type View_ = { key: string; kind: 'main' | 'zoom' | 'dark' | 'photo'; uri?: string };
+type View_ = { key: string; kind: 'main' | 'zoom' | 'dark' | 'photo'; source?: ImageRef };
 
 function Slide({ view, product, width, height, index, x, scrollY }: { view: View_; product: Product; width: number; height: number; index: number; x: SharedValue<number>; scrollY: SharedValue<number> }) {
   const parallax = useAnimatedStyle(() => ({
@@ -21,7 +21,7 @@ function Slide({ view, product, width, height, index, x, scrollY }: { view: View
     <View style={{ width, height, overflow: 'hidden' }}>
       <Animated.View style={[StyleSheet.absoluteFill, parallax]}>
         {view.kind === 'photo' ? (
-          <ProductImage uri={view.uri} shape={product.shape} tone={product.tone} gem={product.gem} style={StyleSheet.absoluteFill} />
+          <ProductImage source={view.source} shape={product.shape} tone={product.tone} gem={product.gem} style={StyleSheet.absoluteFill} />
         ) : view.kind === 'main' ? (
           <ProductImage shape={product.shape} tone={product.tone} gem={product.gem} shimmer padding={36} style={StyleSheet.absoluteFill} />
         ) : view.kind === 'zoom' ? (
@@ -44,8 +44,8 @@ export function ProductGallery({ product, width, height, scrollY }: { product: P
   const onScroll = useAnimatedScrollHandler((e) => {
     x.value = e.contentOffset.x;
   });
-  const views: View_[] = product.imageUrls.length
-    ? product.imageUrls.map((uri, i) => ({ key: `p${i}`, kind: 'photo', uri }))
+  const views: View_[] = product.images.length
+    ? product.images.map((source, i) => ({ key: `p${i}`, kind: 'photo' as const, source }))
     : [{ key: 'main', kind: 'main' }, { key: 'zoom', kind: 'zoom' }, { key: 'dark', kind: 'dark' }];
 
   return (

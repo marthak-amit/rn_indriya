@@ -26,7 +26,7 @@ export function ReviewStep() {
 
   const submit = async () => {
     const res = await placeOrder({
-      lines: lines.map((l) => ({ productId: l.productId, name: l.product.name, qty: l.qty, size: l.size, unitPrice: l.product.price, shape: l.product.shape, tone: l.product.tone, gem: l.product.gem, imageUrl: l.product.imageUrls[0] })),
+      lines: lines.map((l) => ({ productId: l.productId, name: l.product.name, qty: l.qty, size: l.size, unitPrice: l.product.price, shape: l.product.shape, tone: l.product.tone, gem: l.product.gem })),
       totals, address, payment, couponCode: coupon?.code,
     });
     if (!('error' in res)) router.replace({ pathname: '/order-success/[id]', params: { id: res.data.id } });
@@ -39,7 +39,7 @@ export function ReviewStep() {
       <View style={styles.card}>
         {lines.map((l) => (
           <View key={l.key} style={styles.line}>
-            <ProductImage uri={l.product.imageUrls[0]} shape={l.product.shape} tone={l.product.tone} gem={l.product.gem} padding={4} style={styles.thumb} />
+            <ProductImage source={l.product.images[0]} shape={l.product.shape} tone={l.product.tone} gem={l.product.gem} padding={4} style={styles.thumb} />
             <View style={{ flex: 1 }}>
               <Text variant="bodyStrong" numberOfLines={1}>{l.product.name}</Text>
               <Text variant="caption" color="muted">Qty {l.qty}{l.size ? ` · Size ${l.size}` : ''}</Text>

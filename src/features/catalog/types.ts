@@ -1,6 +1,9 @@
 export type MetalTone = 'yellow' | 'rose' | 'white';
 export type GemType = 'diamond' | 'ruby' | 'emerald' | 'sapphire' | 'pearl' | 'none';
-export type JewelShape = 'ring' | 'necklace' | 'earrings' | 'bangle' | 'pendant';
+export type JewelShape = 'ring' | 'necklace' | 'earrings' | 'bangle' | 'pendant' | 'mangalsutra';
+
+/** A bundled asset (`require(...)` id) or a remote image. */
+export type ImageRef = number | { uri: string };
 
 export interface Category {
   id: string;
@@ -17,7 +20,7 @@ export interface Collection {
   tone: MetalTone;
   gem: GemType;
   shape: JewelShape;
-  imageUrl?: string;
+  image?: ImageRef;
 }
 
 export interface Product {
@@ -31,16 +34,18 @@ export interface Product {
   tone: MetalTone;
   gem: GemType;
   shape: JewelShape;
-  weightGrams: number;
-  rating: number;
-  reviewCount: number;
+  weightGrams?: number;
+  rating?: number;
+  reviewCount?: number;
   description: string;
   highlights: string[];
   sizes?: string[];
   tags: string[];
   isNew?: boolean;
   isBestseller?: boolean;
-  imageUrls: string[];
+  images: ImageRef[];
+  /** Canonical product page on indriya.com, when known. */
+  href?: string;
 }
 
 export interface Banner {
@@ -54,7 +59,7 @@ export interface Banner {
   gem: GemType;
   shape: JewelShape;
   gradient: [string, string];
-  imageUrl?: string;
+  image?: ImageRef;
 }
 
 export interface Catalog {

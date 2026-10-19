@@ -23,6 +23,6 @@ export function AppHeader({ scrollY }: { scrollY: SharedValue<number> }) {
 }
 
 const styles = StyleSheet.create({
-  bar: { position: 'absolute', top: 0, left: 0, right: 0, zIndex: 20, backgroundColor: 'rgba(251,248,243,0.96)', borderBottomWidth: 1, shadowColor: '#3C1E14', shadowRadius: 12, shadowOffset: { width: 0, height: 4 }, paddingBottom: 6, paddingHorizontal: 10 },
+  bar: { position: 'absolute', top: 0, left: 0, right: 0, zIndex: 20, backgroundColor: 'rgba(255,249,243,0.96)', borderBottomWidth: 1, shadowColor: '#3C1E14', shadowRadius: 12, shadowOffset: { width: 0, height: 4 }, paddingBottom: 6, paddingHorizontal: 10 },
   row: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
 });

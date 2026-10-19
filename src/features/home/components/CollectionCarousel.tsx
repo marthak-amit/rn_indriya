@@ -37,7 +37,7 @@ function Card({ item, index, x }: { item: Collection; index: number; x: SharedVa
         style={styles.card}
       >
         <Animated.View style={[StyleSheet.absoluteFill, inner]}>
-          <ProductImage uri={item.imageUrl} shape={item.shape} tone={item.tone} gem={item.gem} padding={40} style={StyleSheet.absoluteFill} />
+          <ProductImage source={item.image} shape={item.shape} tone={item.tone} gem={item.gem} padding={40} style={StyleSheet.absoluteFill} />
         </Animated.View>
         <LinearGradient colors={['transparent', 'rgba(30,12,10,0.78)']} style={styles.scrim} />
         <View style={styles.caption}>

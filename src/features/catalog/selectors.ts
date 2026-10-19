@@ -32,11 +32,11 @@ export const selectRelated = (s: RootState, id: string): Product[] => {
 };
 
 const sorters: Record<SortKey, (a: Product, b: Product) => number> = {
-  featured: (a, b) => Number(!!b.isBestseller) - Number(!!a.isBestseller) || b.rating - a.rating,
+  featured: (a, b) => Number(!!b.isBestseller) - Number(!!a.isBestseller) || (b.rating ?? 0) - (a.rating ?? 0),
   priceAsc: (a, b) => a.price - b.price,
   priceDesc: (a, b) => b.price - a.price,
-  rating: (a, b) => b.rating - a.rating || b.reviewCount - a.reviewCount,
-  newest: (a, b) => Number(!!b.isNew) - Number(!!a.isNew) || b.rating - a.rating,
+  rating: (a, b) => (b.rating ?? 0) - (a.rating ?? 0) || (b.reviewCount ?? 0) - (a.reviewCount ?? 0),
+  newest: (a, b) => Number(!!b.isNew) - Number(!!a.isNew) || (b.rating ?? 0) - (a.rating ?? 0),
 };
 
 export const selectFilters = (s: RootState) => s.filters;

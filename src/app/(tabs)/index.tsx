@@ -21,9 +21,10 @@ import { TrustStrip } from '@/features/home/components/TrustStrip';
 import { useLayoutMetrics } from '@/hooks/useLayoutMetrics';
 import { useGetCatalogQuery } from '@/services/api/indriyaApi';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
+import { brand } from '@/config/brand';
 import { colors } from '@/theme';
 
-const ANNOUNCEMENTS = ['Free insured shipping on larger orders', 'Hallmarked & certified jewellery', 'Easy exchange', 'New festive edit is here'];
+const ANNOUNCEMENTS = ['BIS Hallmark gold', 'Certified natural diamonds', 'New age jewellery', 'Crafted with the trust of the Aditya Birla Group'];
 
 export default function HomeScreen() {
   const router = useRouter();
@@ -93,7 +94,7 @@ export default function HomeScreen() {
               </View>
               <View style={styles.section}>
                 <ScrollReveal scrollY={scrollY}>
-                  <SectionHeader overline="The Indriya promise" title="Crafted with care" />
+                  <SectionHeader overline="The Indriya promise" title="Trust, certified" />
                   <TrustStrip />
                 </ScrollReveal>
               </View>
@@ -107,7 +108,7 @@ export default function HomeScreen() {
               ) : null}
               <View style={styles.footer}>
                 <Wordmark size={20} />
-                <Text variant="caption" color="muted" align="center">Jewellery that celebrates you</Text>
+                <Text variant="caption" color="muted" align="center">{brand.tagline}</Text>
               </View>
             </>
           )}

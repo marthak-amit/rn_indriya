@@ -1,0 +1,240 @@
+#!/usr/bin/env node
+/**
+ * Captures real content from https://www.indriya.com with a headless browser:
+ *   - product tiles (name, price, link, image) for each category / collection page
+ *   - hero banners and collection images
+ *   - the live theme (CSS variables, computed colours, fonts) and the logo
+ *   - reference screenshots in docs/reference/
+ * and writes:
+ *   src/data/generated/indriya.json   (data)
+ *   src/data/generated/images.ts      (require() map of the downloaded images)
+ *   assets/indriya/**                 (images)
+ *
+ * Run:  npm i --no-save playwright && npx playwright install chromium && node scripts/sync-indriya.mjs
+ * (also runs in CI: .github/workflows/sync-indriya.yml)
+ */
+import { createHash } from 'node:crypto';
+import { mkdir, writeFile, rm } from 'node:fs/promises';
+import path from 'node:path';
+import { chromium } from 'playwright';
+
+const ORIGIN = process.env.INDRIYA_ORIGIN || 'https://www.indriya.com';
+const ROOT = path.resolve(new URL('..', import.meta.url).pathname);
+const ASSETS = path.join(ROOT, 'assets/indriya');
+const GEN = path.join(ROOT, 'src/data/generated');
+const REF = path.join(ROOT, 'docs/reference');
+const MAX_PAGES = Number(process.env.MAX_PAGES || 16);
+const MAX_PER_PAGE = Number(process.env.MAX_PER_PAGE || 14);
+const MAX_PRODUCTS = Number(process.env.MAX_PRODUCTS || 90);
+
+const log = (...a) => console.log('[sync]', ...a);
+const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 48) || 'item';
+const hash = (s) => createHash('sha1').update(s).digest('hex').slice(0, 6);
+
+const SEED_PATHS = [
+  '/jewellery/necklaces', '/jewellery/earrings', '/jewellery/bangles', '/jewellery/rings', '/jewellery/mangalsutra',
+  '/jewellery/bangles/single-bangle-design', '/jewellery/gold-jewellery', '/jewellery/18k-gold-jewellery',
+  '/aasmaniyat', '/indriya-diamonds', '/temple-jewellery', '/wedding/engagement-jewellery', '/brand',
+];
+const COLLECTION_BY_PATH = [
+  [/aasmaniyat/i, 'aasmaniyat'], [/indriya-diamonds|diamond/i, 'diamonds'], [/temple|anantara/i, 'temple'], [/bridal|wedding|engagement|saptapadma/i, 'bridal'],
+];
+const categoryFromText = (t) => {
+  if (/mangal\s?sutra/i.test(t)) return 'mangalsutra';
+  if (/ear\s?ring|jhumk|stud|bali|chandbali|drop|danglers?/i.test(t)) return 'earrings';
+  if (/bangle|kada|bracelet|cuff/i.test(t)) return 'bangles';
+  if (/necklace|haar|choker|chain|pendant|set\b/i.test(t)) return 'necklaces';
+  if (/\bring\b|band|solitaire/i.test(t)) return 'rings';
+  return null;
+};
+
+async function download(ctx, url, dir, base) {
+  try {
+    const res = await ctx.request.get(url, { timeout: 30000, headers: { referer: ORIGIN + '/' } });
+    if (!res.ok()) return null;
+    const type = (res.headers()['content-type'] || '').toLowerCase();
+    if (!type.startsWith('image/') || type.includes('svg')) return null;
+    const body = await res.body();
+    if (body.length < 4000) return null;
+    const ext = type.includes('png') ? 'png' : type.includes('webp') ? 'webp' : 'jpg';
+    await mkdir(path.join(ASSETS, dir), { recursive: true });
+    const rel = `${dir}/${base}.${ext}`;
+    await writeFile(path.join(ASSETS, rel), body);
+    return rel;
+  } catch (e) {
+    log('download failed', url, e.message.split('\n')[0]);
+    return null;
+  }
+}
+
+async function autoScroll(page) {
+  for (let i = 0; i < 14; i++) {
+    await page.evaluate(() => window.scrollBy(0, Math.round(window.innerHeight * 0.8)));
+    await page.waitForTimeout(450);
+  }
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.waitForTimeout(600);
+}
+
+/** Runs inside the page: returns image tiles with nearby name/price/link. */
+function extractTiles() {
+  const abs = (u) => { try { return new URL(u, location.href).href; } catch { return null; } };
+  const bestFromSrcset = (img) => {
+    const set = img.getAttribute('srcset') || img.getAttribute('data-srcset');
+    if (!set) return null;
+    const parts = set.split(',').map((s) => s.trim().split(/\s+/)).map(([u, w]) => ({ u, w: parseInt(w || '0', 10) || 0 }));
+    parts.sort((a, b) => b.w - a.w);
+    return parts[0]?.u || null;
+  };
+  const out = [];
+  for (const img of document.images) {
+    const r = img.getBoundingClientRect();
+    if (r.width < 110 || r.height < 110) continue;
+    let src = img.currentSrc || img.src || img.getAttribute('data-src') || bestFromSrcset(img);
+    const big = bestFromSrcset(img);
+    if (big) src = big;
+    if (!src || src.startsWith('data:')) continue;
+    const alt = (img.alt || '').trim();
+    if (/logo|icon|banner-bg|sprite/i.test(alt + src)) continue;
+    const a = img.closest('a[href]');
+    const box = img.closest('li, article, [class*="card" i], [class*="product" i], [class*="tile" i], [class*="item" i]') || a || img.parentElement?.parentElement;
+    const text = (box?.innerText || '').replace(/\s+/g, ' ').trim();
+    const prices = [...text.matchAll(/(?:₹|Rs\.?|INR)\s*([\d,]+(?:\.\d+)?)/gi)].map((m) => Math.round(parseFloat(m[1].replace(/,/g, '')))).filter((n) => n > 500);
+    const heading = box?.querySelector('h1,h2,h3,h4,h5,[class*="name" i],[class*="title" i]')?.textContent?.trim();
+    out.push({
+      src: abs(src), alt, href: a ? abs(a.getAttribute('href')) : null,
+      name: (alt.length > 3 ? alt : heading) || text.split(/₹|Rs/)[0].trim().slice(0, 90),
+      prices: [...new Set(prices)].sort((x, y) => x - y), w: Math.round(r.width), h: Math.round(r.height), top: Math.round(r.top + scrollY),
+    });
+  }
+  return out;
+}
+
+/** Runs inside the page: theme signals. */
+function extractTheme() {
+  const cs = (el) => (el ? getComputedStyle(el) : null);
+  const vars = {};
+  for (const sheet of document.styleSheets) {
+    let rules; try { rules = sheet.cssRules; } catch { continue; }
+    for (const rule of rules || []) {
+      if (rule.selectorText && /:root|html|body/.test(rule.selectorText)) {
+        for (const name of rule.style) if (name.startsWith('--') && /#|rgb|hsl/i.test(rule.style.getPropertyValue(name))) vars[name] = rule.style.getPropertyValue(name).trim();
+      }
+    }
+  }
+  const freq = (arr) => Object.entries(arr.reduce((m, v) => ((m[v] = (m[v] || 0) + 1), m), {})).sort((a, b) => b[1] - a[1]).slice(0, 8);
+  const bg = [], fg = [], btn = [], link = [];
+  for (const el of document.querySelectorAll('header, nav, footer, button, a, h1, h2, h3, p, section, div')) {
+    const s = cs(el); if (!s) continue;
+    if (s.backgroundColor && s.backgroundColor !== 'rgba(0, 0, 0, 0)') (el.tagName === 'BUTTON' || /btn|button/i.test(el.className) ? btn : bg).push(s.backgroundColor);
+    if (/^H[1-3]$|^P$|^A$/.test(el.tagName)) (el.tagName === 'A' ? link : fg).push(s.color);
+  }
+  const fonts = {};
+  for (const sel of ['body', 'h1', 'h2', 'h3', 'button', 'nav a']) { const el = document.querySelector(sel); if (el) fonts[sel] = cs(el).fontFamily; }
+  return {
+    themeColor: document.querySelector('meta[name="theme-color"]')?.content || null,
+    cssVars: vars, bodyBg: cs(document.body).backgroundColor, bodyColor: cs(document.body).color,
+    headerBg: cs(document.querySelector('header'))?.backgroundColor || null,
+    topBackgrounds: freq(bg), topButtonBackgrounds: freq(btn), topTextColors: freq(fg), topLinkColors: freq(link), fonts,
+    fontFaces: [...document.fonts].map((f) => `${f.family} ${f.weight}`).slice(0, 20),
+    title: document.title,
+  };
+}
+
+async function main() {
+  await rm(ASSETS, { recursive: true, force: true });
+  await mkdir(ASSETS, { recursive: true }); await mkdir(GEN, { recursive: true }); await mkdir(REF, { recursive: true });
+  const browser = await chromium.launch({ args: ['--no-sandbox'], executablePath: process.env.CHROMIUM_PATH || undefined });
+  const ctx = await browser.newContext({
+    viewport: { width: 1440, height: 900 }, locale: 'en-IN',
+    userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36',
+  });
+  const page = await ctx.newPage();
+  const report = { origin: ORIGIN, pages: [], errors: [] };
+
+  // ---- home: theme, logo, hero banners, links
+  log('home');
+  await page.goto(ORIGIN + '/', { waitUntil: 'domcontentloaded', timeout: 60000 }).catch((e) => report.errors.push('home: ' + e.message));
+  await page.waitForLoadState('networkidle', { timeout: 30000 }).catch(() => {});
+  await page.waitForTimeout(2500);
+  await page.screenshot({ path: path.join(REF, 'home-top.png') });
+  const theme = await page.evaluate(extractTheme).catch((e) => ({ error: e.message }));
+  await autoScroll(page);
+  await page.screenshot({ path: path.join(REF, 'home-full.png'), fullPage: true }).catch(() => {});
+  const homeTiles = await page.evaluate(extractTiles).catch(() => []);
+  const html = await page.content();
+  await writeFile(path.join(REF, 'home.html'), html.slice(0, 600000));
+
+  const logoSrc = await page.evaluate(() => {
+    const el = document.querySelector('header img[src*="logo" i], header a[href="/"] img, a[href="/"] img[alt*="indriya" i], img[alt*="indriya" i][src*="logo" i]');
+    return el ? el.currentSrc || el.src : null;
+  }).catch(() => null);
+  const logo = logoSrc ? await download(ctx, logoSrc, 'brand', 'logo') : null;
+
+  const links = await page.evaluate(() => [...document.querySelectorAll('a[href]')].map((a) => ({ href: a.href, text: (a.textContent || '').trim().slice(0, 40) }))).catch(() => []);
+  const sameOrigin = links.filter((l) => l.href.startsWith(ORIGIN) && !/#|\.(pdf|jpg|png)$|\/(login|cart|account|blog|store|stores|policy|terms|contact)/i.test(l.href)).map((l) => l.href.split('?')[0].replace(/\/$/, ''));
+  const interesting = [...new Set(sameOrigin)].filter((u) => /necklace|earring|bangle|ring|mangalsutra|jewellery|collection|diamond|gold|temple|aasmaniyat|bridal|wedding|engagement/i.test(u));
+  const queue = [...new Set([...SEED_PATHS.map((p) => ORIGIN + p), ...interesting])].slice(0, MAX_PAGES + SEED_PATHS.length);
+  report.discoveredLinks = interesting.slice(0, 60);
+
+  const banners = [];
+  for (const t of homeTiles.filter((t) => t.w >= 600 && t.h >= 220).sort((a, b) => a.top - b.top).slice(0, 4)) {
+    const rel = await download(ctx, t.src, 'banners', `banner-${banners.length + 1}`);
+    if (rel) banners.push({ id: `b${banners.length + 1}`, title: t.alt || t.name, href: t.href, image: rel });
+  }
+
+  // ---- listing pages
+  const products = new Map();
+  const collections = {};
+  let visited = 0;
+  for (const url of queue) {
+    if (visited >= MAX_PAGES || products.size >= MAX_PRODUCTS) break;
+    log('page', url);
+    try {
+      const resp = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 });
+      await page.waitForLoadState('networkidle', { timeout: 20000 }).catch(() => {});
+      await page.waitForTimeout(1500);
+      const status = resp?.status() ?? 0;
+      if (status >= 400) { report.pages.push({ url, status, tiles: 0 }); continue; }
+      visited++;
+      await autoScroll(page);
+      const tiles = (await page.evaluate(extractTiles)).filter((t) => t.href && t.href !== url && t.name);
+      const pathName = new URL(url).pathname;
+      const col = COLLECTION_BY_PATH.find(([re]) => re.test(pathName))?.[1] ?? null;
+      const pageCat = categoryFromText(pathName);
+      const og = await page.evaluate(() => { const c = document.querySelector('meta[property="og:image"]')?.content; try { return c ? new URL(c, location.href).href : null; } catch { return null; } });
+      if (col && og && !collections[col]) { const rel = await download(ctx, og, 'collections', col); if (rel) collections[col] = { id: col, image: rel }; }
+      if (visited <= 4) await page.screenshot({ path: path.join(REF, `page-${visited}-${slug(pathName)}.png`) }).catch(() => {});
+      let kept = 0;
+      for (const t of tiles) {
+        if (kept >= MAX_PER_PAGE || products.size >= MAX_PRODUCTS) break;
+        const key = t.href;
+        if (products.has(key)) continue;
+        const category = pageCat || categoryFromText(`${t.name} ${t.href}`) || categoryFromText(t.name);
+        if (!category) continue;
+        const id = `${slug(t.name).slice(0, 30)}-${hash(key)}`;
+        const rel = await download(ctx, t.src, 'products', id);
+        if (!rel) continue;
+        const [price, mrp] = t.prices.length > 1 ? [t.prices[0], t.prices[t.prices.length - 1]] : [t.prices[0] ?? null, null];
+        products.set(key, { id, name: t.name.replace(/\s+/g, ' ').slice(0, 90), price, mrp, category, collection: col, href: t.href, image: rel });
+        kept++;
+      }
+      report.pages.push({ url, status, tiles: tiles.length, kept });
+    } catch (e) {
+      report.errors.push(`${url}: ${e.message.split('\n')[0]}`);
+    }
+  }
+  await browser.close();
+
+  // ---- write outputs
+  const list = [...products.values()];
+  const imageKeys = [...new Set([...(logo ? [logo] : []), ...banners.map((b) => b.image), ...Object.values(collections).map((c) => c.image), ...list.map((p) => p.image)])];
+  const data = { fetchedAt: new Date().toISOString(), source: ORIGIN, theme, logo, banners, collections: Object.values(collections), products: list };
+  await writeFile(path.join(GEN, 'indriya.json'), JSON.stringify(data, null, 2) + '\n');
+  const ts = `// Generated by scripts/sync-indriya.mjs — do not edit.\nexport const generatedImages: Record<string, number> = {\n${imageKeys.map((k) => `  '${k}': require('../../../assets/indriya/${k}'),`).join('\n')}\n};\n`;
+  await writeFile(path.join(GEN, 'images.ts'), ts);
+  await writeFile(path.join(REF, 'sync-report.json'), JSON.stringify({ ...report, counts: { products: list.length, banners: banners.length, collections: Object.keys(collections).length, images: imageKeys.length } }, null, 2));
+  log(`done: ${list.length} products, ${banners.length} banners, ${Object.keys(collections).length} collections, ${imageKeys.length} images; errors: ${report.errors.length}`);
+}
+
+main().catch((e) => { console.error(e); process.exit(1); });
