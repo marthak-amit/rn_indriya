@@ -2,9 +2,10 @@
   "origin": "https://www.indriya.com",
   "pages": [
     {
-      "url": "https://www.indriya.com/jewellery/necklaces",
-      "status": 404,
-      "tiles": 0
+      "url": "https://www.indriya.com/jewellery/neckwear",
+      "status": 200,
+      "tiles": 100,
+      "kept": 14
     },
     {
       "url": "https://www.indriya.com/jewellery/earrings",
@@ -21,40 +22,31 @@
     {
       "url": "https://www.indriya.com/jewellery/rings",
       "status": 200,
-      "tiles": 80,
+      "tiles": 100,
       "kept": 14
     },
     {
-      "url": "https://www.indriya.com/jewellery/mangalsutra",
-      "status": 404,
-      "tiles": 0
-    },
-    {
-      "url": "https://www.indriya.com/jewellery/bangles/single-bangle-design",
-      "status": 200,
-      "tiles": 20,
-      "kept": 14
-    },
-    {
-      "url": "https://www.indriya.com/jewellery/gold-jewellery",
+      "url": "https://www.indriya.com/jewellery/mangalsutras",
       "status": 200,
       "tiles": 100,
       "kept": 14
     },
     {
-      "url": "https://www.indriya.com/jewellery/18k-gold-jewellery",
+      "url": "https://www.indriya.com/jewellery/pendants",
       "status": 200,
       "tiles": 100,
       "kept": 14
     },
     {
-      "url": "https://www.indriya.com/aasmaniyat",
+      "url": "https://www.indriya.com/jewellery/bracelets",
       "status": 200,
-      "tiles": 30,
+      "tiles": 100,
       "kept": 6
     }
   ],
-  "errors": [],
+  "errors": [
+    "logo: locator.screenshot: Timeout 8000ms exceeded."
+  ],
   "discoveredLinks": [
     "https://www.indriya.com/jewellery/earrings",
     "https://www.indriya.com/jewellery/rings",
@@ -121,6 +113,6 @@
     "products": 90,
     "banners": 4,
     "collections": 0,
-    "images": 94
+    "images": 214
   }
 }

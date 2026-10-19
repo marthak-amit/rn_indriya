@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-19T06:33:01.207Z",
+  "fetchedAt": "2026-10-19T07:17:56.885Z",
   "source": "https://www.indriya.com",
   "theme": {
     "themeColor": null,
@@ -185,664 +185,1038 @@
   "collections": [],
   "products": [
     {
-      "id": "bhadrika-gajamalika-gold-drop--a0dda0",
-      "name": "Bhadrika Gajamalika Gold Drop Earrings",
-      "price": null,
+      "id": "devi-padma-gold-necklace-e2c147",
+      "name": "Devi Padma Gold Necklace",
+      "price": 901235,
       "mrp": null,
-      "category": "earrings",
+      "category": "necklaces",
       "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/bhadrika-gajamalika-gold-drop-earrings-jtyyb20-eaea051",
-      "image": "products/bhadrika-gajamalika-gold-drop--a0dda0.webp"
+      "href": "https://www.indriya.com/jewellery-products/devi-padma-gold-necklace-gtyya01-eana007",
+      "image": "products/devi-padma-gold-necklace-e2c147.webp",
+      "description": "Explore Devi Padma Gold Necklace in 22KT Yellow Gold, weighing 67.130000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {},
+      "extraImages": [
+        "products/devi-padma-gold-necklace-e2c147-2.jpg",
+        "products/devi-padma-gold-necklace-e2c147-3.jpg"
+      ]
     },
     {
-      "id": "kamala-elegance-gold-earrings-6513d9",
-      "name": "Kamala Elegance Gold Earrings",
-      "price": null,
+      "id": "bhavika-gajamalika-gold-neckla-ba9c59",
+      "name": "Bhavika Gajamalika Gold Necklace",
+      "price": 658714,
       "mrp": null,
-      "category": "earrings",
+      "category": "necklaces",
       "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/kamala-elegance-gold-earrings-jtyyb20-eaea014",
-      "image": "products/kamala-elegance-gold-earrings-6513d9.webp"
+      "href": "https://www.indriya.com/jewellery-products/bhavika-gajamalika-gold-necklace-jtbya20-eana051",
+      "image": "products/bhavika-gajamalika-gold-neckla-ba9c59.webp",
+      "description": "Explore Bhavika Gajamalika Gold Necklace in 22KT Yellow Gold, weighing 53.684000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "35.5 cm"
+      },
+      "extraImages": [
+        "products/bhavika-gajamalika-gold-neckla-ba9c59-2.jpg",
+        "products/bhavika-gajamalika-gold-neckla-ba9c59-3.jpg"
+      ]
     },
     {
-      "id": "dhanyavi-padma-gold-drop-earri-296f2e",
-      "name": "Dhanyavi Padma Gold Drop Earrings",
-      "price": null,
+      "id": "lakshmi-padma-coin-gold-neckla-01f465",
+      "name": "Lakshmi Padma Coin Gold Necklace",
+      "price": 783630,
       "mrp": null,
-      "category": "earrings",
+      "category": "necklaces",
       "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/dhanyavi-padma-gold-drop-earrings-gtyyd01-eaea034",
-      "image": "products/dhanyavi-padma-gold-drop-earri-296f2e.webp"
+      "href": "https://www.indriya.com/jewellery-products/lakshmi-padma-coin-gold-necklace-gtjya01-eana001",
+      "image": "products/lakshmi-padma-coin-gold-neckla-01f465.webp",
+      "description": "Explore Lakshmi Padma Coin Gold Necklace in 22KT Yellow Gold, weighing 58.311000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "50.8 cm"
+      },
+      "extraImages": [
+        "products/lakshmi-padma-coin-gold-neckla-01f465-2.jpg",
+        "products/lakshmi-padma-coin-gold-neckla-01f465-3.jpg"
+      ]
     },
     {
-      "id": "phoolbala-gold-drop-earrings-e7a41e",
-      "name": "Phoolbala Gold Drop Earrings",
-      "price": null,
+      "id": "tirvani-gold-necklace-6815fe",
+      "name": "Tirvani Gold Necklace",
+      "price": 152234,
       "mrp": null,
-      "category": "earrings",
+      "category": "necklaces",
       "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/phoolbala-gold-drop-earrings-gtyyb00-diea974",
-      "image": "products/phoolbala-gold-drop-earrings-e7a41e.webp"
-    },
-    {
-      "id": "larevia-gold-drop-earrings-7dba35",
-      "name": "Larevia Gold Drop Earrings",
-      "price": null,
-      "mrp": null,
-      "category": "earrings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/larevia-gold-drop-earrings-jeyyb20-dfeb001",
-      "image": "products/larevia-gold-drop-earrings-7dba35.webp"
-    },
-    {
-      "id": "roshika-gold-drop-earrings-713d71",
-      "name": "Roshika Gold Drop Earrings",
-      "price": null,
-      "mrp": null,
-      "category": "earrings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/roshika-gold-drop-earrings-gtyyd01-eaea041",
-      "image": "products/roshika-gold-drop-earrings-713d71.webp"
-    },
-    {
-      "id": "pranavi-gold-drop-earrings-7353e1",
-      "name": "Pranavi Gold Drop Earrings",
-      "price": null,
-      "mrp": null,
-      "category": "earrings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/pranavi-gold-drop-earrings-gtyyd01-eaea049",
-      "image": "products/pranavi-gold-drop-earrings-7353e1.webp"
-    },
-    {
-      "id": "gireya-gold-drop-earrings-933981",
-      "name": "Gireya Gold Drop Earrings",
-      "price": null,
-      "mrp": null,
-      "category": "earrings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/gireya-gold-drop-earrings-jeyyb20-dfea997",
-      "image": "products/gireya-gold-drop-earrings-933981.webp"
-    },
-    {
-      "id": "vritika-gold-stud-earrings-7e76f3",
-      "name": "Vritika Gold Stud Earrings",
-      "price": null,
-      "mrp": null,
-      "category": "earrings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/vritika-gold-stud-earrings-gtyyb01-dqea403",
-      "image": "products/vritika-gold-stud-earrings-7e76f3.webp"
-    },
-    {
-      "id": "diyara-gold-stud-earrings-018962",
-      "name": "Diyara Gold Stud Earrings",
-      "price": null,
-      "mrp": null,
-      "category": "earrings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/diyara-gold-stud-earrings-gtyyb01-dqea402",
-      "image": "products/diyara-gold-stud-earrings-018962.webp"
-    },
-    {
-      "id": "devika-gold-drop-earrings-26af2a",
-      "name": "Devika Gold Drop Earrings",
-      "price": null,
-      "mrp": null,
-      "category": "earrings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/devika-gold-drop-earrings-gtyyb00-diea973",
-      "image": "products/devika-gold-drop-earrings-26af2a.webp"
-    },
-    {
-      "id": "aparajita-gold-drop-earrings-71a00b",
-      "name": "Aparajita Gold Drop Earrings",
-      "price": null,
-      "mrp": null,
-      "category": "earrings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/aparajita-gold-drop-earrings-gtyyb01-diea971",
-      "image": "products/aparajita-gold-drop-earrings-71a00b.webp"
-    },
-    {
-      "id": "amitha-gold-bridal-stud-earrin-4b8ee3",
-      "name": "Amitha Gold Bridal Stud Earrings",
-      "price": null,
-      "mrp": null,
-      "category": "earrings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/amitha-gold-bridal-stud-earrings-jtyyb20-diea901",
-      "image": "products/amitha-gold-bridal-stud-earrin-4b8ee3.webp"
-    },
-    {
-      "id": "nayvisha-gold-drop-earrings-800c3f",
-      "name": "Nayvisha Gold Drop Earrings",
-      "price": null,
-      "mrp": null,
-      "category": "earrings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/nayvisha-gold-drop-earrings-jeyyb20-dfea996",
-      "image": "products/nayvisha-gold-drop-earrings-800c3f.webp"
-    },
-    {
-      "id": "rukmini-padmavati-gold-bangle-33b519",
-      "name": "Rukmini Padmavati Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/rukmini-padmavati-gold-bangle-gtoya01-eabra18",
-      "image": "products/rukmini-padmavati-gold-bangle-33b519.webp"
-    },
-    {
-      "id": "sonalika-mrinal-gold-bangle-b3e49b",
-      "name": "Sonalika Mrinal Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/sonalika-mrinal-gold-bangle-gtkyg01-eabra10",
-      "image": "products/sonalika-mrinal-gold-bangle-b3e49b.webp"
-    },
-    {
-      "id": "amriteshwari-padmrekha-gold-ba-5159d2",
-      "name": "Amriteshwari Padmrekha Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/amriteshwari-padmrekha-gold-bangle-jtkya20-eabra19",
-      "image": "products/amriteshwari-padmrekha-gold-ba-5159d2.webp"
-    },
-    {
-      "id": "devashri-kusum-gold-bangle-140499",
-      "name": "Devashri Kusum Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/devashri-kusum-gold-bangle-jteyg20-eaboa20",
-      "image": "products/devashri-kusum-gold-bangle-140499.webp"
-    },
-    {
-      "id": "kumudarekha-gold-bangle-c7ed44",
-      "name": "Kumudarekha Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/kumudarekha-gold-bangle-jtlyg20-eabra14",
-      "image": "products/kumudarekha-gold-bangle-c7ed44.webp"
-    },
-    {
-      "id": "bhagyashri-kamal-gold-bangle-391bf1",
-      "name": "Bhagyashri Kamal Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/bhagyashri-kamal-gold-bangle-gteyg01-eaboa07",
-      "image": "products/bhagyashri-kamal-gold-bangle-391bf1.webp"
-    },
-    {
-      "id": "mahashri-padma-gold-bangle-7cad12",
-      "name": "Mahashri Padma Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/mahashri-padma-gold-bangle-gtlyg01-eabra02",
-      "image": "products/mahashri-padma-gold-bangle-7cad12.webp"
-    },
-    {
-      "id": "pradyutika-gajavalli-gold-bang-432531",
-      "name": "Pradyutika Gajavalli Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/pradyutika-gajavalli-gold-bangle-gtkyg01-eabra08",
-      "image": "products/pradyutika-gajavalli-gold-bang-432531.webp"
-    },
-    {
-      "id": "soubhagyavati-kamala-gold-bang-857ed4",
-      "name": "Soubhagyavati Kamala Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/soubhagyavati-kamala-gold-bangle-gtkyg01-eabra04",
-      "image": "products/soubhagyavati-kamala-gold-bang-857ed4.webp"
-    },
-    {
-      "id": "mahalakshmi-shankh-gold-bangle-063a3a",
-      "name": "Mahalakshmi Shankh Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/mahalakshmi-shankh-gold-bangle-gtmya01-eabra03",
-      "image": "products/mahalakshmi-shankh-gold-bangle-063a3a.webp"
-    },
-    {
-      "id": "shri-swarna-gold-bangle-e38e0b",
-      "name": "Shri Swarna Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/shri-swarna-gold-bangle-jtmyg20-apbr771",
-      "image": "products/shri-swarna-gold-bangle-e38e0b.webp"
-    },
-    {
-      "id": "maribelle-diamond-oval-bangle-da23dc",
-      "name": "Maribelle Diamond Oval Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/maribelle-diamond-oval-bangle-teerz40-ddba100",
-      "image": "products/maribelle-diamond-oval-bangle-da23dc.webp"
-    },
-    {
-      "id": "ylvara-gold-bangle-17f292",
-      "name": "Ylvara Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/ylvara-gold-bangle-jtmya20-ambr724",
-      "image": "products/ylvara-gold-bangle-17f292.webp"
-    },
-    {
-      "id": "gauravi-gold-bangle-2fd873",
-      "name": "Gauravi Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/gauravi-gold-bangle-jtlyg20-brbr018",
-      "image": "products/gauravi-gold-bangle-2fd873.webp"
-    },
-    {
-      "id": "vasudha-kamal-gold-ring-44053b",
-      "name": "Vasudha Kamal Gold Ring",
-      "price": null,
-      "mrp": null,
-      "category": "rings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/vasudha-kamal-gold-ring-jtmya20-eafa006",
-      "image": "products/vasudha-kamal-gold-ring-44053b.webp"
-    },
-    {
-      "id": "padmaraga-gold-ring-e5e513",
-      "name": "Padmaraga Gold Ring",
-      "price": null,
-      "mrp": null,
-      "category": "rings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/padmaraga-gold-ring-jtnya20-eafa008",
-      "image": "products/padmaraga-gold-ring-e5e513.webp"
-    },
-    {
-      "id": "freyana-diamond-finger-ring-bf3d74",
-      "name": "Freyana Diamond Finger Ring",
-      "price": null,
-      "mrp": null,
-      "category": "rings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/freyana-diamond-finger-ring-dfjya40-adfl035",
-      "image": "products/freyana-diamond-finger-ring-bf3d74.webp"
-    },
-    {
-      "id": "daphne-diamond-finger-ring-8d8dca",
-      "name": "Daphne Diamond Finger Ring",
-      "price": null,
-      "mrp": null,
-      "category": "rings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/daphne-diamond-finger-ring-dfjra40-apfl585",
-      "image": "products/daphne-diamond-finger-ring-8d8dca.webp"
-    },
-    {
-      "id": "fleurine-diamond-finger-ring-f75d8e",
-      "name": "Fleurine Diamond Finger Ring",
-      "price": null,
-      "mrp": null,
-      "category": "rings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/fleurine-diamond-finger-ring-temya50-adfl214",
-      "image": "products/fleurine-diamond-finger-ring-f75d8e.webp"
-    },
-    {
-      "id": "sharvani-gold-ring-095450",
-      "name": "Sharvani Gold Ring",
-      "price": null,
-      "mrp": null,
-      "category": "rings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/sharvani-gold-ring-jtlya20-amfl540",
-      "image": "products/sharvani-gold-ring-095450.webp"
-    },
-    {
-      "id": "gulmohar-gold-band-ring-06060b",
-      "name": "Gulmohar Gold Band Ring",
-      "price": null,
-      "mrp": null,
-      "category": "rings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/gulmohar-gold-band-ring-gtmya01-aqfl125",
-      "image": "products/gulmohar-gold-band-ring-06060b.webp"
-    },
-    {
-      "id": "rupali-gold-finger-ring-94f0e2",
-      "name": "Rupali Gold Finger Ring",
-      "price": null,
-      "mrp": null,
-      "category": "rings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/rupali-gold-finger-ring-gtmya00-aqfl156",
-      "image": "products/rupali-gold-finger-ring-94f0e2.webp"
-    },
-    {
-      "id": "gulabi-gold-band-ring-9504f9",
-      "name": "Gulabi Gold Band Ring",
-      "price": null,
-      "mrp": null,
-      "category": "rings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/gulabi-gold-band-ring-gtmya00-aqfl121",
-      "image": "products/gulabi-gold-band-ring-9504f9.webp"
-    },
-    {
-      "id": "gulmohini-gold-band-ring-4ad731",
-      "name": "Gulmohini Gold Band Ring",
-      "price": null,
-      "mrp": null,
-      "category": "rings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/gulmohini-gold-band-ring-gtmya00-aqfl119",
-      "image": "products/gulmohini-gold-band-ring-4ad731.webp"
-    },
-    {
-      "id": "meenakshi-gold-finger-ring-762d84",
-      "name": "Meenakshi Gold Finger Ring",
-      "price": null,
-      "mrp": null,
-      "category": "rings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/meenakshi-gold-finger-ring-gtoya00-aqfl258",
-      "image": "products/meenakshi-gold-finger-ring-762d84.webp"
-    },
-    {
-      "id": "gulrukh-gold-band-ring-04b433",
-      "name": "Gulrukh Gold Band Ring",
-      "price": null,
-      "mrp": null,
-      "category": "rings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/gulrukh-gold-band-ring-gtlya00-aqfl123",
-      "image": "products/gulrukh-gold-band-ring-04b433.webp"
-    },
-    {
-      "id": "yamuna-gold-finger-ring-8ac08d",
-      "name": "Yamuna Gold Finger Ring",
-      "price": null,
-      "mrp": null,
-      "category": "rings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/yamuna-gold-finger-ring-gtkya00-aqfl253",
-      "image": "products/yamuna-gold-finger-ring-8ac08d.webp"
-    },
-    {
-      "id": "ravisha-gold-band-ring-e81572",
-      "name": "Ravisha Gold Band Ring",
-      "price": null,
-      "mrp": null,
-      "category": "rings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/ravisha-gold-band-ring-gtkya00-aqfl131",
-      "image": "products/ravisha-gold-band-ring-e81572.webp"
-    },
-    {
-      "id": "kritika-gold-bangle-c2fabc",
-      "name": "Kritika Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/kritika-gold-bangle-gtkyg00-apbr886",
-      "image": "products/kritika-gold-bangle-c2fabc.webp"
-    },
-    {
-      "id": "trishulya-gold-bangle-305f7d",
-      "name": "Trishulya Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/trishulya-gold-bangle-gtkyg00-apbr191",
-      "image": "products/trishulya-gold-bangle-305f7d.webp"
-    },
-    {
-      "id": "ojasvira-gold-bangle-b142b7",
-      "name": "Ojasvira Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/ojasvira-gold-bangle-gtmya01-ddbrb75",
-      "image": "products/ojasvira-gold-bangle-b142b7.webp"
-    },
-    {
-      "id": "kairanvi-gold-bangle-3ef18b",
-      "name": "Kairanvi Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/kairanvi-gold-bangle-gtmya00-ddbrb78",
-      "image": "products/kairanvi-gold-bangle-3ef18b.webp"
-    },
-    {
-      "id": "nandivara-gold-bangle-0004e4",
-      "name": "Nandivara Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/nandivara-gold-bangle-gtmyg00-ddbrc84",
-      "image": "products/nandivara-gold-bangle-0004e4.webp"
-    },
-    {
-      "id": "hridayara-gold-bangle-868fad",
-      "name": "Hridayara Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/hridayara-gold-bangle-jekya20-dfbr114",
-      "image": "products/hridayara-gold-bangle-868fad.webp"
-    },
-    {
-      "id": "nityarekha-gold-bangle-19be56",
-      "name": "Nityarekha Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/nityarekha-gold-bangle-etmyg30-dxbr040",
-      "image": "products/nityarekha-gold-bangle-19be56.webp"
-    },
-    {
-      "id": "rudrika-gold-bangle-3f06c8",
-      "name": "Rudrika Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/rudrika-gold-bangle-gtlya01-ddbra16",
-      "image": "products/rudrika-gold-bangle-3f06c8.webp"
-    },
-    {
-      "id": "vaanika-gold-bangle-07ab74",
-      "name": "Vaanika Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/vaanika-gold-bangle-gtmya00-ddbrb04",
-      "image": "products/vaanika-gold-bangle-07ab74.webp"
-    },
-    {
-      "id": "yashodhara-gold-bangle-a2f648",
-      "name": "Yashodhara Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/yashodhara-gold-bangle-gtoya01-ddbrb74",
-      "image": "products/yashodhara-gold-bangle-a2f648.webp"
-    },
-    {
-      "id": "charuvrinda-gold-bangle-0b2482",
-      "name": "Charuvrinda Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/charuvrinda-gold-bangle-gtkya01-ddbrb60",
-      "image": "products/charuvrinda-gold-bangle-0b2482.webp"
-    },
-    {
-      "id": "nakshira-gold-bangle-0f8baf",
-      "name": "Nakshira Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/nakshira-gold-bangle-jtkya20-ddbrb55",
-      "image": "products/nakshira-gold-bangle-0f8baf.webp"
-    },
-    {
-      "id": "urivana-gold-bangle-91aed3",
-      "name": "Urivana Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/urivana-gold-bangle-gtlya01-ddbra42",
-      "image": "products/urivana-gold-bangle-91aed3.webp"
-    },
-    {
-      "id": "wistariya-gold-bangle-5180cc",
-      "name": "Wistariya Gold Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/wistariya-gold-bangle-gtlya00-ddbrb99",
-      "image": "products/wistariya-gold-bangle-5180cc.webp"
+      "href": "https://www.indriya.com/jewellery-products/tirvani-gold-necklace-jeeyl20-dfna993",
+      "image": "products/tirvani-gold-necklace-6815fe.webp",
+      "description": "Explore Tirvani Gold Necklace in 18KT Yellow Gold, weighing 13.800000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "40.6 cm"
+      },
+      "extraImages": [
+        "products/tirvani-gold-necklace-6815fe-2.jpg",
+        "products/tirvani-gold-necklace-6815fe-3.jpg"
+      ]
     },
     {
       "id": "gavisha-gold-necklace-abecc0",
       "name": "Gavisha Gold Necklace",
-      "price": null,
+      "price": 143035,
       "mrp": null,
       "category": "necklaces",
       "collection": null,
       "href": "https://www.indriya.com/jewellery-products/gavisha-gold-necklace-jeeyl20-dfna996",
-      "image": "products/gavisha-gold-necklace-abecc0.webp"
+      "image": "products/gavisha-gold-necklace-abecc0.webp",
+      "description": "Explore Gavisha Gold Necklace in 18KT Yellow Gold, weighing 12.990000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "40.6 cm"
+      },
+      "extraImages": [
+        "products/gavisha-gold-necklace-abecc0-2.jpg",
+        "products/gavisha-gold-necklace-abecc0-3.jpg"
+      ]
+    },
+    {
+      "id": "eshvaira-gold-necklace-3dc768",
+      "name": "Eshvaira Gold Necklace",
+      "price": 170408,
+      "mrp": null,
+      "category": "necklaces",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/eshvaira-gold-necklace-jeyya20-dfna997",
+      "image": "products/eshvaira-gold-necklace-3dc768.webp",
+      "description": "Explore Eshvaira Gold Necklace in 18KT Yellow Gold, weighing 15.630000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {},
+      "extraImages": [
+        "products/eshvaira-gold-necklace-3dc768-2.jpg",
+        "products/eshvaira-gold-necklace-3dc768-3.jpg"
+      ]
     },
     {
       "id": "sindhuja-blessings-gold-neckla-3073a2",
       "name": "Sindhuja Blessings Gold Necklace",
-      "price": null,
+      "price": 760241,
       "mrp": null,
       "category": "necklaces",
       "collection": null,
       "href": "https://www.indriya.com/jewellery-products/sindhuja-blessings-gold-necklace-gtyya01-eana021",
-      "image": "products/sindhuja-blessings-gold-neckla-3073a2.webp"
+      "image": "products/sindhuja-blessings-gold-neckla-3073a2.webp",
+      "description": "Explore Sindhuja Blessings Gold Necklace in 22KT Yellow Gold, weighing 56.463000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {},
+      "extraImages": [
+        "products/sindhuja-blessings-gold-neckla-3073a2-2.jpg",
+        "products/sindhuja-blessings-gold-neckla-3073a2-3.jpg"
+      ]
     },
     {
       "id": "nalvika-gold-necklace-09b7e7",
       "name": "Nalvika Gold Necklace",
-      "price": null,
+      "price": 186588,
       "mrp": null,
       "category": "necklaces",
       "collection": null,
       "href": "https://www.indriya.com/jewellery-products/nalvika-gold-necklace-jeyya20-dfnb001",
-      "image": "products/nalvika-gold-necklace-09b7e7.webp"
+      "image": "products/nalvika-gold-necklace-09b7e7.webp",
+      "description": "Explore Nalvika Gold Necklace in 18KT Yellow Gold, weighing 17.894000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {},
+      "extraImages": [
+        "products/nalvika-gold-necklace-09b7e7-2.jpg",
+        "products/nalvika-gold-necklace-09b7e7-3.jpg"
+      ]
+    },
+    {
+      "id": "dashabhuja-elegant-gold-neckla-c54450",
+      "name": "Dashabhuja Elegant Gold Necklace",
+      "price": 1003019,
+      "mrp": null,
+      "category": "necklaces",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/dashabhuja-elegant-gold-necklace-gtyya01-dina971",
+      "image": "products/dashabhuja-elegant-gold-neckla-c54450.webp",
+      "description": "Explore Dashabhuja Elegant Gold Necklace in 22KT Yellow Gold, weighing 74.620000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {},
+      "extraImages": [
+        "products/dashabhuja-elegant-gold-neckla-c54450-2.jpg",
+        "products/dashabhuja-elegant-gold-neckla-c54450-3.jpg"
+      ]
     },
     {
       "id": "gajalakshmi-padmavati-gold-sho-c213a0",
       "name": "Gajalakshmi Padmavati Gold Short Necklace",
-      "price": null,
+      "price": 440923,
       "mrp": null,
       "category": "necklaces",
       "collection": null,
       "href": "https://www.indriya.com/jewellery-products/gajalakshmi-padmavati-gold-short-necklace-gtyya01-eana010",
-      "image": "products/gajalakshmi-padmavati-gold-sho-c213a0.webp"
+      "image": "products/gajalakshmi-padmavati-gold-sho-c213a0.webp",
+      "description": "Explore Gajalakshmi Padmavati Gold Short Necklace in 22KT Yellow Gold, weighing 32.719000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {},
+      "extraImages": [
+        "products/gajalakshmi-padmavati-gold-sho-c213a0-2.jpg",
+        "products/gajalakshmi-padmavati-gold-sho-c213a0-3.jpg"
+      ]
+    },
+    {
+      "id": "shri-padmavati-gold-short-neck-013e67",
+      "name": "Shri Padmavati Gold Short Necklace",
+      "price": 635388,
+      "mrp": null,
+      "category": "necklaces",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/shri-padmavati-gold-short-necklace-jtyya20-eana008",
+      "image": "products/shri-padmavati-gold-short-neck-013e67.webp",
+      "description": "Explore Shri Padmavati Gold Short Necklace in 22KT Yellow Gold, weighing 47.490000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {},
+      "extraImages": [
+        "products/shri-padmavati-gold-short-neck-013e67-2.jpg",
+        "products/shri-padmavati-gold-short-neck-013e67-3.jpg"
+      ]
     },
     {
       "id": "mahishika-gold-long-necklace-2c54d2",
       "name": "Mahishika Gold Long Necklace",
-      "price": null,
+      "price": 420337,
       "mrp": null,
       "category": "necklaces",
       "collection": null,
       "href": "https://www.indriya.com/jewellery-products/mahishika-gold-long-necklace-gt1ya00-dina974",
-      "image": "products/mahishika-gold-long-necklace-2c54d2.webp"
+      "image": "products/mahishika-gold-long-necklace-2c54d2.webp",
+      "description": "Explore Mahishika Gold Long Necklace in 22KT Yellow Gold, weighing 31.050000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "30.5 cm"
+      },
+      "extraImages": [
+        "products/mahishika-gold-long-necklace-2c54d2-2.jpg",
+        "products/mahishika-gold-long-necklace-2c54d2-3.jpg"
+      ]
     },
     {
-      "id": "nerisha-gold-pendant-c9f7a6",
-      "name": "Nerisha Gold Pendant",
-      "price": null,
+      "id": "shaktirupa-gold-choker-792244",
+      "name": "Shaktirupa Gold Choker",
+      "price": 976558,
       "mrp": null,
       "category": "necklaces",
       "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/nerisha-gold-pendant-jtyya20-dqpa401",
-      "image": "products/nerisha-gold-pendant-c9f7a6.webp"
+      "href": "https://www.indriya.com/jewellery-products/shaktirupa-gold-choker-gtyya00-dina973",
+      "image": "products/shaktirupa-gold-choker-792244.webp",
+      "description": "Explore Shaktirupa Gold Choker in 22KT Yellow Gold, weighing 72.145000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {},
+      "extraImages": [
+        "products/shaktirupa-gold-choker-792244-2.jpg",
+        "products/shaktirupa-gold-choker-792244-3.jpg"
+      ]
     },
     {
-      "id": "aradhana-gold-drop-earrings-811613",
-      "name": "Aradhana Gold Drop Earrings",
-      "price": null,
+      "id": "amitha-gold-bridal-necklace-579903",
+      "name": "Amitha Gold Bridal Necklace",
+      "price": 665266,
+      "mrp": null,
+      "category": "necklaces",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/amitha-gold-bridal-necklace-jtyya20-dina901",
+      "image": "products/amitha-gold-bridal-necklace-579903.webp",
+      "description": "Explore Amitha Gold Bridal Necklace in 22KT Yellow Gold, weighing 58.176000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {},
+      "extraImages": [
+        "products/amitha-gold-bridal-necklace-579903-2.jpg",
+        "products/amitha-gold-bridal-necklace-579903-3.jpg"
+      ]
+    },
+    {
+      "id": "bhadrika-gajamalika-gold-drop--a0dda0",
+      "name": "Bhadrika Gajamalika Gold Drop Earrings",
+      "price": 214593,
       "mrp": null,
       "category": "earrings",
       "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/aradhana-gold-drop-earrings-jtaya20-aaed219",
-      "image": "products/aradhana-gold-drop-earrings-811613.webp"
+      "href": "https://www.indriya.com/jewellery-products/bhadrika-gajamalika-gold-drop-earrings-jtyyb20-eaea051",
+      "image": "products/bhadrika-gajamalika-gold-drop--a0dda0.webp",
+      "description": "Explore Bhadrika Gajamalika Gold Drop Earrings in 22KT Yellow Gold, weighing 16.468000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {},
+      "extraImages": [
+        "products/bhadrika-gajamalika-gold-drop--a0dda0-2.jpg",
+        "products/bhadrika-gajamalika-gold-drop--a0dda0-3.jpg"
+      ]
+    },
+    {
+      "id": "kamala-elegance-gold-earrings-6513d9",
+      "name": "Kamala Elegance Gold Earrings",
+      "price": 265400,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/kamala-elegance-gold-earrings-jtyyb20-eaea014",
+      "image": "products/kamala-elegance-gold-earrings-6513d9.webp",
+      "description": "Explore Kamala Elegance Gold Earrings in 22KT Yellow Gold, weighing 20.140000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {},
+      "extraImages": [
+        "products/kamala-elegance-gold-earrings-6513d9-2.jpg",
+        "products/kamala-elegance-gold-earrings-6513d9-3.jpg"
+      ]
+    },
+    {
+      "id": "dhanyavi-padma-gold-drop-earri-296f2e",
+      "name": "Dhanyavi Padma Gold Drop Earrings",
+      "price": 154517,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/dhanyavi-padma-gold-drop-earrings-gtyyd01-eaea034",
+      "image": "products/dhanyavi-padma-gold-drop-earri-296f2e.webp",
+      "description": "Explore Dhanyavi Padma Gold Drop Earrings in 22KT Yellow Gold, weighing 11.525000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {},
+      "extraImages": [
+        "products/dhanyavi-padma-gold-drop-earri-296f2e-2.jpg",
+        "products/dhanyavi-padma-gold-drop-earri-296f2e-3.jpg"
+      ]
+    },
+    {
+      "id": "phoolbala-gold-drop-earrings-e7a41e",
+      "name": "Phoolbala Gold Drop Earrings",
+      "price": 102204,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/phoolbala-gold-drop-earrings-gtyyb00-diea974",
+      "image": "products/phoolbala-gold-drop-earrings-e7a41e.webp",
+      "description": "Explore Phoolbala Gold Drop Earrings in 22KT Yellow Gold, weighing 7.540000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {},
+      "extraImages": [
+        "products/phoolbala-gold-drop-earrings-e7a41e-2.jpg",
+        "products/phoolbala-gold-drop-earrings-e7a41e-3.jpg"
+      ]
+    },
+    {
+      "id": "larevia-gold-drop-earrings-7dba35",
+      "name": "Larevia Gold Drop Earrings",
+      "price": 61656,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/larevia-gold-drop-earrings-jeyyb20-dfeb001",
+      "image": "products/larevia-gold-drop-earrings-7dba35.webp",
+      "description": "Explore Larevia Gold Drop Earrings in 18KT Yellow Gold, weighing 5.976000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {},
+      "extraImages": [
+        "products/larevia-gold-drop-earrings-7dba35-2.jpg",
+        "products/larevia-gold-drop-earrings-7dba35-3.jpg"
+      ]
+    },
+    {
+      "id": "roshika-gold-drop-earrings-713d71",
+      "name": "Roshika Gold Drop Earrings",
+      "price": 255149,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/roshika-gold-drop-earrings-gtyyd01-eaea041",
+      "image": "products/roshika-gold-drop-earrings-713d71.webp",
+      "description": "Explore Roshika Gold Drop Earrings in 22KT Yellow Gold, weighing 19.170000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {},
+      "extraImages": [
+        "products/roshika-gold-drop-earrings-713d71-2.jpg",
+        "products/roshika-gold-drop-earrings-713d71-3.jpg"
+      ]
+    },
+    {
+      "id": "pranavi-gold-drop-earrings-7353e1",
+      "name": "Pranavi Gold Drop Earrings",
+      "price": 150835,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/pranavi-gold-drop-earrings-gtyyd01-eaea049",
+      "image": "products/pranavi-gold-drop-earrings-7353e1.webp",
+      "description": "Explore Pranavi Gold Drop Earrings in 22KT Yellow Gold, weighing 11.281000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {},
+      "extraImages": [
+        "products/pranavi-gold-drop-earrings-7353e1-2.jpg",
+        "products/pranavi-gold-drop-earrings-7353e1-3.jpg"
+      ]
+    },
+    {
+      "id": "gireya-gold-drop-earrings-933981",
+      "name": "Gireya Gold Drop Earrings",
+      "price": 63762,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/gireya-gold-drop-earrings-jeyyb20-dfea997",
+      "image": "products/gireya-gold-drop-earrings-933981.webp",
+      "description": "Explore Gireya Gold Drop Earrings in 18KT Yellow Gold, weighing 5.820000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {},
+      "extraImages": [
+        "products/gireya-gold-drop-earrings-933981-2.jpg",
+        "products/gireya-gold-drop-earrings-933981-3.jpg"
+      ]
+    },
+    {
+      "id": "vritika-gold-stud-earrings-7e76f3",
+      "name": "Vritika Gold Stud Earrings",
+      "price": 74999,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/vritika-gold-stud-earrings-gtyyb01-dqea403",
+      "image": "products/vritika-gold-stud-earrings-7e76f3.webp",
+      "description": "Explore Vritika Gold Stud Earrings in 22KT Yellow Gold, weighing 5.832000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {},
+      "extraImages": [
+        "products/vritika-gold-stud-earrings-7e76f3-2.jpg",
+        "products/vritika-gold-stud-earrings-7e76f3-3.jpg"
+      ]
+    },
+    {
+      "id": "diyara-gold-stud-earrings-018962",
+      "name": "Diyara Gold Stud Earrings",
+      "price": 90835,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/diyara-gold-stud-earrings-gtyyb01-dqea402",
+      "image": "products/diyara-gold-stud-earrings-018962.webp",
+      "description": "Explore Diyara Gold Stud Earrings in 22KT Yellow Gold, weighing 7.065000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {},
+      "extraImages": [
+        "products/diyara-gold-stud-earrings-018962-2.jpg",
+        "products/diyara-gold-stud-earrings-018962-3.jpg"
+      ]
+    },
+    {
+      "id": "devika-gold-drop-earrings-26af2a",
+      "name": "Devika Gold Drop Earrings",
+      "price": 201199,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/devika-gold-drop-earrings-gtyyb00-diea973",
+      "image": "products/devika-gold-drop-earrings-26af2a.webp",
+      "description": "Explore Devika Gold Drop Earrings in 22KT Yellow Gold, weighing 14.854000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {},
+      "extraImages": [
+        "products/devika-gold-drop-earrings-26af2a-2.jpg",
+        "products/devika-gold-drop-earrings-26af2a-3.jpg"
+      ]
+    },
+    {
+      "id": "aparajita-gold-drop-earrings-71a00b",
+      "name": "Aparajita Gold Drop Earrings",
+      "price": 198979,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/aparajita-gold-drop-earrings-gtyyb01-diea971",
+      "image": "products/aparajita-gold-drop-earrings-71a00b.webp",
+      "description": "Explore Aparajita Gold Drop Earrings in 22KT Yellow Gold, weighing 14.760000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {},
+      "extraImages": [
+        "products/aparajita-gold-drop-earrings-71a00b-2.jpg",
+        "products/aparajita-gold-drop-earrings-71a00b-3.jpg"
+      ]
+    },
+    {
+      "id": "amitha-gold-bridal-stud-earrin-4b8ee3",
+      "name": "Amitha Gold Bridal Stud Earrings",
+      "price": 97480,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/amitha-gold-bridal-stud-earrings-jtyyb20-diea901",
+      "image": "products/amitha-gold-bridal-stud-earrin-4b8ee3.webp",
+      "description": "Explore Amitha Gold Bridal Stud Earrings in 22KT Yellow Gold, weighing 7.716000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {},
+      "extraImages": [
+        "products/amitha-gold-bridal-stud-earrin-4b8ee3-2.jpg",
+        "products/amitha-gold-bridal-stud-earrin-4b8ee3-3.jpg"
+      ]
+    },
+    {
+      "id": "nayvisha-gold-drop-earrings-800c3f",
+      "name": "Nayvisha Gold Drop Earrings",
+      "price": 31047,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/nayvisha-gold-drop-earrings-jeyyb20-dfea996",
+      "image": "products/nayvisha-gold-drop-earrings-800c3f.webp",
+      "description": "Explore Nayvisha Gold Drop Earrings in 18KT Yellow Gold, weighing 2.838000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {},
+      "extraImages": [
+        "products/nayvisha-gold-drop-earrings-800c3f-2.jpg",
+        "products/nayvisha-gold-drop-earrings-800c3f-3.jpg"
+      ]
+    },
+    {
+      "id": "rukmini-padmavati-gold-bangle-33b519",
+      "name": "Rukmini Padmavati Gold Bangle",
+      "price": 211099,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/rukmini-padmavati-gold-bangle-gtoya01-eabra18",
+      "image": "products/rukmini-padmavati-gold-bangle-33b519.webp",
+      "description": "Explore Rukmini Padmavati Gold Bangle in 22KT Yellow Gold, weighing 15.887000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "63.7 mm"
+      },
+      "extraImages": [
+        "products/rukmini-padmavati-gold-bangle-33b519-2.jpg",
+        "products/rukmini-padmavati-gold-bangle-33b519-3.jpg"
+      ]
+    },
+    {
+      "id": "sonalika-mrinal-gold-bangle-b3e49b",
+      "name": "Sonalika Mrinal Gold Bangle",
+      "price": 392225,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/sonalika-mrinal-gold-bangle-gtkyg01-eabra10",
+      "image": "products/sonalika-mrinal-gold-bangle-b3e49b.webp",
+      "description": "Explore Sonalika Mrinal Gold Bangle in 22KT Yellow Gold, weighing 29.606000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "57.3 mm"
+      },
+      "extraImages": [
+        "products/sonalika-mrinal-gold-bangle-b3e49b-2.jpg",
+        "products/sonalika-mrinal-gold-bangle-b3e49b-3.jpg"
+      ]
+    },
+    {
+      "id": "amriteshwari-padmrekha-gold-ba-5159d2",
+      "name": "Amriteshwari Padmrekha Gold Bangle",
+      "price": 255115,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/amriteshwari-padmrekha-gold-bangle-jtkya20-eabra19",
+      "image": "products/amriteshwari-padmrekha-gold-ba-5159d2.webp",
+      "description": "Explore Amriteshwari Padmrekha Gold Bangle in 22KT Yellow Gold, weighing 20.331000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "57.3 mm"
+      },
+      "extraImages": [
+        "products/amriteshwari-padmrekha-gold-ba-5159d2-2.jpg",
+        "products/amriteshwari-padmrekha-gold-ba-5159d2-3.jpg"
+      ]
+    },
+    {
+      "id": "devashri-kusum-gold-bangle-140499",
+      "name": "Devashri Kusum Gold Bangle",
+      "price": 250154,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/devashri-kusum-gold-bangle-jteyg20-eaboa20",
+      "image": "products/devashri-kusum-gold-bangle-140499.webp",
+      "description": "Explore Devashri Kusum Gold Bangle in 22KT Yellow Gold, weighing 18.607000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "47 * 57 mm"
+      },
+      "extraImages": [
+        "products/devashri-kusum-gold-bangle-140499-2.jpg",
+        "products/devashri-kusum-gold-bangle-140499-3.jpg"
+      ]
+    },
+    {
+      "id": "kumudarekha-gold-bangle-c7ed44",
+      "name": "Kumudarekha Gold Bangle",
+      "price": 325592,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/kumudarekha-gold-bangle-jtlyg20-eabra14",
+      "image": "products/kumudarekha-gold-bangle-c7ed44.webp",
+      "description": "Explore Kumudarekha Gold Bangle in 22KT Yellow Gold, weighing 24.670000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "58.9 mm"
+      },
+      "extraImages": [
+        "products/kumudarekha-gold-bangle-c7ed44-2.jpg",
+        "products/kumudarekha-gold-bangle-c7ed44-3.jpg"
+      ]
+    },
+    {
+      "id": "bhagyashri-kamal-gold-bangle-391bf1",
+      "name": "Bhagyashri Kamal Gold Bangle",
+      "price": 286543,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/bhagyashri-kamal-gold-bangle-gteyg01-eaboa07",
+      "image": "products/bhagyashri-kamal-gold-bangle-391bf1.webp",
+      "description": "Explore Bhagyashri Kamal Gold Bangle in 22KT Yellow Gold, weighing 21.189000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "47 * 57 mm"
+      },
+      "extraImages": [
+        "products/bhagyashri-kamal-gold-bangle-391bf1-2.jpg",
+        "products/bhagyashri-kamal-gold-bangle-391bf1-3.jpg"
+      ]
+    },
+    {
+      "id": "mahashri-padma-gold-bangle-7cad12",
+      "name": "Mahashri Padma Gold Bangle",
+      "price": 349549,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/mahashri-padma-gold-bangle-gtlyg01-eabra02",
+      "image": "products/mahashri-padma-gold-bangle-7cad12.webp",
+      "description": "Explore Mahashri Padma Gold Bangle in 22KT Yellow Gold, weighing 25.970000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "58.9 mm"
+      },
+      "extraImages": [
+        "products/mahashri-padma-gold-bangle-7cad12-2.jpg",
+        "products/mahashri-padma-gold-bangle-7cad12-3.jpg"
+      ]
+    },
+    {
+      "id": "pradyutika-gajavalli-gold-bang-432531",
+      "name": "Pradyutika Gajavalli Gold Bangle",
+      "price": 512348,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/pradyutika-gajavalli-gold-bangle-gtkyg01-eabra08",
+      "image": "products/pradyutika-gajavalli-gold-bang-432531.webp",
+      "description": "Explore Pradyutika Gajavalli Gold Bangle in 22KT Yellow Gold, weighing 38.188000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "57.3 mm"
+      },
+      "extraImages": [
+        "products/pradyutika-gajavalli-gold-bang-432531-2.jpg",
+        "products/pradyutika-gajavalli-gold-bang-432531-3.jpg"
+      ]
+    },
+    {
+      "id": "soubhagyavati-kamala-gold-bang-857ed4",
+      "name": "Soubhagyavati Kamala Gold Bangle",
+      "price": 329855,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/soubhagyavati-kamala-gold-bangle-gtkyg01-eabra04",
+      "image": "products/soubhagyavati-kamala-gold-bang-857ed4.webp",
+      "description": "Explore Soubhagyavati Kamala Gold Bangle in 22KT Yellow Gold, weighing 24.660000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "57.3 mm"
+      },
+      "extraImages": [
+        "products/soubhagyavati-kamala-gold-bang-857ed4-2.jpg",
+        "products/soubhagyavati-kamala-gold-bang-857ed4-3.jpg"
+      ]
+    },
+    {
+      "id": "mahalakshmi-shankh-gold-bangle-063a3a",
+      "name": "Mahalakshmi Shankh Gold Bangle",
+      "price": 207012,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/mahalakshmi-shankh-gold-bangle-gtmya01-eabra03",
+      "image": "products/mahalakshmi-shankh-gold-bangle-063a3a.webp",
+      "description": "Explore Mahalakshmi Shankh Gold Bangle in 22KT Yellow Gold, weighing 15.333000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "60.5 mm"
+      },
+      "extraImages": [
+        "products/mahalakshmi-shankh-gold-bangle-063a3a-2.jpg",
+        "products/mahalakshmi-shankh-gold-bangle-063a3a-3.jpg"
+      ]
+    },
+    {
+      "id": "shri-swarna-gold-bangle-e38e0b",
+      "name": "Shri Swarna Gold Bangle",
+      "price": 332734,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/shri-swarna-gold-bangle-jtmyg20-apbr771",
+      "image": "products/shri-swarna-gold-bangle-e38e0b.webp",
+      "description": "Explore Shri Swarna Gold Bangle in 22KT Yellow Gold, weighing 25.420000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "60.5 mm"
+      },
+      "extraImages": [
+        "products/shri-swarna-gold-bangle-e38e0b-2.jpg",
+        "products/shri-swarna-gold-bangle-e38e0b-3.jpg"
+      ]
+    },
+    {
+      "id": "maribelle-diamond-oval-bangle-da23dc",
+      "name": "Maribelle Diamond Oval Bangle",
+      "price": 195138,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/maribelle-diamond-oval-bangle-teerz40-ddba100",
+      "image": "products/maribelle-diamond-oval-bangle-da23dc.webp",
+      "description": "Explore Maribelle Diamond Oval Bangle in 18KT Pink Gold, weighing 9.666000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "47 * 57 mm"
+      },
+      "extraImages": [
+        "products/maribelle-diamond-oval-bangle-da23dc-2.jpg",
+        "products/maribelle-diamond-oval-bangle-da23dc-3.jpg"
+      ]
+    },
+    {
+      "id": "ylvara-gold-bangle-17f292",
+      "name": "Ylvara Gold Bangle",
+      "price": 314378,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/ylvara-gold-bangle-jtmya20-ambr724",
+      "image": "products/ylvara-gold-bangle-17f292.webp",
+      "description": "Explore Ylvara Gold Bangle in 22KT Yellow Gold, weighing 23.975000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "60.5 mm"
+      },
+      "extraImages": [
+        "products/ylvara-gold-bangle-17f292-2.jpg",
+        "products/ylvara-gold-bangle-17f292-3.jpg"
+      ]
+    },
+    {
+      "id": "gauravi-gold-bangle-2fd873",
+      "name": "Gauravi Gold Bangle",
+      "price": 635438,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/gauravi-gold-bangle-jtlyg20-brbr018",
+      "image": "products/gauravi-gold-bangle-2fd873.webp",
+      "description": "Explore Gauravi Gold Bangle in 22KT Yellow Gold, weighing 48.719000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "58.9 mm"
+      },
+      "extraImages": [
+        "products/gauravi-gold-bangle-2fd873-2.jpg",
+        "products/gauravi-gold-bangle-2fd873-3.jpg"
+      ]
+    },
+    {
+      "id": "vasudha-kamal-gold-ring-44053b",
+      "name": "Vasudha Kamal Gold Ring",
+      "price": 121376,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/vasudha-kamal-gold-ring-jtmya20-eafa006",
+      "image": "products/vasudha-kamal-gold-ring-44053b.webp",
+      "description": "Explore Vasudha Kamal Gold Ring in 22KT Yellow Gold, weighing 9.232000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "16.8 mm"
+      },
+      "extraImages": [
+        "products/vasudha-kamal-gold-ring-44053b-2.jpg",
+        "products/vasudha-kamal-gold-ring-44053b-3.jpg"
+      ]
+    },
+    {
+      "id": "padmaraga-gold-ring-e5e513",
+      "name": "Padmaraga Gold Ring",
+      "price": 86597,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/padmaraga-gold-ring-jtnya20-eafa008",
+      "image": "products/padmaraga-gold-ring-e5e513.webp",
+      "description": "Explore Padmaraga Gold Ring in 22KT Yellow Gold, weighing 6.511000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "17.2 mm"
+      },
+      "extraImages": [
+        "products/padmaraga-gold-ring-e5e513-2.jpg",
+        "products/padmaraga-gold-ring-e5e513-3.jpg"
+      ]
+    },
+    {
+      "id": "freyana-diamond-finger-ring-bf3d74",
+      "name": "Freyana Diamond Finger Ring",
+      "price": 137043,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/freyana-diamond-finger-ring-dfjya40-adfl035",
+      "image": "products/freyana-diamond-finger-ring-bf3d74.webp",
+      "description": "Explore Freyana Diamond Finger Ring in 14KT Yellow Gold, weighing 4.011000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "15.6 mm"
+      },
+      "extraImages": [
+        "products/freyana-diamond-finger-ring-bf3d74-2.jpg",
+        "products/freyana-diamond-finger-ring-bf3d74-3.jpg"
+      ]
+    },
+    {
+      "id": "daphne-diamond-finger-ring-8d8dca",
+      "name": "Daphne Diamond Finger Ring",
+      "price": 210168,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/daphne-diamond-finger-ring-dfjra40-apfl585",
+      "image": "products/daphne-diamond-finger-ring-8d8dca.webp",
+      "description": "Explore Daphne Diamond Finger Ring in 14KT Pink Gold, weighing 3.657000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "15.6 mm"
+      },
+      "extraImages": [
+        "products/daphne-diamond-finger-ring-8d8dca-2.jpg",
+        "products/daphne-diamond-finger-ring-8d8dca-3.jpg"
+      ]
+    },
+    {
+      "id": "fleurine-diamond-finger-ring-f75d8e",
+      "name": "Fleurine Diamond Finger Ring",
+      "price": 149928,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/fleurine-diamond-finger-ring-temya50-adfl214",
+      "image": "products/fleurine-diamond-finger-ring-f75d8e.webp",
+      "description": "Explore Fleurine Diamond Finger Ring in 18KT Yellow Gold, weighing 7.641000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "16.8 mm"
+      },
+      "extraImages": [
+        "products/fleurine-diamond-finger-ring-f75d8e-2.jpg",
+        "products/fleurine-diamond-finger-ring-f75d8e-3.jpg"
+      ]
+    },
+    {
+      "id": "sharvani-gold-ring-095450",
+      "name": "Sharvani Gold Ring",
+      "price": 113884,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/sharvani-gold-ring-jtlya20-amfl540",
+      "image": "products/sharvani-gold-ring-095450.webp",
+      "description": "Explore Sharvani Gold Ring in 22KT Yellow Gold, weighing 9.413000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "16.4 mm"
+      },
+      "extraImages": [
+        "products/sharvani-gold-ring-095450-2.jpg",
+        "products/sharvani-gold-ring-095450-3.jpg"
+      ]
+    },
+    {
+      "id": "gulmohar-gold-band-ring-06060b",
+      "name": "Gulmohar Gold Band Ring",
+      "price": 48932,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/gulmohar-gold-band-ring-gtmya01-aqfl125",
+      "image": "products/gulmohar-gold-band-ring-06060b.webp",
+      "description": "Explore Gulmohar Gold Band Ring in 22KT Yellow Gold, weighing 3.749000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "16.8 mm"
+      },
+      "extraImages": [
+        "products/gulmohar-gold-band-ring-06060b-2.jpg",
+        "products/gulmohar-gold-band-ring-06060b-3.jpg"
+      ]
+    },
+    {
+      "id": "rupali-gold-finger-ring-94f0e2",
+      "name": "Rupali Gold Finger Ring",
+      "price": 58382,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/rupali-gold-finger-ring-gtmya00-aqfl156",
+      "image": "products/rupali-gold-finger-ring-94f0e2.webp",
+      "description": "Explore Rupali Gold Finger Ring in 22KT Yellow Gold, weighing 4.235000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "16.8 mm"
+      },
+      "extraImages": [
+        "products/rupali-gold-finger-ring-94f0e2-2.jpg",
+        "products/rupali-gold-finger-ring-94f0e2-3.jpg"
+      ]
+    },
+    {
+      "id": "gulabi-gold-band-ring-9504f9",
+      "name": "Gulabi Gold Band Ring",
+      "price": 43299,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/gulabi-gold-band-ring-gtmya00-aqfl121",
+      "image": "products/gulabi-gold-band-ring-9504f9.webp",
+      "description": "Explore Gulabi Gold Band Ring in 22KT Yellow Gold, weighing 3.220000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "16.8 mm"
+      },
+      "extraImages": [
+        "products/gulabi-gold-band-ring-9504f9-2.jpg",
+        "products/gulabi-gold-band-ring-9504f9-3.jpg"
+      ]
+    },
+    {
+      "id": "gulmohini-gold-band-ring-4ad731",
+      "name": "Gulmohini Gold Band Ring",
+      "price": 39194,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/gulmohini-gold-band-ring-gtmya00-aqfl119",
+      "image": "products/gulmohini-gold-band-ring-4ad731.webp",
+      "description": "Explore Gulmohini Gold Band Ring in 22KT Yellow Gold, weighing 3.092000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "16.8 mm"
+      },
+      "extraImages": [
+        "products/gulmohini-gold-band-ring-4ad731-2.jpg",
+        "products/gulmohini-gold-band-ring-4ad731-3.jpg"
+      ]
+    },
+    {
+      "id": "meenakshi-gold-finger-ring-762d84",
+      "name": "Meenakshi Gold Finger Ring",
+      "price": 46893,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/meenakshi-gold-finger-ring-gtoya00-aqfl258",
+      "image": "products/meenakshi-gold-finger-ring-762d84.webp",
+      "description": "Explore Meenakshi Gold Finger Ring in 22KT Yellow Gold, weighing 3.459000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "17.6 mm"
+      },
+      "extraImages": [
+        "products/meenakshi-gold-finger-ring-762d84-2.jpg",
+        "products/meenakshi-gold-finger-ring-762d84-3.jpg"
+      ]
+    },
+    {
+      "id": "gulrukh-gold-band-ring-04b433",
+      "name": "Gulrukh Gold Band Ring",
+      "price": 50957,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/gulrukh-gold-band-ring-gtlya00-aqfl123",
+      "image": "products/gulrukh-gold-band-ring-04b433.webp",
+      "description": "Explore Gulrukh Gold Band Ring in 22KT Yellow Gold, weighing 3.976000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "16.4 mm"
+      },
+      "extraImages": [
+        "products/gulrukh-gold-band-ring-04b433-2.jpg",
+        "products/gulrukh-gold-band-ring-04b433-3.jpg"
+      ]
+    },
+    {
+      "id": "yamuna-gold-finger-ring-8ac08d",
+      "name": "Yamuna Gold Finger Ring",
+      "price": 53714,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/yamuna-gold-finger-ring-gtkya00-aqfl253",
+      "image": "products/yamuna-gold-finger-ring-8ac08d.webp",
+      "description": "Explore Yamuna Gold Finger Ring in 22KT Yellow Gold, weighing 3.963000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "16 mm"
+      },
+      "extraImages": [
+        "products/yamuna-gold-finger-ring-8ac08d-2.jpg",
+        "products/yamuna-gold-finger-ring-8ac08d-3.jpg"
+      ]
+    },
+    {
+      "id": "ravisha-gold-band-ring-e81572",
+      "name": "Ravisha Gold Band Ring",
+      "price": 45709,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/ravisha-gold-band-ring-gtkya00-aqfl131",
+      "image": "products/ravisha-gold-band-ring-e81572.webp",
+      "description": "Explore Ravisha Gold Band Ring in 22KT Yellow Gold, weighing 3.515000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "16 mm"
+      },
+      "extraImages": [
+        "products/ravisha-gold-band-ring-e81572-2.jpg",
+        "products/ravisha-gold-band-ring-e81572-3.jpg"
+      ]
+    },
+    {
+      "id": "saptika-gold-mangalsutra-e32f01",
+      "name": "Saptika Gold Mangalsutra",
+      "price": 91092,
+      "mrp": null,
+      "category": "mangalsutra",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/saptika-gold-mangalsutra-jtgyl20-enma001",
+      "image": "products/saptika-gold-mangalsutra-e32f01.webp",
+      "description": "Explore Saptika Gold Mangalsutra in 22KT Yellow Gold, weighing 6.957000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "43.2 cm"
+      },
+      "extraImages": [
+        "products/saptika-gold-mangalsutra-e32f01-2.jpg",
+        "products/saptika-gold-mangalsutra-e32f01-3.jpg"
+      ]
     },
     {
       "id": "nayantara-gold-antique-mangals-aa5804",
       "name": "Nayantara Gold Antique Mangalsutra",
-      "price": null,
+      "price": 128071,
       "mrp": null,
       "category": "mangalsutra",
       "collection": null,
       "href": "https://www.indriya.com/jewellery-products/nayantara-gold-antique-mangalsutra-jtjyj20-apmt036",
-      "image": "products/nayantara-gold-antique-mangals-aa5804.webp"
+      "image": "products/nayantara-gold-antique-mangals-aa5804.webp",
+      "description": "Explore Nayantara Gold Antique Mangalsutra in 22KT Yellow Gold, weighing 10.870000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "50.8 cm"
+      },
+      "extraImages": [
+        "products/nayantara-gold-antique-mangals-aa5804-2.jpg",
+        "products/nayantara-gold-antique-mangals-aa5804-3.jpg"
+      ]
+    },
+    {
+      "id": "jivanshika-gold-mangalsutra-20635e",
+      "name": "Jivanshika Gold Mangalsutra",
+      "price": 81583,
+      "mrp": null,
+      "category": "mangalsutra",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/jivanshika-gold-mangalsutra-jtjyj20-apmm133",
+      "image": "products/jivanshika-gold-mangalsutra-20635e.webp",
+      "description": "Explore Jivanshika Gold Mangalsutra in 22KT Yellow Gold, weighing 6.222000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "50.8 cm"
+      },
+      "extraImages": [
+        "products/jivanshika-gold-mangalsutra-20635e-2.jpg",
+        "products/jivanshika-gold-mangalsutra-20635e-3.jpg"
+      ]
     },
     {
       "id": "apoorva-gold-mangalsutra-aa74f3",
       "name": "Apoorva Gold Mangalsutra",
-      "price": null,
+      "price": 125517,
       "mrp": null,
       "category": "mangalsutra",
       "collection": null,
       "href": "https://www.indriya.com/jewellery-products/apoorva-gold-mangalsutra-jtjyj20-apmm085",
-      "image": "products/apoorva-gold-mangalsutra-aa74f3.webp"
-    },
-    {
-      "id": "niharika-gold-kids-earrings-2e193c",
-      "name": "Niharika Gold Kids Earrings",
-      "price": null,
-      "mrp": null,
-      "category": "earrings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/niharika-gold-kids-earrings-gtyyb01-ares198",
-      "image": "products/niharika-gold-kids-earrings-2e193c.webp"
+      "image": "products/apoorva-gold-mangalsutra-aa74f3.webp",
+      "description": "Explore Apoorva Gold Mangalsutra in 22KT Yellow Gold, weighing 9.528000 g Gross wt. Available at an exclusive price. View jewellery designs online or shop at our physical store today! ✔Attractive Offers ✔Lifetime Exchange ✔100% Certified",
+      "specs": {
+        "Size": "50.8 cm"
+      },
+      "extraImages": [
+        "products/apoorva-gold-mangalsutra-aa74f3-2.jpg",
+        "products/apoorva-gold-mangalsutra-aa74f3-3.jpg"
+      ]
     },
     {
       "id": "veylora-gold-mangalsutra-d63472",
@@ -855,6 +1229,86 @@
       "image": "products/veylora-gold-mangalsutra-d63472.webp"
     },
     {
+      "id": "rashmika-gold-mangalsutra-261f83",
+      "name": "Rashmika Gold Mangalsutra",
+      "price": null,
+      "mrp": null,
+      "category": "mangalsutra",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/rashmika-gold-mangalsutra-jthya20-acmm164",
+      "image": "products/rashmika-gold-mangalsutra-261f83.webp"
+    },
+    {
+      "id": "aaradhya-gold-mangalsutra-17e63d",
+      "name": "Aaradhya Gold Mangalsutra",
+      "price": null,
+      "mrp": null,
+      "category": "mangalsutra",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/aaradhya-gold-mangalsutra-jthya20-acmm160",
+      "image": "products/aaradhya-gold-mangalsutra-17e63d.webp"
+    },
+    {
+      "id": "tarunika-gold-traditional-mang-4b7592",
+      "name": "Tarunika Gold Traditional Mangalsutra",
+      "price": null,
+      "mrp": null,
+      "category": "mangalsutra",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/tarunika-gold-traditional-mangalsutra-jthyj20-apmx448",
+      "image": "products/tarunika-gold-traditional-mang-4b7592.webp"
+    },
+    {
+      "id": "bhavini-gold-mangalsutra-af26ce",
+      "name": "Bhavini Gold Mangalsutra",
+      "price": null,
+      "mrp": null,
+      "category": "mangalsutra",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/bhavini-gold-mangalsutra-jthyj20-apmx097",
+      "image": "products/bhavini-gold-mangalsutra-af26ce.webp"
+    },
+    {
+      "id": "nayvella-gold-mangalsutra-63444c",
+      "name": "Nayvella Gold Mangalsutra",
+      "price": null,
+      "mrp": null,
+      "category": "mangalsutra",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/nayvella-gold-mangalsutra-jthyj20-apmx095",
+      "image": "products/nayvella-gold-mangalsutra-63444c.webp"
+    },
+    {
+      "id": "floriana-gold-mangalsutra-f568ae",
+      "name": "Floriana Gold Mangalsutra",
+      "price": null,
+      "mrp": null,
+      "category": "mangalsutra",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/floriana-gold-mangalsutra-jthyj20-apmx094",
+      "image": "products/floriana-gold-mangalsutra-f568ae.webp"
+    },
+    {
+      "id": "faylina-gold-mangalsutra-4af2d1",
+      "name": "Faylina Gold Mangalsutra",
+      "price": null,
+      "mrp": null,
+      "category": "mangalsutra",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/faylina-gold-mangalsutra-jthyj20-apmt115",
+      "image": "products/faylina-gold-mangalsutra-4af2d1.webp"
+    },
+    {
+      "id": "amodini-gold-mangalsutra-6a7a8c",
+      "name": "Amodini Gold Mangalsutra",
+      "price": null,
+      "mrp": null,
+      "category": "mangalsutra",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/amodini-gold-mangalsutra-jthyj20-apmt088",
+      "image": "products/amodini-gold-mangalsutra-6a7a8c.webp"
+    },
+    {
       "id": "yamika-gold-mangalsutra-763a4a",
       "name": "Yamika Gold Mangalsutra",
       "price": null,
@@ -865,224 +1319,204 @@
       "image": "products/yamika-gold-mangalsutra-763a4a.webp"
     },
     {
-      "id": "teyana-gold-mangalsutra-ca4378",
-      "name": "Teyana Gold Mangalsutra",
+      "id": "prerika-gold-pendant-477f1c",
+      "name": "Prerika Gold Pendant",
       "price": null,
       "mrp": null,
-      "category": "mangalsutra",
+      "category": "pendants",
       "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/teyana-gold-mangalsutra-jthyj20-apmm071",
-      "image": "products/teyana-gold-mangalsutra-ca4378.webp"
+      "href": "https://www.indriya.com/jewellery-products/prerika-gold-pendant-jtyya20-eapa038",
+      "image": "products/prerika-gold-pendant-477f1c.webp"
     },
     {
-      "id": "yuvika-gold-mangalsutra-324203",
-      "name": "Yuvika Gold Mangalsutra",
+      "id": "tanirika-gold-pendant-ac241d",
+      "name": "Tanirika Gold Pendant",
       "price": null,
       "mrp": null,
-      "category": "mangalsutra",
+      "category": "pendants",
       "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/yuvika-gold-mangalsutra-jteyj20-apmm108",
-      "image": "products/yuvika-gold-mangalsutra-324203.webp"
+      "href": "https://www.indriya.com/jewellery-products/tanirika-gold-pendant-gtyya01-dqpa403",
+      "image": "products/tanirika-gold-pendant-ac241d.webp"
     },
     {
-      "id": "tirvani-gold-necklace-6815fe",
-      "name": "Tirvani Gold Necklace",
+      "id": "eliara-gold-pendant-f3cce0",
+      "name": "Eliara Gold Pendant",
       "price": null,
       "mrp": null,
-      "category": "necklaces",
+      "category": "pendants",
       "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/tirvani-gold-necklace-jeeyl20-dfna993",
-      "image": "products/tirvani-gold-necklace-6815fe.webp"
+      "href": "https://www.indriya.com/jewellery-products/eliara-gold-pendant-gtyya01-dqpa402",
+      "image": "products/eliara-gold-pendant-f3cce0.webp"
     },
     {
-      "id": "eshvaira-gold-necklace-3dc768",
-      "name": "Eshvaira Gold Necklace",
+      "id": "vaishnavi-aravind-gold-pendant-8c3603",
+      "name": "Vaishnavi Aravind Gold Pendant",
       "price": null,
       "mrp": null,
-      "category": "necklaces",
+      "category": "pendants",
       "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/eshvaira-gold-necklace-jeyya20-dfna997",
-      "image": "products/eshvaira-gold-necklace-3dc768.webp"
+      "href": "https://www.indriya.com/jewellery-products/vaishnavi-aravind-gold-pendant-jtyya20-eapa037",
+      "image": "products/vaishnavi-aravind-gold-pendant-8c3603.webp"
     },
     {
-      "id": "ravisha-gold-drop-earrings-2b7a00",
-      "name": "Ravisha Gold Drop Earrings",
+      "id": "nerisha-gold-pendant-c9f7a6",
+      "name": "Nerisha Gold Pendant",
       "price": null,
       "mrp": null,
-      "category": "earrings",
+      "category": "pendants",
       "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/ravisha-gold-drop-earrings-jeyyb20-dfea993",
-      "image": "products/ravisha-gold-drop-earrings-2b7a00.webp"
+      "href": "https://www.indriya.com/jewellery-products/nerisha-gold-pendant-jtyya20-dqpa401",
+      "image": "products/nerisha-gold-pendant-c9f7a6.webp"
     },
     {
-      "id": "pherina-gold-drop-earrings-4e22b2",
-      "name": "Pherina Gold Drop Earrings",
+      "id": "yashodhara-gold-pendant-5e0841",
+      "name": "Yashodhara Gold Pendant",
       "price": null,
       "mrp": null,
-      "category": "earrings",
+      "category": "pendants",
       "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/pherina-gold-drop-earrings-jeyyb20-dfeb003",
-      "image": "products/pherina-gold-drop-earrings-4e22b2.webp"
+      "href": "https://www.indriya.com/jewellery-products/yashodhara-gold-pendant-gtaya00-arpl207",
+      "image": "products/yashodhara-gold-pendant-5e0841.webp"
+    },
+    {
+      "id": "devavrata-gold-pendant-6857c4",
+      "name": "Devavrata Gold Pendant",
+      "price": null,
+      "mrp": null,
+      "category": "pendants",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/devavrata-gold-pendant-jtyya20-ddpe176",
+      "image": "products/devavrata-gold-pendant-6857c4.webp"
+    },
+    {
+      "id": "vajrakesha-gold-pendant-ce03ad",
+      "name": "Vajrakesha Gold Pendant",
+      "price": null,
+      "mrp": null,
+      "category": "pendants",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/vajrakesha-gold-pendant-jtyya20-ddpe173",
+      "image": "products/vajrakesha-gold-pendant-ce03ad.webp"
+    },
+    {
+      "id": "loveweave-diamond-pendant-4a1380",
+      "name": "Loveweave Diamond Pendant",
+      "price": null,
+      "mrp": null,
+      "category": "pendants",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/loveweave-diamond-pendant-dnyya40-ecpa003",
+      "image": "products/loveweave-diamond-pendant-4a1380.webp"
+    },
+    {
+      "id": "adore-vine-diamond-pendant-e86aa4",
+      "name": "Adore Vine Diamond Pendant",
+      "price": null,
+      "mrp": null,
+      "category": "pendants",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/adore-vine-diamond-pendant-dnyya40-ecpa005",
+      "image": "products/adore-vine-diamond-pendant-e86aa4.webp"
+    },
+    {
+      "id": "timeless-bonds-diamond-pendant-6d775b",
+      "name": "Timeless Bonds Diamond Pendant",
+      "price": null,
+      "mrp": null,
+      "category": "pendants",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/timeless-bonds-diamond-pendant-dnyya40-ecpa001",
+      "image": "products/timeless-bonds-diamond-pendant-6d775b.webp"
+    },
+    {
+      "id": "divyanshi-gold-faith-pendant-f13ff4",
+      "name": "Divyanshi Gold Faith Pendant",
+      "price": null,
+      "mrp": null,
+      "category": "pendants",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/divyanshi-gold-faith-pendant-jtyya20-ddpe169",
+      "image": "products/divyanshi-gold-faith-pendant-f13ff4.webp"
+    },
+    {
+      "id": "havielle-gold-pendant-c6c52a",
+      "name": "Havielle Gold Pendant",
+      "price": null,
+      "mrp": null,
+      "category": "pendants",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/havielle-gold-pendant-gfyya00-edpa042",
+      "image": "products/havielle-gold-pendant-c6c52a.webp"
+    },
+    {
+      "id": "ritambhara-gold-pendant-817179",
+      "name": "Ritambhara Gold Pendant",
+      "price": null,
+      "mrp": null,
+      "category": "pendants",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/ritambhara-gold-pendant-gtyya00-ddpe175",
+      "image": "products/ritambhara-gold-pendant-817179.webp"
     },
     {
       "id": "divyani-gold-polki-bracelet-4fdbfa",
       "name": "Divyani Gold Polki Bracelet",
       "price": null,
       "mrp": null,
-      "category": "bangles",
+      "category": "bracelets",
       "collection": null,
       "href": "https://www.indriya.com/jewellery-products/divyani-gold-polki-bracelet-oeqylm3-adtl003",
       "image": "products/divyani-gold-polki-bracelet-4fdbfa.webp"
     },
     {
-      "id": "vespera-diamond-hoop-earrings-c01015",
-      "name": "Vespera Diamond Hoop Earrings",
+      "id": "ishita-gold-polki-bracelet-837a89",
+      "name": "Ishita Gold Polki Bracelet",
       "price": null,
       "mrp": null,
-      "category": "earrings",
+      "category": "bracelets",
       "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/vespera-diamond-hoop-earrings-tearb40-adeh814",
-      "image": "products/vespera-diamond-hoop-earrings-c01015.webp"
-    },
-    {
-      "id": "elarven-gold-hoop-earrings-bb57e8",
-      "name": "Elarven Gold Hoop Earrings",
-      "price": null,
-      "mrp": null,
-      "category": "earrings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/elarven-gold-hoop-earrings-gearh00-apeh250",
-      "image": "products/elarven-gold-hoop-earrings-bb57e8.webp"
-    },
-    {
-      "id": "jovelle-gold-handcrafted-chain-3eb9dd",
-      "name": "Jovelle Gold Handcrafted Chain",
-      "price": null,
-      "mrp": null,
-      "category": "necklaces",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/jovelle-gold-handcrafted-chain-gehyl01-apcg384",
-      "image": "products/jovelle-gold-handcrafted-chain-3eb9dd.webp"
-    },
-    {
-      "id": "linnea-diamond-finger-ring-817e10",
-      "name": "Linnea Diamond Finger Ring",
-      "price": null,
-      "mrp": null,
-      "category": "rings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/linnea-diamond-finger-ring-delra40-ddfa132",
-      "image": "products/linnea-diamond-finger-ring-817e10.webp"
-    },
-    {
-      "id": "clara-diamond-stud-earrings-51a074",
-      "name": "Clara Diamond Stud Earrings",
-      "price": null,
-      "mrp": null,
-      "category": "earrings",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/clara-diamond-stud-earrings-deayz40-aqes036",
-      "image": "products/clara-diamond-stud-earrings-51a074.webp"
-    },
-    {
-      "id": "rosalie-diamond-oval-bangle-b34424",
-      "name": "Rosalie Diamond Oval Bangle",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/rosalie-diamond-oval-bangle-deerz40-ddba112",
-      "image": "products/rosalie-diamond-oval-bangle-b34424.webp"
+      "href": "https://www.indriya.com/jewellery-products/ishita-gold-polki-bracelet-oelyl8a-adtl002",
+      "image": "products/ishita-gold-polki-bracelet-837a89.webp"
     },
     {
       "id": "ros-petal-diamond-bracelet-405869",
       "name": "Rosé Petal Diamond Bracelet",
       "price": null,
       "mrp": null,
-      "category": "bangles",
+      "category": "bracelets",
       "collection": null,
       "href": "https://www.indriya.com/jewellery-products/ros-petal-diamond-bracelet-degrl50-actl096",
       "image": "products/ros-petal-diamond-bracelet-405869.webp"
     },
     {
-      "id": "willow-diamond-drop-earrings-1673cb",
-      "name": "Willow Diamond Drop Earrings",
+      "id": "patralika-gold-bracelet-0c246b",
+      "name": "Patralika Gold Bracelet",
       "price": null,
       "mrp": null,
-      "category": "earrings",
+      "category": "bracelets",
       "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/willow-diamond-drop-earrings-deayb40-aded622",
-      "image": "products/willow-diamond-drop-earrings-1673cb.webp"
+      "href": "https://www.indriya.com/jewellery-products/patralika-gold-bracelet-gflyl01-edta001",
+      "image": "products/patralika-gold-bracelet-0c246b.webp"
     },
     {
-      "id": "clarissa-diamond-mangalsutra-74acb2",
-      "name": "Clarissa Diamond Mangalsutra",
+      "id": "mayukhi-gold-bracelet-db6094",
+      "name": "Mayukhi Gold Bracelet",
       "price": null,
       "mrp": null,
-      "category": "mangalsutra",
+      "category": "bracelets",
       "collection": null,
-      "href": "https://www.indriya.com/jewellery-products/clarissa-diamond-mangalsutra-segyl90-ddma086",
-      "image": "products/clarissa-diamond-mangalsutra-74acb2.webp"
+      "href": "https://www.indriya.com/jewellery-products/mayukhi-gold-bracelet-gfmyl01-edta005",
+      "image": "products/mayukhi-gold-bracelet-db6094.webp"
     },
     {
-      "id": "lush-gold-collection-dd39d7",
-      "name": "Lush Gold Collection",
+      "id": "lorcan-gold-cuban-bracelet-49b660",
+      "name": "Lorcan Gold Cuban Bracelet",
       "price": null,
       "mrp": null,
-      "category": "necklaces",
-      "collection": "aasmaniyat",
-      "href": "https://www.indriya.com/aasmaniyat/aasmaniyat-necklaces",
-      "image": "products/lush-gold-collection-dd39d7.webp"
-    },
-    {
-      "id": "3-by-4-product-pdp-40da3f",
-      "name": "3 by 4 Product PDP",
-      "price": null,
-      "mrp": null,
-      "category": "earrings",
-      "collection": "aasmaniyat",
-      "href": "https://www.indriya.com/aasmaniyat/aasmaniyat-earrings",
-      "image": "products/3-by-4-product-pdp-40da3f.webp"
-    },
-    {
-      "id": "lush-gold-collection-30b8bd",
-      "name": "Lush Gold Collection",
-      "price": null,
-      "mrp": null,
-      "category": "bangles",
-      "collection": "aasmaniyat",
-      "href": "https://www.indriya.com/aasmaniyat/aasmaniyat-bangles",
-      "image": "products/lush-gold-collection-30b8bd.webp"
-    },
-    {
-      "id": "solasta-diamond-necklace-bfc12d",
-      "name": "Solasta Diamond Necklace",
-      "price": null,
-      "mrp": null,
-      "category": "necklaces",
-      "collection": "aasmaniyat",
-      "href": "https://www.indriya.com/jewellery-products/solasta-diamond-necklace-deaya60-adns844",
-      "image": "products/solasta-diamond-necklace-bfc12d.webp"
-    },
-    {
-      "id": "lyra-diamond-necklace-8cca0c",
-      "name": "Lyra Diamond Necklace",
-      "price": null,
-      "mrp": null,
-      "category": "necklaces",
-      "collection": "aasmaniyat",
-      "href": "https://www.indriya.com/jewellery-products/lyra-diamond-necklace-deawl50-aenl595",
-      "image": "products/lyra-diamond-necklace-8cca0c.webp"
-    },
-    {
-      "id": "altaira-diamond-necklace-d0e73d",
-      "name": "Altaira Diamond Necklace",
-      "price": null,
-      "mrp": null,
-      "category": "necklaces",
-      "collection": "aasmaniyat",
-      "href": "https://www.indriya.com/jewellery-products/altaira-diamond-necklace-degwl50-aens646",
-      "image": "products/altaira-diamond-necklace-d0e73d.webp"
+      "category": "bracelets",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/lorcan-gold-cuban-bracelet-gtwys00-dqta031",
+      "image": "products/lorcan-gold-cuban-bracelet-49b660.webp"
     }
   ]
 }
