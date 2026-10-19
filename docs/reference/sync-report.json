@@ -1,0 +1,126 @@
+{
+  "origin": "https://www.indriya.com",
+  "pages": [
+    {
+      "url": "https://www.indriya.com/jewellery/necklaces",
+      "status": 404,
+      "tiles": 0
+    },
+    {
+      "url": "https://www.indriya.com/jewellery/earrings",
+      "status": 200,
+      "tiles": 100,
+      "kept": 14
+    },
+    {
+      "url": "https://www.indriya.com/jewellery/bangles",
+      "status": 200,
+      "tiles": 100,
+      "kept": 14
+    },
+    {
+      "url": "https://www.indriya.com/jewellery/rings",
+      "status": 200,
+      "tiles": 80,
+      "kept": 14
+    },
+    {
+      "url": "https://www.indriya.com/jewellery/mangalsutra",
+      "status": 404,
+      "tiles": 0
+    },
+    {
+      "url": "https://www.indriya.com/jewellery/bangles/single-bangle-design",
+      "status": 200,
+      "tiles": 20,
+      "kept": 14
+    },
+    {
+      "url": "https://www.indriya.com/jewellery/gold-jewellery",
+      "status": 200,
+      "tiles": 100,
+      "kept": 14
+    },
+    {
+      "url": "https://www.indriya.com/jewellery/18k-gold-jewellery",
+      "status": 200,
+      "tiles": 100,
+      "kept": 14
+    },
+    {
+      "url": "https://www.indriya.com/aasmaniyat",
+      "status": 200,
+      "tiles": 30,
+      "kept": 6
+    }
+  ],
+  "errors": [],
+  "discoveredLinks": [
+    "https://www.indriya.com/jewellery/earrings",
+    "https://www.indriya.com/jewellery/rings",
+    "https://www.indriya.com/jewellery/neckwear",
+    "https://www.indriya.com/jewellery/bangles",
+    "https://www.indriya.com/jewellery/mangalsutras",
+    "https://www.indriya.com/jewellery/pendants",
+    "https://www.indriya.com/jewellery/bracelets",
+    "https://www.indriya.com/jewellery/chains",
+    "https://www.indriya.com/jewellery/silver-coins",
+    "https://www.indriya.com/gold-coins",
+    "https://www.indriya.com/jewellery/silver-rakhis",
+    "https://www.indriya.com/jewellery",
+    "https://www.indriya.com/jewellery/daily-wear",
+    "https://www.indriya.com/jewellery/heavy-wear",
+    "https://www.indriya.com/jewellery/light-wear",
+    "https://www.indriya.com/jewellery/bridal-wear",
+    "https://www.indriya.com/jewellery/elevated-wear",
+    "https://www.indriya.com/aasmaniyat",
+    "https://www.indriya.com/jewellery/gold-jewellery",
+    "https://www.indriya.com/gold-exchange",
+    "https://www.indriya.com/jewellery/gold-earrings",
+    "https://www.indriya.com/jewellery/gold-rings",
+    "https://www.indriya.com/jewellery/gold-bangles",
+    "https://www.indriya.com/jewellery/gold-bracelets",
+    "https://www.indriya.com/jewellery/gold-necklaces",
+    "https://www.indriya.com/jewellery/gold-chains",
+    "https://www.indriya.com/jewellery/gold-mangalsutra",
+    "https://www.indriya.com/jewellery/gold-pendants",
+    "https://www.indriya.com/jewellery/14k-gold-jewellery",
+    "https://www.indriya.com/jewellery/18k-gold-jewellery",
+    "https://www.indriya.com/jewellery/22k-gold-jewellery",
+    "https://www.indriya.com/jewellery/24k-gold-jewellery",
+    "https://www.indriya.com/jewellery/gold-jewellery/women",
+    "https://www.indriya.com/jewellery/gold-jewellery/men",
+    "https://www.indriya.com/jewellery/gold-jewellery/kids",
+    "https://www.indriya.com/jewellery/gold-jewellery/unisex",
+    "https://www.indriya.com/jewellery/gold-jewellery/under-50000",
+    "https://www.indriya.com/jewellery/gold-jewellery/50000-100000",
+    "https://www.indriya.com/jewellery/gold-jewellery/100000-200000",
+    "https://www.indriya.com/jewellery/gold-jewellery/200000-500000",
+    "https://www.indriya.com/jewellery/gold-jewellery/500000-1000000",
+    "https://www.indriya.com/jewellery/gold-jewellery/above-1000000",
+    "https://www.indriya.com/indriya-diamonds",
+    "https://www.indriya.com/jewellery/diamond-jewellery",
+    "https://www.indriya.com/jewellery/polki-jewellery",
+    "https://www.indriya.com/jewellery/diamond-earrings",
+    "https://www.indriya.com/jewellery/diamond-rings",
+    "https://www.indriya.com/jewellery/diamond-bangles",
+    "https://www.indriya.com/jewellery/diamond-bracelets",
+    "https://www.indriya.com/jewellery/diamond-necklaces",
+    "https://www.indriya.com/jewellery/diamond-mangalsutra",
+    "https://www.indriya.com/jewellery/diamond-chains",
+    "https://www.indriya.com/jewellery/diamond-pendants",
+    "https://www.indriya.com/jewellery/diamond-jewellery/women",
+    "https://www.indriya.com/jewellery/diamond-jewellery/men",
+    "https://www.indriya.com/jewellery/diamond-jewellery/kids",
+    "https://www.indriya.com/jewellery/diamond-jewellery/unisex",
+    "https://www.indriya.com/jewellery/diamond-jewellery/under-50000",
+    "https://www.indriya.com/jewellery/diamond-jewellery/50000-100000",
+    "https://www.indriya.com/jewellery/diamond-jewellery/100000-200000"
+  ],
+  "counts": {
+    "products": 90,
+    "banners": 4,
+    "collections": 0,
+    "images": 94
+  }
+}

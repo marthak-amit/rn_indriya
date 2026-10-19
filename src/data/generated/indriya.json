@@ -1,8 +1,1088 @@
 {
-  "fetchedAt": null,
+  "fetchedAt": "2026-10-19T06:33:01.207Z",
   "source": "https://www.indriya.com",
-  "theme": {},
-  "banners": [],
+  "theme": {
+    "themeColor": null,
+    "cssVars": {},
+    "bodyBg": "rgb(255, 249, 243)",
+    "bodyColor": "rgb(2, 46, 113)",
+    "headerBg": "rgba(0, 0, 0, 0)",
+    "topBackgrounds": [
+      [
+        "rgba(255, 241, 227, 0.2)",
+        23
+      ],
+      [
+        "rgb(255, 249, 243)",
+        14
+      ],
+      [
+        "rgb(255, 241, 227)",
+        10
+      ],
+      [
+        "rgb(252, 232, 214)",
+        8
+      ],
+      [
+        "rgb(2, 46, 113)",
+        8
+      ],
+      [
+        "rgb(255, 255, 255)",
+        4
+      ],
+      [
+        "rgb(255, 241, 226)",
+        2
+      ],
+      [
+        "rgba(0, 0, 0, 0.4)",
+        2
+      ]
+    ],
+    "topButtonBackgrounds": [
+      [
+        "rgb(239, 239, 239)",
+        9
+      ],
+      [
+        "rgb(2, 46, 113)",
+        8
+      ],
+      [
+        "rgba(255, 249, 243, 0.4)",
+        5
+      ],
+      [
+        "rgba(255, 220, 151, 0.2)",
+        2
+      ],
+      [
+        "rgb(248, 211, 200)",
+        1
+      ],
+      [
+        "rgb(228, 86, 46)",
+        1
+      ],
+      [
+        "rgba(239, 239, 239, 0.3)",
+        1
+      ],
+      [
+        "rgb(140, 140, 140)",
+        1
+      ]
+    ],
+    "topTextColors": [
+      [
+        "rgb(67, 67, 67)",
+        47
+      ],
+      [
+        "rgb(2, 46, 113)",
+        36
+      ],
+      [
+        "rgb(255, 241, 227)",
+        26
+      ],
+      [
+        "rgb(95, 99, 104)",
+        24
+      ],
+      [
+        "rgb(38, 38, 38)",
+        18
+      ],
+      [
+        "rgb(0, 0, 238)",
+        16
+      ],
+      [
+        "rgb(0, 0, 0)",
+        9
+      ],
+      [
+        "rgb(31, 31, 31)",
+        3
+      ]
+    ],
+    "topLinkColors": [
+      [
+        "rgb(0, 0, 238)",
+        362
+      ],
+      [
+        "rgb(67, 67, 67)",
+        201
+      ],
+      [
+        "rgb(2, 46, 113)",
+        38
+      ],
+      [
+        "rgb(255, 241, 227)",
+        9
+      ],
+      [
+        "rgb(86, 116, 175)",
+        5
+      ],
+      [
+        "rgb(95, 99, 104)",
+        2
+      ]
+    ],
+    "fonts": {
+      "body": "BricolageGrotesque-Regular",
+      "h1": "BricolageGrotesque-Regular",
+      "h2": "BegumSans-Variable",
+      "h3": "BegumSans-Regular",
+      "button": "Arial",
+      "nav a": "BricolageGrotesque-Regular"
+    },
+    "fontFaces": [
+      "BegumSans-Variable 400",
+      "BegumSans-Regular 400",
+      "BegumSans-Medium 400",
+      "BricolageGrotesque-Regular 400",
+      "BricolageGrotesque-Medium 400",
+      "BricolageGrotesque-Bold 400",
+      "BricolageGrotesque-SemiBold 400",
+      "BrittanySignature 400"
+    ],
+    "title": "Indriya - Aditya Birla Jewellery - Best Store for Gold and Diamond Jewellery Designs"
+  },
+  "logo": null,
+  "banners": [
+    {
+      "id": "b1",
+      "title": "",
+      "href": "https://www.indriya.com/jewellery/diamond-jewellery?master_group=47",
+      "image": "banners/banner-1.webp"
+    },
+    {
+      "id": "b2",
+      "title": "",
+      "href": "https://www.igp.indriya.com/",
+      "image": "banners/banner-2.webp"
+    },
+    {
+      "id": "b3",
+      "title": "",
+      "href": "https://www.indriya.com/jewellery",
+      "image": "banners/banner-3.webp"
+    },
+    {
+      "id": "b4",
+      "title": "",
+      "href": "https://www.indriya.com/gold-exchange",
+      "image": "banners/banner-4.webp"
+    }
+  ],
   "collections": [],
-  "products": []
+  "products": [
+    {
+      "id": "bhadrika-gajamalika-gold-drop--a0dda0",
+      "name": "Bhadrika Gajamalika Gold Drop Earrings",
+      "price": null,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/bhadrika-gajamalika-gold-drop-earrings-jtyyb20-eaea051",
+      "image": "products/bhadrika-gajamalika-gold-drop--a0dda0.webp"
+    },
+    {
+      "id": "kamala-elegance-gold-earrings-6513d9",
+      "name": "Kamala Elegance Gold Earrings",
+      "price": null,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/kamala-elegance-gold-earrings-jtyyb20-eaea014",
+      "image": "products/kamala-elegance-gold-earrings-6513d9.webp"
+    },
+    {
+      "id": "dhanyavi-padma-gold-drop-earri-296f2e",
+      "name": "Dhanyavi Padma Gold Drop Earrings",
+      "price": null,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/dhanyavi-padma-gold-drop-earrings-gtyyd01-eaea034",
+      "image": "products/dhanyavi-padma-gold-drop-earri-296f2e.webp"
+    },
+    {
+      "id": "phoolbala-gold-drop-earrings-e7a41e",
+      "name": "Phoolbala Gold Drop Earrings",
+      "price": null,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/phoolbala-gold-drop-earrings-gtyyb00-diea974",
+      "image": "products/phoolbala-gold-drop-earrings-e7a41e.webp"
+    },
+    {
+      "id": "larevia-gold-drop-earrings-7dba35",
+      "name": "Larevia Gold Drop Earrings",
+      "price": null,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/larevia-gold-drop-earrings-jeyyb20-dfeb001",
+      "image": "products/larevia-gold-drop-earrings-7dba35.webp"
+    },
+    {
+      "id": "roshika-gold-drop-earrings-713d71",
+      "name": "Roshika Gold Drop Earrings",
+      "price": null,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/roshika-gold-drop-earrings-gtyyd01-eaea041",
+      "image": "products/roshika-gold-drop-earrings-713d71.webp"
+    },
+    {
+      "id": "pranavi-gold-drop-earrings-7353e1",
+      "name": "Pranavi Gold Drop Earrings",
+      "price": null,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/pranavi-gold-drop-earrings-gtyyd01-eaea049",
+      "image": "products/pranavi-gold-drop-earrings-7353e1.webp"
+    },
+    {
+      "id": "gireya-gold-drop-earrings-933981",
+      "name": "Gireya Gold Drop Earrings",
+      "price": null,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/gireya-gold-drop-earrings-jeyyb20-dfea997",
+      "image": "products/gireya-gold-drop-earrings-933981.webp"
+    },
+    {
+      "id": "vritika-gold-stud-earrings-7e76f3",
+      "name": "Vritika Gold Stud Earrings",
+      "price": null,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/vritika-gold-stud-earrings-gtyyb01-dqea403",
+      "image": "products/vritika-gold-stud-earrings-7e76f3.webp"
+    },
+    {
+      "id": "diyara-gold-stud-earrings-018962",
+      "name": "Diyara Gold Stud Earrings",
+      "price": null,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/diyara-gold-stud-earrings-gtyyb01-dqea402",
+      "image": "products/diyara-gold-stud-earrings-018962.webp"
+    },
+    {
+      "id": "devika-gold-drop-earrings-26af2a",
+      "name": "Devika Gold Drop Earrings",
+      "price": null,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/devika-gold-drop-earrings-gtyyb00-diea973",
+      "image": "products/devika-gold-drop-earrings-26af2a.webp"
+    },
+    {
+      "id": "aparajita-gold-drop-earrings-71a00b",
+      "name": "Aparajita Gold Drop Earrings",
+      "price": null,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/aparajita-gold-drop-earrings-gtyyb01-diea971",
+      "image": "products/aparajita-gold-drop-earrings-71a00b.webp"
+    },
+    {
+      "id": "amitha-gold-bridal-stud-earrin-4b8ee3",
+      "name": "Amitha Gold Bridal Stud Earrings",
+      "price": null,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/amitha-gold-bridal-stud-earrings-jtyyb20-diea901",
+      "image": "products/amitha-gold-bridal-stud-earrin-4b8ee3.webp"
+    },
+    {
+      "id": "nayvisha-gold-drop-earrings-800c3f",
+      "name": "Nayvisha Gold Drop Earrings",
+      "price": null,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/nayvisha-gold-drop-earrings-jeyyb20-dfea996",
+      "image": "products/nayvisha-gold-drop-earrings-800c3f.webp"
+    },
+    {
+      "id": "rukmini-padmavati-gold-bangle-33b519",
+      "name": "Rukmini Padmavati Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/rukmini-padmavati-gold-bangle-gtoya01-eabra18",
+      "image": "products/rukmini-padmavati-gold-bangle-33b519.webp"
+    },
+    {
+      "id": "sonalika-mrinal-gold-bangle-b3e49b",
+      "name": "Sonalika Mrinal Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/sonalika-mrinal-gold-bangle-gtkyg01-eabra10",
+      "image": "products/sonalika-mrinal-gold-bangle-b3e49b.webp"
+    },
+    {
+      "id": "amriteshwari-padmrekha-gold-ba-5159d2",
+      "name": "Amriteshwari Padmrekha Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/amriteshwari-padmrekha-gold-bangle-jtkya20-eabra19",
+      "image": "products/amriteshwari-padmrekha-gold-ba-5159d2.webp"
+    },
+    {
+      "id": "devashri-kusum-gold-bangle-140499",
+      "name": "Devashri Kusum Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/devashri-kusum-gold-bangle-jteyg20-eaboa20",
+      "image": "products/devashri-kusum-gold-bangle-140499.webp"
+    },
+    {
+      "id": "kumudarekha-gold-bangle-c7ed44",
+      "name": "Kumudarekha Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/kumudarekha-gold-bangle-jtlyg20-eabra14",
+      "image": "products/kumudarekha-gold-bangle-c7ed44.webp"
+    },
+    {
+      "id": "bhagyashri-kamal-gold-bangle-391bf1",
+      "name": "Bhagyashri Kamal Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/bhagyashri-kamal-gold-bangle-gteyg01-eaboa07",
+      "image": "products/bhagyashri-kamal-gold-bangle-391bf1.webp"
+    },
+    {
+      "id": "mahashri-padma-gold-bangle-7cad12",
+      "name": "Mahashri Padma Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/mahashri-padma-gold-bangle-gtlyg01-eabra02",
+      "image": "products/mahashri-padma-gold-bangle-7cad12.webp"
+    },
+    {
+      "id": "pradyutika-gajavalli-gold-bang-432531",
+      "name": "Pradyutika Gajavalli Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/pradyutika-gajavalli-gold-bangle-gtkyg01-eabra08",
+      "image": "products/pradyutika-gajavalli-gold-bang-432531.webp"
+    },
+    {
+      "id": "soubhagyavati-kamala-gold-bang-857ed4",
+      "name": "Soubhagyavati Kamala Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/soubhagyavati-kamala-gold-bangle-gtkyg01-eabra04",
+      "image": "products/soubhagyavati-kamala-gold-bang-857ed4.webp"
+    },
+    {
+      "id": "mahalakshmi-shankh-gold-bangle-063a3a",
+      "name": "Mahalakshmi Shankh Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/mahalakshmi-shankh-gold-bangle-gtmya01-eabra03",
+      "image": "products/mahalakshmi-shankh-gold-bangle-063a3a.webp"
+    },
+    {
+      "id": "shri-swarna-gold-bangle-e38e0b",
+      "name": "Shri Swarna Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/shri-swarna-gold-bangle-jtmyg20-apbr771",
+      "image": "products/shri-swarna-gold-bangle-e38e0b.webp"
+    },
+    {
+      "id": "maribelle-diamond-oval-bangle-da23dc",
+      "name": "Maribelle Diamond Oval Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/maribelle-diamond-oval-bangle-teerz40-ddba100",
+      "image": "products/maribelle-diamond-oval-bangle-da23dc.webp"
+    },
+    {
+      "id": "ylvara-gold-bangle-17f292",
+      "name": "Ylvara Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/ylvara-gold-bangle-jtmya20-ambr724",
+      "image": "products/ylvara-gold-bangle-17f292.webp"
+    },
+    {
+      "id": "gauravi-gold-bangle-2fd873",
+      "name": "Gauravi Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/gauravi-gold-bangle-jtlyg20-brbr018",
+      "image": "products/gauravi-gold-bangle-2fd873.webp"
+    },
+    {
+      "id": "vasudha-kamal-gold-ring-44053b",
+      "name": "Vasudha Kamal Gold Ring",
+      "price": null,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/vasudha-kamal-gold-ring-jtmya20-eafa006",
+      "image": "products/vasudha-kamal-gold-ring-44053b.webp"
+    },
+    {
+      "id": "padmaraga-gold-ring-e5e513",
+      "name": "Padmaraga Gold Ring",
+      "price": null,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/padmaraga-gold-ring-jtnya20-eafa008",
+      "image": "products/padmaraga-gold-ring-e5e513.webp"
+    },
+    {
+      "id": "freyana-diamond-finger-ring-bf3d74",
+      "name": "Freyana Diamond Finger Ring",
+      "price": null,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/freyana-diamond-finger-ring-dfjya40-adfl035",
+      "image": "products/freyana-diamond-finger-ring-bf3d74.webp"
+    },
+    {
+      "id": "daphne-diamond-finger-ring-8d8dca",
+      "name": "Daphne Diamond Finger Ring",
+      "price": null,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/daphne-diamond-finger-ring-dfjra40-apfl585",
+      "image": "products/daphne-diamond-finger-ring-8d8dca.webp"
+    },
+    {
+      "id": "fleurine-diamond-finger-ring-f75d8e",
+      "name": "Fleurine Diamond Finger Ring",
+      "price": null,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/fleurine-diamond-finger-ring-temya50-adfl214",
+      "image": "products/fleurine-diamond-finger-ring-f75d8e.webp"
+    },
+    {
+      "id": "sharvani-gold-ring-095450",
+      "name": "Sharvani Gold Ring",
+      "price": null,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/sharvani-gold-ring-jtlya20-amfl540",
+      "image": "products/sharvani-gold-ring-095450.webp"
+    },
+    {
+      "id": "gulmohar-gold-band-ring-06060b",
+      "name": "Gulmohar Gold Band Ring",
+      "price": null,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/gulmohar-gold-band-ring-gtmya01-aqfl125",
+      "image": "products/gulmohar-gold-band-ring-06060b.webp"
+    },
+    {
+      "id": "rupali-gold-finger-ring-94f0e2",
+      "name": "Rupali Gold Finger Ring",
+      "price": null,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/rupali-gold-finger-ring-gtmya00-aqfl156",
+      "image": "products/rupali-gold-finger-ring-94f0e2.webp"
+    },
+    {
+      "id": "gulabi-gold-band-ring-9504f9",
+      "name": "Gulabi Gold Band Ring",
+      "price": null,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/gulabi-gold-band-ring-gtmya00-aqfl121",
+      "image": "products/gulabi-gold-band-ring-9504f9.webp"
+    },
+    {
+      "id": "gulmohini-gold-band-ring-4ad731",
+      "name": "Gulmohini Gold Band Ring",
+      "price": null,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/gulmohini-gold-band-ring-gtmya00-aqfl119",
+      "image": "products/gulmohini-gold-band-ring-4ad731.webp"
+    },
+    {
+      "id": "meenakshi-gold-finger-ring-762d84",
+      "name": "Meenakshi Gold Finger Ring",
+      "price": null,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/meenakshi-gold-finger-ring-gtoya00-aqfl258",
+      "image": "products/meenakshi-gold-finger-ring-762d84.webp"
+    },
+    {
+      "id": "gulrukh-gold-band-ring-04b433",
+      "name": "Gulrukh Gold Band Ring",
+      "price": null,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/gulrukh-gold-band-ring-gtlya00-aqfl123",
+      "image": "products/gulrukh-gold-band-ring-04b433.webp"
+    },
+    {
+      "id": "yamuna-gold-finger-ring-8ac08d",
+      "name": "Yamuna Gold Finger Ring",
+      "price": null,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/yamuna-gold-finger-ring-gtkya00-aqfl253",
+      "image": "products/yamuna-gold-finger-ring-8ac08d.webp"
+    },
+    {
+      "id": "ravisha-gold-band-ring-e81572",
+      "name": "Ravisha Gold Band Ring",
+      "price": null,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/ravisha-gold-band-ring-gtkya00-aqfl131",
+      "image": "products/ravisha-gold-band-ring-e81572.webp"
+    },
+    {
+      "id": "kritika-gold-bangle-c2fabc",
+      "name": "Kritika Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/kritika-gold-bangle-gtkyg00-apbr886",
+      "image": "products/kritika-gold-bangle-c2fabc.webp"
+    },
+    {
+      "id": "trishulya-gold-bangle-305f7d",
+      "name": "Trishulya Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/trishulya-gold-bangle-gtkyg00-apbr191",
+      "image": "products/trishulya-gold-bangle-305f7d.webp"
+    },
+    {
+      "id": "ojasvira-gold-bangle-b142b7",
+      "name": "Ojasvira Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/ojasvira-gold-bangle-gtmya01-ddbrb75",
+      "image": "products/ojasvira-gold-bangle-b142b7.webp"
+    },
+    {
+      "id": "kairanvi-gold-bangle-3ef18b",
+      "name": "Kairanvi Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/kairanvi-gold-bangle-gtmya00-ddbrb78",
+      "image": "products/kairanvi-gold-bangle-3ef18b.webp"
+    },
+    {
+      "id": "nandivara-gold-bangle-0004e4",
+      "name": "Nandivara Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/nandivara-gold-bangle-gtmyg00-ddbrc84",
+      "image": "products/nandivara-gold-bangle-0004e4.webp"
+    },
+    {
+      "id": "hridayara-gold-bangle-868fad",
+      "name": "Hridayara Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/hridayara-gold-bangle-jekya20-dfbr114",
+      "image": "products/hridayara-gold-bangle-868fad.webp"
+    },
+    {
+      "id": "nityarekha-gold-bangle-19be56",
+      "name": "Nityarekha Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/nityarekha-gold-bangle-etmyg30-dxbr040",
+      "image": "products/nityarekha-gold-bangle-19be56.webp"
+    },
+    {
+      "id": "rudrika-gold-bangle-3f06c8",
+      "name": "Rudrika Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/rudrika-gold-bangle-gtlya01-ddbra16",
+      "image": "products/rudrika-gold-bangle-3f06c8.webp"
+    },
+    {
+      "id": "vaanika-gold-bangle-07ab74",
+      "name": "Vaanika Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/vaanika-gold-bangle-gtmya00-ddbrb04",
+      "image": "products/vaanika-gold-bangle-07ab74.webp"
+    },
+    {
+      "id": "yashodhara-gold-bangle-a2f648",
+      "name": "Yashodhara Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/yashodhara-gold-bangle-gtoya01-ddbrb74",
+      "image": "products/yashodhara-gold-bangle-a2f648.webp"
+    },
+    {
+      "id": "charuvrinda-gold-bangle-0b2482",
+      "name": "Charuvrinda Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/charuvrinda-gold-bangle-gtkya01-ddbrb60",
+      "image": "products/charuvrinda-gold-bangle-0b2482.webp"
+    },
+    {
+      "id": "nakshira-gold-bangle-0f8baf",
+      "name": "Nakshira Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/nakshira-gold-bangle-jtkya20-ddbrb55",
+      "image": "products/nakshira-gold-bangle-0f8baf.webp"
+    },
+    {
+      "id": "urivana-gold-bangle-91aed3",
+      "name": "Urivana Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/urivana-gold-bangle-gtlya01-ddbra42",
+      "image": "products/urivana-gold-bangle-91aed3.webp"
+    },
+    {
+      "id": "wistariya-gold-bangle-5180cc",
+      "name": "Wistariya Gold Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/wistariya-gold-bangle-gtlya00-ddbrb99",
+      "image": "products/wistariya-gold-bangle-5180cc.webp"
+    },
+    {
+      "id": "gavisha-gold-necklace-abecc0",
+      "name": "Gavisha Gold Necklace",
+      "price": null,
+      "mrp": null,
+      "category": "necklaces",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/gavisha-gold-necklace-jeeyl20-dfna996",
+      "image": "products/gavisha-gold-necklace-abecc0.webp"
+    },
+    {
+      "id": "sindhuja-blessings-gold-neckla-3073a2",
+      "name": "Sindhuja Blessings Gold Necklace",
+      "price": null,
+      "mrp": null,
+      "category": "necklaces",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/sindhuja-blessings-gold-necklace-gtyya01-eana021",
+      "image": "products/sindhuja-blessings-gold-neckla-3073a2.webp"
+    },
+    {
+      "id": "nalvika-gold-necklace-09b7e7",
+      "name": "Nalvika Gold Necklace",
+      "price": null,
+      "mrp": null,
+      "category": "necklaces",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/nalvika-gold-necklace-jeyya20-dfnb001",
+      "image": "products/nalvika-gold-necklace-09b7e7.webp"
+    },
+    {
+      "id": "gajalakshmi-padmavati-gold-sho-c213a0",
+      "name": "Gajalakshmi Padmavati Gold Short Necklace",
+      "price": null,
+      "mrp": null,
+      "category": "necklaces",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/gajalakshmi-padmavati-gold-short-necklace-gtyya01-eana010",
+      "image": "products/gajalakshmi-padmavati-gold-sho-c213a0.webp"
+    },
+    {
+      "id": "mahishika-gold-long-necklace-2c54d2",
+      "name": "Mahishika Gold Long Necklace",
+      "price": null,
+      "mrp": null,
+      "category": "necklaces",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/mahishika-gold-long-necklace-gt1ya00-dina974",
+      "image": "products/mahishika-gold-long-necklace-2c54d2.webp"
+    },
+    {
+      "id": "nerisha-gold-pendant-c9f7a6",
+      "name": "Nerisha Gold Pendant",
+      "price": null,
+      "mrp": null,
+      "category": "necklaces",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/nerisha-gold-pendant-jtyya20-dqpa401",
+      "image": "products/nerisha-gold-pendant-c9f7a6.webp"
+    },
+    {
+      "id": "aradhana-gold-drop-earrings-811613",
+      "name": "Aradhana Gold Drop Earrings",
+      "price": null,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/aradhana-gold-drop-earrings-jtaya20-aaed219",
+      "image": "products/aradhana-gold-drop-earrings-811613.webp"
+    },
+    {
+      "id": "nayantara-gold-antique-mangals-aa5804",
+      "name": "Nayantara Gold Antique Mangalsutra",
+      "price": null,
+      "mrp": null,
+      "category": "mangalsutra",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/nayantara-gold-antique-mangalsutra-jtjyj20-apmt036",
+      "image": "products/nayantara-gold-antique-mangals-aa5804.webp"
+    },
+    {
+      "id": "apoorva-gold-mangalsutra-aa74f3",
+      "name": "Apoorva Gold Mangalsutra",
+      "price": null,
+      "mrp": null,
+      "category": "mangalsutra",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/apoorva-gold-mangalsutra-jtjyj20-apmm085",
+      "image": "products/apoorva-gold-mangalsutra-aa74f3.webp"
+    },
+    {
+      "id": "niharika-gold-kids-earrings-2e193c",
+      "name": "Niharika Gold Kids Earrings",
+      "price": null,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/niharika-gold-kids-earrings-gtyyb01-ares198",
+      "image": "products/niharika-gold-kids-earrings-2e193c.webp"
+    },
+    {
+      "id": "veylora-gold-mangalsutra-d63472",
+      "name": "Veylora Gold Mangalsutra",
+      "price": null,
+      "mrp": null,
+      "category": "mangalsutra",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/veylora-gold-mangalsutra-jthyl20-ammm730",
+      "image": "products/veylora-gold-mangalsutra-d63472.webp"
+    },
+    {
+      "id": "yamika-gold-mangalsutra-763a4a",
+      "name": "Yamika Gold Mangalsutra",
+      "price": null,
+      "mrp": null,
+      "category": "mangalsutra",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/yamika-gold-mangalsutra-jthyj20-apmt087",
+      "image": "products/yamika-gold-mangalsutra-763a4a.webp"
+    },
+    {
+      "id": "teyana-gold-mangalsutra-ca4378",
+      "name": "Teyana Gold Mangalsutra",
+      "price": null,
+      "mrp": null,
+      "category": "mangalsutra",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/teyana-gold-mangalsutra-jthyj20-apmm071",
+      "image": "products/teyana-gold-mangalsutra-ca4378.webp"
+    },
+    {
+      "id": "yuvika-gold-mangalsutra-324203",
+      "name": "Yuvika Gold Mangalsutra",
+      "price": null,
+      "mrp": null,
+      "category": "mangalsutra",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/yuvika-gold-mangalsutra-jteyj20-apmm108",
+      "image": "products/yuvika-gold-mangalsutra-324203.webp"
+    },
+    {
+      "id": "tirvani-gold-necklace-6815fe",
+      "name": "Tirvani Gold Necklace",
+      "price": null,
+      "mrp": null,
+      "category": "necklaces",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/tirvani-gold-necklace-jeeyl20-dfna993",
+      "image": "products/tirvani-gold-necklace-6815fe.webp"
+    },
+    {
+      "id": "eshvaira-gold-necklace-3dc768",
+      "name": "Eshvaira Gold Necklace",
+      "price": null,
+      "mrp": null,
+      "category": "necklaces",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/eshvaira-gold-necklace-jeyya20-dfna997",
+      "image": "products/eshvaira-gold-necklace-3dc768.webp"
+    },
+    {
+      "id": "ravisha-gold-drop-earrings-2b7a00",
+      "name": "Ravisha Gold Drop Earrings",
+      "price": null,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/ravisha-gold-drop-earrings-jeyyb20-dfea993",
+      "image": "products/ravisha-gold-drop-earrings-2b7a00.webp"
+    },
+    {
+      "id": "pherina-gold-drop-earrings-4e22b2",
+      "name": "Pherina Gold Drop Earrings",
+      "price": null,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/pherina-gold-drop-earrings-jeyyb20-dfeb003",
+      "image": "products/pherina-gold-drop-earrings-4e22b2.webp"
+    },
+    {
+      "id": "divyani-gold-polki-bracelet-4fdbfa",
+      "name": "Divyani Gold Polki Bracelet",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/divyani-gold-polki-bracelet-oeqylm3-adtl003",
+      "image": "products/divyani-gold-polki-bracelet-4fdbfa.webp"
+    },
+    {
+      "id": "vespera-diamond-hoop-earrings-c01015",
+      "name": "Vespera Diamond Hoop Earrings",
+      "price": null,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/vespera-diamond-hoop-earrings-tearb40-adeh814",
+      "image": "products/vespera-diamond-hoop-earrings-c01015.webp"
+    },
+    {
+      "id": "elarven-gold-hoop-earrings-bb57e8",
+      "name": "Elarven Gold Hoop Earrings",
+      "price": null,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/elarven-gold-hoop-earrings-gearh00-apeh250",
+      "image": "products/elarven-gold-hoop-earrings-bb57e8.webp"
+    },
+    {
+      "id": "jovelle-gold-handcrafted-chain-3eb9dd",
+      "name": "Jovelle Gold Handcrafted Chain",
+      "price": null,
+      "mrp": null,
+      "category": "necklaces",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/jovelle-gold-handcrafted-chain-gehyl01-apcg384",
+      "image": "products/jovelle-gold-handcrafted-chain-3eb9dd.webp"
+    },
+    {
+      "id": "linnea-diamond-finger-ring-817e10",
+      "name": "Linnea Diamond Finger Ring",
+      "price": null,
+      "mrp": null,
+      "category": "rings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/linnea-diamond-finger-ring-delra40-ddfa132",
+      "image": "products/linnea-diamond-finger-ring-817e10.webp"
+    },
+    {
+      "id": "clara-diamond-stud-earrings-51a074",
+      "name": "Clara Diamond Stud Earrings",
+      "price": null,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/clara-diamond-stud-earrings-deayz40-aqes036",
+      "image": "products/clara-diamond-stud-earrings-51a074.webp"
+    },
+    {
+      "id": "rosalie-diamond-oval-bangle-b34424",
+      "name": "Rosalie Diamond Oval Bangle",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/rosalie-diamond-oval-bangle-deerz40-ddba112",
+      "image": "products/rosalie-diamond-oval-bangle-b34424.webp"
+    },
+    {
+      "id": "ros-petal-diamond-bracelet-405869",
+      "name": "Rosé Petal Diamond Bracelet",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/ros-petal-diamond-bracelet-degrl50-actl096",
+      "image": "products/ros-petal-diamond-bracelet-405869.webp"
+    },
+    {
+      "id": "willow-diamond-drop-earrings-1673cb",
+      "name": "Willow Diamond Drop Earrings",
+      "price": null,
+      "mrp": null,
+      "category": "earrings",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/willow-diamond-drop-earrings-deayb40-aded622",
+      "image": "products/willow-diamond-drop-earrings-1673cb.webp"
+    },
+    {
+      "id": "clarissa-diamond-mangalsutra-74acb2",
+      "name": "Clarissa Diamond Mangalsutra",
+      "price": null,
+      "mrp": null,
+      "category": "mangalsutra",
+      "collection": null,
+      "href": "https://www.indriya.com/jewellery-products/clarissa-diamond-mangalsutra-segyl90-ddma086",
+      "image": "products/clarissa-diamond-mangalsutra-74acb2.webp"
+    },
+    {
+      "id": "lush-gold-collection-dd39d7",
+      "name": "Lush Gold Collection",
+      "price": null,
+      "mrp": null,
+      "category": "necklaces",
+      "collection": "aasmaniyat",
+      "href": "https://www.indriya.com/aasmaniyat/aasmaniyat-necklaces",
+      "image": "products/lush-gold-collection-dd39d7.webp"
+    },
+    {
+      "id": "3-by-4-product-pdp-40da3f",
+      "name": "3 by 4 Product PDP",
+      "price": null,
+      "mrp": null,
+      "category": "earrings",
+      "collection": "aasmaniyat",
+      "href": "https://www.indriya.com/aasmaniyat/aasmaniyat-earrings",
+      "image": "products/3-by-4-product-pdp-40da3f.webp"
+    },
+    {
+      "id": "lush-gold-collection-30b8bd",
+      "name": "Lush Gold Collection",
+      "price": null,
+      "mrp": null,
+      "category": "bangles",
+      "collection": "aasmaniyat",
+      "href": "https://www.indriya.com/aasmaniyat/aasmaniyat-bangles",
+      "image": "products/lush-gold-collection-30b8bd.webp"
+    },
+    {
+      "id": "solasta-diamond-necklace-bfc12d",
+      "name": "Solasta Diamond Necklace",
+      "price": null,
+      "mrp": null,
+      "category": "necklaces",
+      "collection": "aasmaniyat",
+      "href": "https://www.indriya.com/jewellery-products/solasta-diamond-necklace-deaya60-adns844",
+      "image": "products/solasta-diamond-necklace-bfc12d.webp"
+    },
+    {
+      "id": "lyra-diamond-necklace-8cca0c",
+      "name": "Lyra Diamond Necklace",
+      "price": null,
+      "mrp": null,
+      "category": "necklaces",
+      "collection": "aasmaniyat",
+      "href": "https://www.indriya.com/jewellery-products/lyra-diamond-necklace-deawl50-aenl595",
+      "image": "products/lyra-diamond-necklace-8cca0c.webp"
+    },
+    {
+      "id": "altaira-diamond-necklace-d0e73d",
+      "name": "Altaira Diamond Necklace",
+      "price": null,
+      "mrp": null,
+      "category": "necklaces",
+      "collection": "aasmaniyat",
+      "href": "https://www.indriya.com/jewellery-products/altaira-diamond-necklace-degwl50-aens646",
+      "image": "products/altaira-diamond-necklace-d0e73d.webp"
+    }
+  ]
 }
