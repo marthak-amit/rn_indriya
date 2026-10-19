@@ -19,8 +19,10 @@ jobs:
           node-version: 22
       - name: Install Playwright
         run: |
-          npm i --no-save --no-package-lock playwright
-          npx playwright install --with-deps chromium
+          # Install Playwright outside the project so the app's React peer-dependency tree is never resolved.
+          npm i --prefix /tmp/pw playwright
+          mkdir -p node_modules && ln -sfn /tmp/pw/node_modules/playwright node_modules/playwright
+          /tmp/pw/node_modules/.bin/playwright install --with-deps chromium
       - name: Capture content from indriya.com
         run: node scripts/sync-indriya.mjs 2>&1 | tee sync.log
       - uses: actions/upload-artifact@v4
