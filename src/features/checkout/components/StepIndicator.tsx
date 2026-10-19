@@ -15,7 +15,7 @@ function Dot({ i, step }: { i: number; step: number }) {
   }));
   return (
     <Animated.View style={[styles.dot, dot]}>
-      {step > i ? <Ionicons name="checkmark" size={16} color={colors.white} /> : <Text variant="caption" style={{ color: step >= i ? colors.white : colors.muted, fontFamily: 'Jost_600SemiBold' }}>{i + 1}</Text>}
+      {step > i ? <Ionicons name="checkmark" size={16} color={colors.white} /> : <Text variant="caption" style={{ color: step >= i ? colors.white : colors.muted, fontFamily: 'BricolageGrotesque_600SemiBold' }}>{i + 1}</Text>}
     </Animated.View>
   );
 }
@@ -31,7 +31,7 @@ export function StepIndicator({ step }: { step: number }) {
         {CHECKOUT_STEPS.map((label, i) => (
           <View key={label} style={styles.step}>
             <Dot i={i} step={step} />
-            <Text variant="caption" color={step >= i ? 'primary' : 'muted'} style={{ fontFamily: 'Jost_500Medium' }}>{label}</Text>
+            <Text variant="caption" color={step >= i ? 'primary' : 'muted'} style={{ fontFamily: 'BricolageGrotesque_500Medium' }}>{label}</Text>
           </View>
         ))}
       </View>

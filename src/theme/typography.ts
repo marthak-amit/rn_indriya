@@ -1,13 +1,14 @@
 import { TextStyle } from 'react-native';
 
+// Indriya's site uses Bricolage Grotesque (body/UI). Headings use Begum Sans (commercial), approximated with Bricolage.
 export const fonts = {
-  display: 'CormorantGaramond_500Medium',
-  displayBold: 'CormorantGaramond_600SemiBold',
-  displayItalic: 'CormorantGaramond_500Medium_Italic',
-  body: 'Jost_400Regular',
-  bodyLight: 'Jost_300Light',
-  bodyMedium: 'Jost_500Medium',
-  bodySemi: 'Jost_600SemiBold',
+  display: 'BricolageGrotesque_400Regular',
+  displayBold: 'BricolageGrotesque_600SemiBold',
+  displayItalic: 'BricolageGrotesque_400Regular',
+  body: 'BricolageGrotesque_400Regular',
+  bodyLight: 'BricolageGrotesque_400Regular',
+  bodyMedium: 'BricolageGrotesque_500Medium',
+  bodySemi: 'BricolageGrotesque_600SemiBold',
 } as const;
 
 export type TextVariant =
@@ -23,9 +24,9 @@ export type TextVariant =
   | 'button';
 
 export const textVariants: Record<TextVariant, TextStyle> = {
-  hero: { fontFamily: fonts.display, fontSize: 40, lineHeight: 44, letterSpacing: 0.2 },
-  title: { fontFamily: fonts.displayBold, fontSize: 30, lineHeight: 34 },
-  heading: { fontFamily: fonts.displayBold, fontSize: 24, lineHeight: 28 },
+  hero: { fontFamily: fonts.display, fontSize: 38, lineHeight: 44, letterSpacing: -0.3 },
+  title: { fontFamily: fonts.displayBold, fontSize: 28, lineHeight: 34, letterSpacing: -0.4 },
+  heading: { fontFamily: fonts.displayBold, fontSize: 22, lineHeight: 28, letterSpacing: -0.3 },
   subheading: { fontFamily: fonts.bodyMedium, fontSize: 16, lineHeight: 22 },
   body: { fontFamily: fonts.body, fontSize: 15, lineHeight: 22 },
   bodyStrong: { fontFamily: fonts.bodyMedium, fontSize: 15, lineHeight: 22 },

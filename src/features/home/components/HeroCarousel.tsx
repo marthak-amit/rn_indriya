@@ -53,7 +53,7 @@ function Slide({ banner, index, width, height, scrollX }: { banner: Banner; inde
       )}
       <Animated.View style={[styles.copy, text]}>
         <Text variant="overline" color="goldLight">{banner.eyebrow}</Text>
-        <Text color="white" style={{ fontFamily: fonts.displayBold, fontSize: 38, lineHeight: 42 }}>{banner.title}</Text>
+        <Text color="white" style={{ fontFamily: fonts.displayBold, fontSize: 34, lineHeight: 40, letterSpacing: -0.5 }}>{banner.title}</Text>
         <Text variant="body" style={{ color: 'rgba(255,255,255,0.8)' }}>{banner.subtitle}</Text>
         <Button label={banner.cta} variant="gold" icon="arrow-forward" onPress={go} style={{ alignSelf: 'flex-start', marginTop: 8 }} />
       </Animated.View>

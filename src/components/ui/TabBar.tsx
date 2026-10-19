@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
   inner: { flexDirection: 'row' },
   pill: { position: 'absolute', top: 0, bottom: 0, left: 0, borderRadius: radius.pill, backgroundColor: colors.primary },
   item: { height: 52, alignItems: 'center', justifyContent: 'center', gap: 1 },
-  label: { fontFamily: 'Jost_500Medium', fontSize: 10.5, lineHeight: 13, letterSpacing: 0.3 },
+  label: { fontFamily: 'BricolageGrotesque_500Medium', fontSize: 10.5, lineHeight: 13, letterSpacing: 0.3 },
   badge: { position: 'absolute', top: -6, right: -10, minWidth: 17, height: 17, paddingHorizontal: 4, borderRadius: 9, backgroundColor: colors.gold, alignItems: 'center', justifyContent: 'center', borderWidth: 1.5, borderColor: colors.surface },
-  badgeText: { fontSize: 10, lineHeight: 12, fontFamily: 'Jost_600SemiBold' },
+  badgeText: { fontSize: 10, lineHeight: 12, fontFamily: 'BricolageGrotesque_600SemiBold' },
 });

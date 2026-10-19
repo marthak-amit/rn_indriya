@@ -31,5 +31,5 @@ export function Chip({ label, selected = false, onPress, count }: ChipProps) {
 
 const styles = StyleSheet.create({
   chip: { flexDirection: 'row', alignItems: 'center', gap: 6, paddingHorizontal: 16, paddingVertical: 9, borderRadius: radius.pill, borderWidth: 1 },
-  label: { fontFamily: 'Jost_500Medium', fontSize: 13.5, letterSpacing: 0.3 },
+  label: { fontFamily: 'BricolageGrotesque_500Medium', fontSize: 13.5, letterSpacing: 0.3 },
 });

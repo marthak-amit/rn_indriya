@@ -54,7 +54,7 @@ function OrderCard({ order, index }: { order: Order; index: number }) {
             <Text variant="bodyStrong">{order.id}</Text>
             <Text variant="caption" color="muted">{new Date(order.createdAt).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })} · {formatINR(order.totals.total)}</Text>
           </View>
-          <View style={styles.pill}><Text variant="caption" color="success" style={{ textTransform: 'capitalize', fontFamily: 'Jost_500Medium' }}>{order.status}</Text></View>
+          <View style={styles.pill}><Text variant="caption" color="success" style={{ textTransform: 'capitalize', fontFamily: 'BricolageGrotesque_500Medium' }}>{order.status}</Text></View>
           <Animated.View style={chevron}><Ionicons name="chevron-down" size={20} color={colors.muted} /></Animated.View>
         </PressableScale>
         {open ? (
