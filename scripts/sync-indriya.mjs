@@ -252,9 +252,11 @@ async function main() {
       if (i >= queuePdp.length) break;
       const prod = queuePdp[i];
       try {
-        await wp.goto(prod.href, { waitUntil: 'domcontentloaded', timeout: 40000 });
+        await wp.goto(prod.href, { waitUntil: 'domcontentloaded', timeout: 45000 });
         await wp.waitForSelector('h1', { timeout: 15000 }).catch(() => {});
-        await wp.waitForTimeout(1400);
+        // Price and gallery render asynchronously; wait for a rupee amount instead of a fixed delay.
+        await wp.waitForFunction(() => /₹\s*[\d,]{4,}/.test(document.body.innerText), null, { timeout: 15000 }).catch(() => {});
+        await wp.waitForTimeout(1200);
         const d = await wp.evaluate(() => {
           const main = document.querySelector('main') || document.body;
           const text = main.innerText.replace(/[ \t]+/g, ' ');
@@ -262,17 +264,20 @@ async function main() {
           const specs = {};
           for (const m of text.matchAll(/(Gold Weight|Net Weight|Gross Weight|Purity|Karat|Metal|Diamond Weight|Stone Weight|Gold Purity|Diamond Clarity|Diamond Colour|Collection|Size|Width|Height)\s*[:\n]\s*([^\n]{1,40})/gi)) specs[m[1].trim()] = m[2].trim();
           const desc = document.querySelector('meta[name="description"]')?.content || '';
-          const longDesc = [...document.querySelectorAll('p')].map((p) => p.textContent.trim()).filter((t) => t.length > 80)[0] || '';
+          const title = document.querySelector('h1')?.textContent?.trim() || '';
+          const longDesc = [...document.querySelectorAll('p, div')].filter((e) => e.children.length < 3).map((e) => e.textContent.trim().replace(/\s*Read More\s*$/i, '')).filter((t) => t.length > 80 && t.length < 900 && !/agree to be contacted|T&C|Privacy Policy|cookies/i.test(t) && title && t.toLowerCase().includes(title.toLowerCase().split(' ')[0]))[0] || '';
           const imgs = [...document.images].filter((im) => { const r = im.getBoundingClientRect(); return r.width > 160 && r.height > 160 && r.top + scrollY < 1300; }).map((im) => im.currentSrc || im.src).filter((u) => u && !u.startsWith('data:'));
           return { prices: [...new Set(prices)].sort((a, b) => a - b), specs, desc, longDesc, imgs: [...new Set(imgs)], title: document.querySelector('h1')?.textContent?.trim() || null, code: text.match(/\b[A-Z]{3,}\d{2}-[A-Z0-9]{5,}\b/)?.[0] || null, head: text.slice(0, 1200) };
         });
         if (i < 2) { await wp.screenshot({ path: path.join(REF, `pdp-${i + 1}.png`) }).catch(() => {}); await writeFile(path.join(REF, `pdp-${i + 1}.txt`), d.head); }
+        if (!d.prices.length && !prod._retried) { prod._retried = true; queuePdp.push(prod); }
         if (d.prices.length) { prod.price = d.prices[0]; prod.mrp = d.prices.length > 1 ? d.prices[d.prices.length - 1] : null; }
         if (d.title && d.title.length > 3) prod.name = d.title.slice(0, 90);
         prod.description = d.desc ? d.desc.slice(0, 400) : null;
         prod.longDescription = d.longDesc ? d.longDesc.slice(0, 700) : null;
         prod.code = d.code;
         prod.specs = d.specs;
+        if (d.prices.length) delete prod._retried;
         const extra = [];
         for (const u of d.imgs.slice(0, 6)) {
           if (extra.length >= 3) break;
@@ -289,6 +294,7 @@ async function main() {
 
   // ---- write outputs
   const list = [...products.values()];
+  for (const p of list) delete p._retried;
   const imageKeys = [...new Set([...(logo ? [logo] : []), ...banners.map((b) => b.image), ...Object.values(collections).map((c) => c.image), ...list.flatMap((p) => [p.image, ...(p.extraImages || [])])])];
   const data = { fetchedAt: new Date().toISOString(), source: ORIGIN, theme, logo, banners, collections: Object.values(collections), products: list };
   await writeFile(path.join(GEN, 'indriya.json'), JSON.stringify(data, null, 2) + '\n');
