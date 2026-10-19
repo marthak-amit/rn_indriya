@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Indriya",
+    "slug": "indriya",
+    "scheme": "indriya",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FBF8F3",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.indriya.app"
+    },
+    "android": {
+      "package": "com.indriya.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#5B1A2B",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      ["expo-splash-screen", { "backgroundColor": "#5B1A2B", "image": "./assets/icon.png", "imageWidth": 120 }]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
