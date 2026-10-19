@@ -17,6 +17,7 @@ export const categories: Category[] = [
   { id: 'mangalsutra', name: 'Mangalsutra', tagline: 'Tradition, reimagined', shape: 'mangalsutra' },
   { id: 'pendants', name: 'Pendants', tagline: 'Close to the heart', shape: 'pendant' },
   { id: 'bracelets', name: 'Bracelets', tagline: 'A touch of sparkle', shape: 'bangle' },
+  { id: 'chains', name: 'Chains', tagline: 'Gold, simply worn', shape: 'necklace' },
 ];
 
 // Collections mirror the site's own navigation: Diamond, Gold, Daily Wear, Wedding, plus Aasmaniyat.
@@ -104,16 +105,20 @@ const fromGenerated = (g: GeneratedProduct): Product => {
   const weight = g.description?.match(/weighing ([\d.]+) ?g/i);
   const weightGrams = weight ? Math.round(parseFloat(weight[1]) * 100) / 100 : undefined;
   const specs = g.specs ?? {};
+  // Meta text ends with the site's own promises, e.g. "✔Attractive Offers ✔Lifetime Exchange ✔100% Certified".
+  const promises = [...(g.description ?? '').matchAll(/✔\s*([^✔]+)/g)].map((m) => m[1].trim()).filter(Boolean);
+  const cleanLong = g.longDescription && !/agree to be contacted|T&C|Privacy Policy/i.test(g.longDescription) ? g.longDescription : undefined;
   return {
     id: g.id, name: g.name, categoryId: g.category, collectionId: g.collection ?? '', shape, tone: detectTone(`${metal} ${text}`), gem,
     metal, weightGrams, price, mrp: g.mrp && g.mrp > price ? g.mrp : price,
-    description: g.longDescription || `${g.name} in ${metal}${weightGrams ? `, ${weightGrams} g gross weight` : ''}.`,
+    description: cleanLong || `${g.name} in ${metal}${weightGrams ? `, ${weightGrams} g gross weight` : ''}.`,
     highlights: [
       metal,
       ...(weightGrams ? [`${weightGrams} g gross weight`] : []),
       ...Object.entries(specs).map(([k, v]) => `${k}: ${v}`),
       gem === 'diamond' ? 'Certified natural diamonds' : gem === 'none' ? 'Hand-finished' : `Set with ${gemName[gem]}`,
       'BIS hallmarked gold',
+      ...promises,
     ],
     sizes: shape === 'ring' ? ['10', '12', '14', '16', '18'] : g.category === 'bangles' ? ['2.2', '2.4', '2.6', '2.8'] : undefined,
     tags: [g.category, g.collection ?? '', detectTone(metal), gem].filter((t) => t && t !== 'none'),
