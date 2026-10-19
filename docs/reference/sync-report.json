@@ -22,7 +22,7 @@
     {
       "url": "https://www.indriya.com/jewellery/rings",
       "status": 200,
-      "tiles": 80,
+      "tiles": 100,
       "kept": 14
     },
     {
@@ -34,13 +34,13 @@
     {
       "url": "https://www.indriya.com/jewellery/pendants",
       "status": 200,
-      "tiles": 100,
+      "tiles": 80,
       "kept": 14
     },
     {
       "url": "https://www.indriya.com/jewellery/bracelets",
       "status": 200,
-      "tiles": 60,
+      "tiles": 100,
       "kept": 14
     },
     {
@@ -52,19 +52,19 @@
     {
       "url": "https://www.indriya.com/jewellery/diamond-jewellery",
       "status": 200,
-      "tiles": 100,
+      "tiles": 60,
       "kept": 14
     },
     {
       "url": "https://www.indriya.com/jewellery/bridal-wear",
       "status": 200,
-      "tiles": 60,
+      "tiles": 80,
       "kept": 14
     },
     {
       "url": "https://www.indriya.com/jewellery/daily-wear",
       "status": 200,
-      "tiles": 60,
+      "tiles": 100,
       "kept": 14
     },
     {
@@ -141,6 +141,6 @@
     "products": 150,
     "banners": 4,
     "collections": 0,
-    "images": 176
+    "images": 431
   }
 }
