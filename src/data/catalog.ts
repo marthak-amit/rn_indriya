@@ -107,7 +107,9 @@ const fromGenerated = (g: GeneratedProduct): Product => {
   const specs = g.specs ?? {};
   // Meta text ends with the site's own promises, e.g. "✔Attractive Offers ✔Lifetime Exchange ✔100% Certified".
   const promises = [...(g.description ?? '').matchAll(/✔\s*([^✔]+)/g)].map((m) => m[1].trim()).filter(Boolean);
-  const cleanLong = g.longDescription && !/agree to be contacted|T&C|Privacy Policy/i.test(g.longDescription) ? g.longDescription : undefined;
+  const longText = (g.longDescription ?? '').replace(/opens in a new tab/gi, ' ').replace(/\s+/g, ' ').trim();
+  // Only trust scraped copy that reads like a real description (not just the product title / UI text).
+  const cleanLong = longText.length > g.name.length + 60 && !/agree to be contacted|T&C|Privacy Policy/i.test(longText) ? longText : undefined;
   return {
     id: g.id, name: g.name, categoryId: g.category, collectionId: g.collection ?? '', shape, tone: detectTone(`${metal} ${text}`), gem,
     metal, weightGrams, price, mrp: g.mrp && g.mrp > price ? g.mrp : price,

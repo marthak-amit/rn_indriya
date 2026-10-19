@@ -3,10 +3,11 @@
 A scalable, fully clickable React Native (Expo SDK 58 · TypeScript) storefront for Indriya, built on
 **Redux Toolkit** with an animation-first UI (**Reanimated 4**).
 
-> **Content status.** The environment this was built in could not reach `www.indriya.com`, so the
-> catalog, copy, store list, brand colours and imagery are **placeholders** (clearly marked in code).
-> The app draws its own vector jewellery (`JewelArt`) wherever a photo is missing, so every screen works
-> offline today. See [Plugging in real Indriya content](#plugging-in-real-indriya-content).
+> **Content.** Products, prices, photography, banners, logo and the theme come from the public
+> Indriya website, captured by `scripts/sync-indriya.mjs` (see [Syncing site content](#syncing-site-content)).
+> Where the site gives no data (ratings, reviews, store addresses) the app does not invent it.
+> Catalog structure (categories/collections) mirrors the site navigation. The built-in drawn-jewellery
+> artwork remains only as a fallback for missing images and for tests.
 
 ## Run it
 
@@ -23,7 +24,7 @@ npm run typecheck && npm run lint
 | Area | Highlights |
 | --- | --- |
 | Intro | Animated splash — gem facets bloom, wordmark rises letter-by-letter, light sweep, curtain lift |
-| Home | Auto-advancing parallax hero, marquee, category rail, snap collection carousel (cards scale + inner parallax), scroll-linked section reveals, sticky header |
+| Home | Real site banners as an auto-advancing hero, marquee, category rail, snap collection carousel (cards scale + inner parallax), scroll-linked section reveals, sticky header with the Indriya logo |
 | Shop | Category chips, **sort & filter bottom sheet** (drag to dismiss), responsive grid (2–4 cols), skeleton loading, empty state |
 | Product | Parallax/stretchy gallery, shimmer, size selector with shake-on-error, pincode ETA, accordions, related items, add-to-bag morph, buy now |
 | Wishlist | Heart with spark burst, persisted |
@@ -68,13 +69,26 @@ src/
 (staggered entrance), `ScrollReveal` (scroll-linked), `Skeleton`, `Chip`, `Accordion`, `BottomSheet`, `Field`
 (floating label + error shake), `AnimatedPrice`, `Confetti`, `AnimatedCheck`, `Marquee`. Everything runs on the UI thread via Reanimated worklets.
 
-## Plugging in real Indriya content
+## Syncing site content
 
-1. **Images** — add URLs to `src/config/remoteAssets.ts` (`'product:ring-01'`, `'banner:b1'`, `'collection:bridal'` …).
-   Photos replace the vector art automatically, with graceful fallback on load errors.
-2. **Catalog** — replace the `queryFn`s in `src/services/api/indriyaApi.ts` with `query`s against the real backend
-   (`fetchBaseQuery`) returning the same `Catalog` type (`features/catalog/types.ts`). No UI changes needed.
-   Seed data currently lives in `src/data/`.
-3. **Brand** — set real colours in `src/theme/colors.ts`, copy/contacts in `src/config/brand.ts`, and swap
-   `components/ui/Wordmark.tsx` + `assets/` icons for the official logo.
-4. Review placeholder claims (shipping threshold, "hallmarked", returns copy, store addresses).
+Real content lives in `src/data/generated/` (data + image map) and `assets/indriya/` (bundled photos).
+Refresh it any time — locally or from GitHub:
+
+```bash
+# locally (needs access to indriya.com)
+npm i --no-save playwright && npx playwright install chromium
+npm run sync:indriya
+```
+
+Or run the **Sync Indriya content** workflow (Actions tab → *Run workflow*); it captures the site in a
+headless browser on a GitHub runner and commits the result to the branch. Reference screenshots and a
+`sync-report.json` are written to `docs/reference/`.
+
+What it captures: category and collection listings, each product page (name, approximate price, gold weight,
+karat, size, gallery photos), hero banners, the logo, and the site's live colours and fonts.
+
+Notes
+- Prices on the site are *approximate, excluding taxes*; the app says so. Checkout is a demo — no payment is processed.
+- Hero banners carry their own headline in the image; captions in `src/data/catalog.ts` (`bannerMeta`) mirror that text.
+- Ring/bangle size pickers are app UI conveniences, not scraped values.
+- Unit tests mock the synced data and run against the built-in placeholder catalog (see `jest.setup.js`).

@@ -17,7 +17,7 @@ export function ShippingProgress({ amountAfterDiscount }: { amountAfterDiscount:
         <Ionicons name={done ? 'checkmark-circle' : 'cube-outline'} size={18} color={done ? colors.success : colors.primary} />
         <Animated.View key={String(done)} entering={FadeIn} style={{ flex: 1 }}>
           <Text variant="bodyStrong" style={{ fontSize: 14 }} color={done ? 'success' : 'ink'}>
-            {done ? 'You’ve unlocked free insured shipping' : `Add ${formatINR(remaining)} more for free insured shipping`}
+            {done ? 'You’ve unlocked free shipping' : `Add ${formatINR(remaining)} more for free shipping`}
           </Text>
         </Animated.View>
       </View>

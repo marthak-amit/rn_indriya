@@ -5,15 +5,18 @@ import { backdropStops } from '@/components/jewel/palettes';
 import { PressableScale } from '@/components/ui/PressableScale';
 import { Reveal } from '@/components/ui/Reveal';
 import { Text } from '@/components/ui/Text';
+import { Image } from 'expo-image';
 import { LinearGradient } from 'expo-linear-gradient';
+import { selectProducts } from '@/features/catalog/selectors';
 import { browse } from '@/features/catalog/filtersSlice';
 import type { Category } from '@/features/catalog/types';
-import { useAppDispatch } from '@/store/hooks';
+import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { colors, shadow } from '@/theme';
 
 export function CategoryRail({ categories }: { categories: Category[] }) {
   const router = useRouter();
   const dispatch = useAppDispatch();
+  const products = useAppSelector(selectProducts);
   return (
     <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.row}>
       {categories.map((c, i) => (
@@ -29,7 +32,14 @@ export function CategoryRail({ categories }: { categories: Category[] }) {
           >
             <View style={[styles.circle, shadow.soft]}>
               <LinearGradient colors={backdropStops[i % 2 ? 'rose' : 'yellow']} style={StyleSheet.absoluteFill} />
-              <View style={{ width: 62, height: 62 }}><JewelArt shape={c.shape} tone={i % 2 ? 'rose' : 'yellow'} gem={c.shape === 'bangle' ? 'none' : 'diamond'} /></View>
+              {(() => {
+                const photo = products.find((p) => p.categoryId === c.id)?.images[0];
+                return photo !== undefined ? (
+                  <Image source={photo} style={StyleSheet.absoluteFill} contentFit="cover" transition={300} accessibilityLabel={c.name} />
+                ) : (
+                  <View style={{ width: 62, height: 62 }}><JewelArt shape={c.shape} tone={i % 2 ? 'rose' : 'yellow'} gem={c.shape === 'bangle' ? 'none' : 'diamond'} /></View>
+                );
+              })()}
             </View>
             <Text variant="bodyStrong" style={{ fontSize: 13.5 }}>{c.name}</Text>
           </PressableScale>
