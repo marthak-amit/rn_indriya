@@ -239,7 +239,7 @@ async function main() {
   // ---- product detail pages: price, description, specs, gallery
   let pdp = 0;
   for (const prod of products.values()) {
-    if (pdp >= Number(process.env.MAX_PDP || 70)) break;
+    if (pdp >= Number(process.env.MAX_PDP || 60)) break;
     pdp++;
     try {
       await page.goto(prod.href, { waitUntil: 'domcontentloaded', timeout: 40000 });
