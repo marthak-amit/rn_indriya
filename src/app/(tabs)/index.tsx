@@ -8,7 +8,7 @@ import { SectionHeader } from '@/components/ui/SectionHeader';
 import { Text } from '@/components/ui/Text';
 import { Wordmark } from '@/components/ui/Wordmark';
 import { browse } from '@/features/catalog/filtersSlice';
-import { selectBanners, selectBestsellers, selectCategories, selectCollections, selectNewArrivals, selectViewedProducts } from '@/features/catalog/selectors';
+import { selectBanners, selectCategories, selectCollections, selectFeatured, selectMoreToExplore, selectViewedProducts } from '@/features/catalog/selectors';
 import { AppHeader } from '@/features/home/components/AppHeader';
 import { CategoryRail } from '@/features/home/components/CategoryRail';
 import { CollectionCarousel } from '@/features/home/components/CollectionCarousel';
@@ -34,8 +34,8 @@ export default function HomeScreen() {
   const banners = useAppSelector(selectBanners);
   const categories = useAppSelector(selectCategories);
   const collections = useAppSelector(selectCollections);
-  const best = useAppSelector(selectBestsellers);
-  const fresh = useAppSelector(selectNewArrivals);
+  const best = useAppSelector(selectFeatured);
+  const fresh = useAppSelector(selectMoreToExplore);
   const viewed = useAppSelector(selectViewedProducts);
   const { width } = useLayoutMetrics();
   const scrollY = useSharedValue(0);
@@ -73,13 +73,13 @@ export default function HomeScreen() {
               </View>
               <View style={styles.section}>
                 <ScrollReveal scrollY={scrollY}>
-                  <SectionHeader overline="Most loved" title="Bestsellers" actionLabel="View all" onAction={() => openShop()} />
+                  <SectionHeader overline="Handpicked" title="Featured jewellery" actionLabel="View all" onAction={() => openShop()} />
                   <ProductRail products={best} />
                 </ScrollReveal>
               </View>
               <View style={styles.section}>
                 <ScrollReveal scrollY={scrollY}>
-                  <SectionHeader overline="Just in" title="New arrivals" />
+                  <SectionHeader overline="Discover" title="Explore more" />
                   <View style={[styles.grid, { width: Math.min(width, 520) }]}>
                     {fresh.slice(0, 4).map((p, i) => (
                       <ProductCard key={p.id} product={p} width={(Math.min(width, 520) - 40 - 12) / 2} index={i} still />

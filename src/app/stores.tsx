@@ -34,7 +34,7 @@ export default function StoresScreen() {
       </View>
       <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
         <View style={styles.center}>
-          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 8 }} style={{ flexGrow: 0 }}>
+          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 8 }} style={{ flexGrow: 0, flexShrink: 0 }}>
             <Chip label="All cities" selected={!city} onPress={() => setCity(null)} />
             {cities.map((c) => <Chip key={c} label={c} selected={city === c} onPress={() => setCity(c)} />)}
           </ScrollView>

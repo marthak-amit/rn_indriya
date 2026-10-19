@@ -2,7 +2,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useGoBack } from '@/hooks/useGoBack';
 import { useEffect, useRef, useState } from 'react';
-import { StyleSheet, TextInput, useWindowDimensions, View } from 'react-native';
+import { Linking, StyleSheet, TextInput, useWindowDimensions, View } from 'react-native';
 import Animated, { FadeIn, FadeInDown, interpolate, useAnimatedScrollHandler, useAnimatedStyle, useSharedValue, withSequence, withTiming } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { RatingStars } from '@/components/jewel/RatingStars';
@@ -144,7 +144,7 @@ export default function ProductScreen() {
               <Text style={{ fontFamily: fonts.bodySemi, fontSize: 26 }}>{formatINR(product.price)}</Text>
               {off > 0 ? (<><Text variant="body" color="muted" style={{ textDecorationLine: 'line-through' }}>{formatINR(product.mrp)}</Text><Text variant="bodyStrong" color="success">{off}% off</Text></>) : null}
             </View>
-            <Text variant="caption" color="muted">Inclusive of all taxes · BIS hallmarked</Text>
+            <Text variant="caption" color="muted">{product.href ? 'Approximate price, excluding taxes · BIS hallmarked' : 'Inclusive of all taxes · BIS hallmarked'}</Text>
 
             {needsSize ? (
               <Animated.View style={[{ gap: 10, marginTop: 18 }, shakeStyle]}>
@@ -174,6 +174,14 @@ export default function ProductScreen() {
                   ))}
                 </View>
               </Accordion>
+              {product.href ? (
+                <Accordion title="More on indriya.com">
+                  <View style={{ gap: 10 }}>
+                    {product.code ? <Text variant="caption" color="muted">Product code {product.code}</Text> : null}
+                    <Button label="View on indriya.com" variant="secondary" icon="open-outline" onPress={() => Linking.openURL(product.href!)} />
+                  </View>
+                </Accordion>
+              ) : null}
               <Accordion title="Care & returns"><Text variant="body" color="inkSoft">Store separately in the pouch provided, avoid perfumes and water, and wipe gently with a soft cloth. Easy exchange applies as per policy.</Text></Accordion>
             </View>
           </Animated.View>

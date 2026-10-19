@@ -35,7 +35,7 @@ export function ProductCard({ product, width, index = 0, still = false }: Produc
           </View>
           <View style={styles.info}>
             <Text variant="caption" color="muted" numberOfLines={1}>{product.metal}</Text>
-            <Text variant="subheading" numberOfLines={1} style={{ fontSize: 15 }}>{product.name}</Text>
+            <Text variant="subheading" numberOfLines={2} style={{ fontSize: 15, lineHeight: 20, minHeight: 40 }}>{product.name}</Text>
             <View style={styles.priceRow}>
               <Text variant="price">{formatINR(product.price)}</Text>
               {off > 0 ? <Text variant="caption" color="muted" style={{ textDecorationLine: 'line-through' }}>{formatINR(product.mrp)}</Text> : null}

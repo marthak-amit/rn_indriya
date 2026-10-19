@@ -41,6 +41,10 @@ export interface Product {
   highlights: string[];
   sizes?: string[];
   tags: string[];
+  /** Extra facts from the product page (e.g. Size: 35.5 cm). */
+  specs?: Record<string, string>;
+  /** Product code on indriya.com. */
+  code?: string;
   isNew?: boolean;
   isBestseller?: boolean;
   images: ImageRef[];
@@ -55,6 +59,10 @@ export interface Banner {
   subtitle: string;
   cta: string;
   target: { category?: string; collection?: string };
+  /** Opens in the browser instead of the in-app shop (e.g. Golden Programs). */
+  externalUrl?: string;
+  /** The image already contains its own headline (real site banners). */
+  imageHasText?: boolean;
   tone: MetalTone;
   gem: GemType;
   shape: JewelShape;

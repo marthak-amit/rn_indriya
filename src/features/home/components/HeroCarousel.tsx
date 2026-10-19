@@ -2,7 +2,7 @@ import { Image } from 'expo-image';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useRouter } from 'expo-router';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { StyleSheet, useWindowDimensions, View } from 'react-native';
+import { Linking, StyleSheet, useWindowDimensions, View } from 'react-native';
 import Animated, { Extrapolation, FadeInDown, interpolate, useAnimatedScrollHandler, useAnimatedStyle, useSharedValue, type SharedValue } from 'react-native-reanimated';
 import { JewelArt } from '@/components/jewel/JewelArt';
 import { Button } from '@/components/ui/Button';
@@ -25,14 +25,41 @@ function Slide({ banner, index, width, height, scrollX }: { banner: Banner; inde
       transform: [{ translateX: d * -0.45 }, { scale: interpolate(Math.abs(d), [0, width], [1, 0.8], Extrapolation.CLAMP) }, { rotate: `${interpolate(d, [-width, 0, width], [12, 0, -12])}deg` }],
     };
   });
+  const photo = useAnimatedStyle(() => {
+    const d = scrollX.value - index * width;
+    return { opacity: interpolate(Math.abs(d), [0, width * 0.9], [1, 0.35], Extrapolation.CLAMP), transform: [{ translateX: d * -0.2 }, { scale: interpolate(Math.abs(d), [0, width], [1, 1.06], Extrapolation.CLAMP) }] };
+  });
   const text = useAnimatedStyle(() => {
     const d = scrollX.value - index * width;
     return { opacity: interpolate(Math.abs(d), [0, width * 0.5], [1, 0], Extrapolation.CLAMP), transform: [{ translateX: d * 0.3 }] };
   });
   const go = () => {
+    if (banner.externalUrl) {
+      Linking.openURL(banner.externalUrl);
+      return;
+    }
     dispatch(browse({ categoryId: banner.target.category ?? null, collectionId: banner.target.collection ?? null }));
     router.push('/shop');
   };
+  if (banner.image && banner.imageHasText) {
+    // The site's own banner already carries its headline: show it uncropped, with a caption + CTA beneath.
+    const imageH = Math.round((width * 580) / 1440);
+    return (
+      <View style={{ width, height }}>
+        <Animated.View style={[{ width, height: imageH, overflow: 'hidden' }, photo]}>
+          <Image source={banner.image} style={StyleSheet.absoluteFill} contentFit="cover" transition={400} />
+        </Animated.View>
+        <LinearGradient colors={['#011B45', '#022E71']} style={styles.caption}>
+          <Animated.View style={[{ gap: 6 }, text]}>
+            <Text variant="overline" color="goldLight">{banner.eyebrow}</Text>
+            <Text color="white" style={{ fontFamily: fonts.displayBold, fontSize: 26, lineHeight: 32, letterSpacing: -0.4 }}>{banner.title}</Text>
+            <Text variant="body" style={{ color: 'rgba(255,255,255,0.8)' }}>{banner.subtitle}</Text>
+            <Button label={banner.cta} variant="gold" icon="arrow-forward" onPress={go} style={{ alignSelf: 'flex-start', marginTop: 8 }} />
+          </Animated.View>
+        </LinearGradient>
+      </View>
+    );
+  }
   return (
     <View style={{ width, height }}>
       <LinearGradient colors={banner.gradient} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={StyleSheet.absoluteFill} />
@@ -73,7 +100,8 @@ function Dot({ index, width, scrollX }: { index: number; width: number; scrollX:
 export function HeroCarousel({ banners }: { banners: Banner[] }) {
   const { width: screen } = useWindowDimensions();
   const width = Math.min(screen, MAX_CONTENT_WIDTH);
-  const height = Math.round(Math.min(640, Math.max(560, width * 1.5)));
+  const hasPhotoBanners = !!banners[0]?.imageHasText;
+  const height = hasPhotoBanners ? Math.round((width * 580) / 1440) + 232 : Math.round(Math.min(640, Math.max(560, width * 1.5)));
   const scrollX = useSharedValue(0);
   const ref = useRef<Animated.FlatList<Banner>>(null);
   const [, setActive] = useState(0);
@@ -127,9 +155,10 @@ export function HeroCarousel({ banners }: { banners: Banner[] }) {
 
 const styles = StyleSheet.create({
   art: { position: 'absolute', right: -24, top: 18, width: 300, height: 300 },
+  caption: { flex: 1, padding: 22, paddingBottom: 54, justifyContent: 'flex-start' },
   scrim: { position: 'absolute', left: 0, right: 0, bottom: 0, top: '30%' },
   glow: { position: 'absolute', right: -50, top: -10, width: 360, height: 360, borderRadius: 180, backgroundColor: 'rgba(231,207,150,0.14)' },
   copy: { position: 'absolute', left: 24, right: 24, bottom: 64, gap: 8 },
-  pager: { position: 'absolute', bottom: 28, left: 24, flexDirection: 'row', gap: 6 },
+  pager: { position: 'absolute', bottom: 22, left: 24, flexDirection: 'row', gap: 6 },
   dot: { height: 7, borderRadius: 4, backgroundColor: colors.goldLight },
 });

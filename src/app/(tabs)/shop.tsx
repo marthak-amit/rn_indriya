@@ -54,7 +54,7 @@ export default function ShopScreen() {
           <IconButton name="search-outline" label="Search" onPress={() => router.push('/search')} />
         </View>
 
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.chips} style={{ flexGrow: 0 }}>
+        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.chips} style={{ flexGrow: 0, flexShrink: 0 }}>
           <Chip label="All" selected={!filters.categoryId} onPress={() => dispatch(setCategory(null))} />
           {categories.map((c) => <Chip key={c.id} label={c.name} selected={filters.categoryId === c.id} onPress={() => dispatch(setCategory(c.id))} />)}
         </ScrollView>
@@ -98,7 +98,7 @@ export default function ShopScreen() {
 const styles = StyleSheet.create({
   center: { flex: 1, maxWidth: '100%', alignSelf: 'center' },
   head: { flexDirection: 'row', alignItems: 'center', paddingHorizontal: 20, paddingTop: 8, paddingBottom: 10 },
-  chips: { paddingHorizontal: 16, gap: 8, paddingBottom: 12 },
+  chips: { paddingHorizontal: 16, gap: 8, paddingBottom: 12, alignItems: 'center' },
   toolbar: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 20, paddingBottom: 12 },
   filterBtn: { flexDirection: 'row', alignItems: 'center', gap: 6, paddingHorizontal: 14, paddingVertical: 8, borderRadius: radius.pill, backgroundColor: colors.primarySoft },
   dot: { minWidth: 18, height: 18, borderRadius: 9, backgroundColor: colors.primary, alignItems: 'center', justifyContent: 'center', paddingHorizontal: 4 },

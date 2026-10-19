@@ -22,8 +22,23 @@ export const selectProductsById = createSelector([selectProducts], (products) =>
 );
 export const selectProductById = (s: RootState, id: string) => selectProductsById(s)[id];
 
-export const selectBestsellers = createSelector([selectProducts], (p) => p.filter((x) => x.isBestseller));
-export const selectNewArrivals = createSelector([selectProducts], (p) => p.filter((x) => x.isNew));
+/** Round-robin across categories so a rail shows variety rather than 14 bangles in a row. */
+const spread = (products: Product[]): Product[] => {
+  const groups = new Map<string, Product[]>();
+  for (const p of products) groups.set(p.categoryId, [...(groups.get(p.categoryId) ?? []), p]);
+  const lists = [...groups.values()];
+  const out: Product[] = [];
+  for (let i = 0; out.length < products.length; i++) for (const l of lists) if (l[i]) out.push(l[i]);
+  return out;
+};
+const flagged = (p: Product[], key: 'isBestseller' | 'isNew') => p.filter((x) => x[key]);
+
+export const selectFeatured = createSelector([selectProducts], (p) => (flagged(p, 'isBestseller').length >= 4 ? flagged(p, 'isBestseller') : spread(p).slice(0, 10)));
+export const selectMoreToExplore = createSelector([selectProducts, selectFeatured], (p, featured) => {
+  const ids = new Set(featured.map((x) => x.id));
+  const fresh = flagged(p, 'isNew');
+  return (fresh.length >= 4 ? fresh : spread(p).filter((x) => !ids.has(x.id))).slice(0, 4);
+});
 
 export const selectRelated = (s: RootState, id: string): Product[] => {
   const product = selectProductById(s, id);
