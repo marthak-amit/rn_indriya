@@ -32,18 +32,22 @@ const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$
 const hash = (s) => createHash('sha1').update(s).digest('hex').slice(0, 6);
 
 const SEED_PATHS = [
-  '/jewellery/necklaces', '/jewellery/earrings', '/jewellery/bangles', '/jewellery/rings', '/jewellery/mangalsutra',
-  '/jewellery/bangles/single-bangle-design', '/jewellery/gold-jewellery', '/jewellery/18k-gold-jewellery',
-  '/aasmaniyat', '/indriya-diamonds', '/temple-jewellery', '/wedding/engagement-jewellery', '/brand',
+  '/jewellery/neckwear', '/jewellery/earrings', '/jewellery/bangles', '/jewellery/rings', '/jewellery/mangalsutras',
+  '/jewellery/pendants', '/jewellery/bracelets', '/jewellery/chains',
+  '/jewellery/gold-jewellery', '/jewellery/18k-gold-jewellery', '/jewellery/diamond-jewellery',
+  '/aasmaniyat', '/jewellery/bridal-wear', '/temple-jewellery', '/jewellery/daily-wear',
 ];
 const COLLECTION_BY_PATH = [
-  [/aasmaniyat/i, 'aasmaniyat'], [/indriya-diamonds|diamond/i, 'diamonds'], [/temple|anantara/i, 'temple'], [/bridal|wedding|engagement|saptapadma/i, 'bridal'],
+  [/aasmaniyat/i, 'aasmaniyat'], [/diamond/i, 'diamonds'], [/temple|anantara/i, 'temple'], [/bridal|wedding|engagement|saptapadma/i, 'bridal'], [/daily-wear/i, 'daily'],
 ];
 const categoryFromText = (t) => {
   if (/mangal\s?sutra/i.test(t)) return 'mangalsutra';
-  if (/ear\s?ring|jhumk|stud|bali|chandbali|drop|danglers?/i.test(t)) return 'earrings';
-  if (/bangle|kada|bracelet|cuff/i.test(t)) return 'bangles';
-  if (/necklace|haar|choker|chain|pendant|set\b/i.test(t)) return 'necklaces';
+  if (/ear\s?ring|jhumk|\bstud|bali|chandbali|drop|danglers?|hoop/i.test(t)) return 'earrings';
+  if (/bracelet/i.test(t)) return 'bracelets';
+  if (/bangle|kada|cuff/i.test(t)) return 'bangles';
+  if (/pendant/i.test(t)) return 'pendants';
+  if (/\bchains?\b/i.test(t)) return 'chains';
+  if (/necklace|neckwear|haar|choker|\bset\b/i.test(t)) return 'necklaces';
   if (/\bring\b|band|solitaire/i.test(t)) return 'rings';
   return null;
 };
@@ -169,7 +173,15 @@ async function main() {
     const el = document.querySelector('header img[src*="logo" i], header a[href="/"] img, a[href="/"] img[alt*="indriya" i], img[alt*="indriya" i][src*="logo" i]');
     return el ? el.currentSrc || el.src : null;
   }).catch(() => null);
-  const logo = logoSrc ? await download(ctx, logoSrc, 'brand', 'logo') : null;
+  let logo = logoSrc ? await download(ctx, logoSrc, 'brand', 'logo') : null;
+  if (!logo) {
+    try {
+      const el = page.locator('header a[href="/"], a[href="/"]:has(svg), a[href="/"]:has(img)').first();
+      await mkdir(path.join(ASSETS, 'brand'), { recursive: true });
+      await el.screenshot({ path: path.join(ASSETS, 'brand/logo.png'), omitBackground: true, timeout: 8000 });
+      logo = 'brand/logo.png';
+    } catch (e) { report.errors.push('logo: ' + e.message.split('\n')[0]); }
+  }
 
   const links = await page.evaluate(() => [...document.querySelectorAll('a[href]')].map((a) => ({ href: a.href, text: (a.textContent || '').trim().slice(0, 40) }))).catch(() => []);
   const sameOrigin = links.filter((l) => l.href.startsWith(ORIGIN) && !/#|\.(pdf|jpg|png)$|\/(login|cart|account|blog|store|stores|policy|terms|contact)/i.test(l.href)).map((l) => l.href.split('?')[0].replace(/\/$/, ''));
@@ -198,7 +210,7 @@ async function main() {
       if (status >= 400) { report.pages.push({ url, status, tiles: 0 }); continue; }
       visited++;
       await autoScroll(page);
-      const tiles = (await page.evaluate(extractTiles)).filter((t) => t.href && t.href !== url && t.name);
+      const tiles = (await page.evaluate(extractTiles)).filter((t) => t.href && t.href !== url && t.name && /\/jewellery-products\//.test(t.href));
       const pathName = new URL(url).pathname;
       const col = COLLECTION_BY_PATH.find(([re]) => re.test(pathName))?.[1] ?? null;
       const pageCat = categoryFromText(pathName);
@@ -224,11 +236,44 @@ async function main() {
       report.errors.push(`${url}: ${e.message.split('\n')[0]}`);
     }
   }
+  // ---- product detail pages: price, description, specs, gallery
+  let pdp = 0;
+  for (const prod of products.values()) {
+    if (pdp >= Number(process.env.MAX_PDP || 70)) break;
+    pdp++;
+    try {
+      await page.goto(prod.href, { waitUntil: 'domcontentloaded', timeout: 40000 });
+      await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
+      await page.waitForTimeout(900);
+      const d = await page.evaluate(() => {
+        const main = document.querySelector('main') || document.body;
+        const text = main.innerText.replace(/[ \t]+/g, ' ');
+        const prices = [...text.matchAll(/(?:₹|Rs\.?)\s*([\d,]{3,}(?:\.\d+)?)/g)].map((m) => Math.round(parseFloat(m[1].replace(/,/g, '')))).filter((n) => n > 500);
+        const specs = {};
+        for (const m of text.matchAll(/(Gold Weight|Net Weight|Gross Weight|Purity|Karat|Metal|Diamond Weight|Stone Weight|Gold Purity|Diamond Clarity|Diamond Colour|Collection|Size|Width|Height)\s*[:\n]\s*([^\n]{1,40})/gi)) specs[m[1].trim()] = m[2].trim();
+        const desc = document.querySelector('meta[name="description"]')?.content || document.querySelector('meta[property="og:description"]')?.content || '';
+        const imgs = [...document.images].filter((i) => { const r = i.getBoundingClientRect(); return r.width > 160 && r.height > 160 && r.top + scrollY < 1300; }).map((i) => i.currentSrc || i.src).filter((u) => u && !u.startsWith('data:'));
+        return { prices: [...new Set(prices)].sort((a, b) => a - b), specs, desc, imgs: [...new Set(imgs)], title: document.querySelector('h1')?.textContent?.trim() || null, hasText: text.slice(0, 1200) };
+      });
+      if (pdp <= 2) { await page.screenshot({ path: path.join(REF, `pdp-${pdp}.png`), fullPage: false }).catch(() => {}); await writeFile(path.join(REF, `pdp-${pdp}.txt`), d.hasText); }
+      if (d.prices.length) { prod.price = d.prices[0]; prod.mrp = d.prices.length > 1 ? d.prices[d.prices.length - 1] : null; }
+      if (d.title && d.title.length > 3) prod.name = d.title.slice(0, 90);
+      prod.description = d.desc ? d.desc.slice(0, 400) : null;
+      prod.specs = d.specs;
+      const extra = [];
+      for (const u of d.imgs.slice(0, 6)) {
+        if (extra.length >= 3) break;
+        const rel = await download(ctx, u, 'products', `${prod.id}-${extra.length + 2}`);
+        if (rel) extra.push(rel);
+      }
+      prod.extraImages = extra;
+    } catch (e) { report.errors.push(`pdp ${prod.href}: ${e.message.split('\n')[0]}`); }
+  }
   await browser.close();
 
   // ---- write outputs
   const list = [...products.values()];
-  const imageKeys = [...new Set([...(logo ? [logo] : []), ...banners.map((b) => b.image), ...Object.values(collections).map((c) => c.image), ...list.map((p) => p.image)])];
+  const imageKeys = [...new Set([...(logo ? [logo] : []), ...banners.map((b) => b.image), ...Object.values(collections).map((c) => c.image), ...list.flatMap((p) => [p.image, ...(p.extraImages || [])])])];
   const data = { fetchedAt: new Date().toISOString(), source: ORIGIN, theme, logo, banners, collections: Object.values(collections), products: list };
   await writeFile(path.join(GEN, 'indriya.json'), JSON.stringify(data, null, 2) + '\n');
   const ts = `// Generated by scripts/sync-indriya.mjs — do not edit.\nexport const generatedImages: Record<string, number> = {\n${imageKeys.map((k) => `  '${k}': require('../../../assets/indriya/${k}'),`).join('\n')}\n};\n`;
