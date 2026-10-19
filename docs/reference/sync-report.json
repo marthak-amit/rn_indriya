@@ -10,7 +10,7 @@
     {
       "url": "https://www.indriya.com/jewellery/earrings",
       "status": 200,
-      "tiles": 100,
+      "tiles": 80,
       "kept": 14
     },
     {
@@ -22,7 +22,7 @@
     {
       "url": "https://www.indriya.com/jewellery/rings",
       "status": 200,
-      "tiles": 100,
+      "tiles": 80,
       "kept": 14
     },
     {
@@ -40,13 +40,41 @@
     {
       "url": "https://www.indriya.com/jewellery/bracelets",
       "status": 200,
+      "tiles": 60,
+      "kept": 14
+    },
+    {
+      "url": "https://www.indriya.com/aasmaniyat",
+      "status": 200,
+      "tiles": 24,
+      "kept": 8
+    },
+    {
+      "url": "https://www.indriya.com/jewellery/diamond-jewellery",
+      "status": 200,
       "tiles": 100,
-      "kept": 6
+      "kept": 14
+    },
+    {
+      "url": "https://www.indriya.com/jewellery/bridal-wear",
+      "status": 200,
+      "tiles": 60,
+      "kept": 14
+    },
+    {
+      "url": "https://www.indriya.com/jewellery/daily-wear",
+      "status": 200,
+      "tiles": 60,
+      "kept": 14
+    },
+    {
+      "url": "https://www.indriya.com/jewellery/gold-jewellery",
+      "status": 200,
+      "tiles": 60,
+      "kept": 2
     }
   ],
-  "errors": [
-    "logo: locator.screenshot: Timeout 8000ms exceeded."
-  ],
+  "errors": [],
   "discoveredLinks": [
     "https://www.indriya.com/jewellery/earrings",
     "https://www.indriya.com/jewellery/rings",
@@ -110,9 +138,9 @@
     "https://www.indriya.com/jewellery/diamond-jewellery/100000-200000"
   ],
   "counts": {
-    "products": 90,
+    "products": 150,
     "banners": 4,
     "collections": 0,
-    "images": 214
+    "images": 176
   }
 }
